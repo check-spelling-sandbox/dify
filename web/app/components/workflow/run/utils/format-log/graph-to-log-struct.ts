@@ -239,7 +239,7 @@ function convertIterationNode(node: Node): NodeData[] {
 }
 
 /**
- * Converts an loop node to node data.
+ * Converts a loop node to node data.
  */
 function convertLoopNode(node: Node): NodeData[] {
   const { nodeId, params } = node as NodeComplex

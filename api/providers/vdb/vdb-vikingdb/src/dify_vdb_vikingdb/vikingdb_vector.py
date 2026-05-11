@@ -149,7 +149,7 @@ class VikingDBVector(BaseVector):
         self._client.get_collection(self._collection_name).delete_data(ids)
 
     def get_ids_by_metadata_field(self, key: str, value: str):
-        # Note: Metadata field value is an dict, but vikingdb field
+        # Note: Metadata field value is a dict, but vikingdb field
         # not support json type
         results = self._client.get_index(self._collection_name, self._index_name).search(
             filter={"op": "must", "field": vdb_Field.GROUP_KEY, "conds": [self._group_id]},

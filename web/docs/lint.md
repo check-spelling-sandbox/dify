@@ -1,6 +1,6 @@
 # Lint Guide
 
-We use ESLint and Typescript to maintain code quality and consistency across the project.
+We use ESLint and TypeScript to maintain code quality and consistency across the project.
 
 ## ESLint
 

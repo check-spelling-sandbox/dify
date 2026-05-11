@@ -123,7 +123,7 @@ class LangfuseSpan(BaseModel):
     )
     trace_id: str | None = Field(
         default=None,
-        description="The id of the trace the span belongs to. Used to link spans to traces.",
+        description="The id of the trace to which the span belongs. Used to link spans to traces.",
     )
     user_id: str | None = Field(
         default=None,
@@ -169,7 +169,7 @@ class LangfuseSpan(BaseModel):
     )
     parent_observation_id: str | None = Field(
         default=None,
-        description="The id of the observation the span belongs to. Used to link spans to observations.",
+        description="The id of the observation to which the span belongs. Used to link spans to observations.",
     )
 
     @field_validator("input", "output")
@@ -212,11 +212,11 @@ class LangfuseGeneration(BaseModel):
     )
     trace_id: str | None = Field(
         default=None,
-        description="The id of the trace the generation belongs to. Used to link generations to traces.",
+        description="The id of the trace to which the generation belongs. Used to link generations to traces.",
     )
     parent_observation_id: str | None = Field(
         default=None,
-        description="The id of the observation the generation belongs to. Used to link generations to observations.",
+        description="The id of the observation to which the generation belongs. Used to link generations to observations.",
     )
     name: str | None = Field(
         default=None,

@@ -430,7 +430,7 @@ def length_prefixed_response(
     |-----------------|----------|----------|
     | 4 bytes total   | Variable | Variable |
 
-    all data is in little endian
+    all data is in little-endian
     """
 
     def pack_response_with_length_prefix(response: bytes) -> bytes:

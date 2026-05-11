@@ -5,7 +5,7 @@ describe('demo scenario types', () => {
     expect(ContactMethods).toEqual([
       { value: 'email', label: 'Email' },
       { value: 'phone', label: 'Phone' },
-      { value: 'whatsapp', label: 'Whatsapp' },
+      { value: 'whatsapp', label: 'WhatsApp' },
       { value: 'sms', label: 'Sms' },
     ])
   })

@@ -29,7 +29,7 @@ describe('Base Form Demo Flow', () => {
     expect(preferredMethodField).toBeTruthy()
 
     await user.click(within(preferredMethodField as HTMLElement).getByText('Email'))
-    await user.click(screen.getByText('Whatsapp'))
+    await user.click(screen.getByText('WhatsApp'))
 
     const submitButton = screen.getByRole('button', { name: /operation\.submit/i })
     expect(submitButton).toBeEnabled()

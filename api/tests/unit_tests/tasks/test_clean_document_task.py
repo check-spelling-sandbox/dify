@@ -179,7 +179,7 @@ class TestVectorCleanupResilience:
         # Assert
         # 1. Vector cleanup was attempted.
         mock_index_processor_factory["processor"].clean.assert_called_once()
-        # 2. Despite the failure the task continued: at least one DocumentSegment
+        # 2. Despite the failure, the task continued: at least one DocumentSegment
         #    delete was issued. We use the count of session.execute calls across
         #    later short transactions as a proxy for "Step 3+ executed".
         execute_calls = sum(s.execute.call_count for s in sessions)

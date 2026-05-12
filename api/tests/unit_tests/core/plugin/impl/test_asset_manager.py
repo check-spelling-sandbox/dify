@@ -21,7 +21,7 @@ class TestPluginAssetManager:
         manager = PluginAssetManager()
         mocker.patch.object(manager, "_request", return_value=MagicMock(status_code=404, content=b""))
 
-        with pytest.raises(ValueError, match="can not found asset asset-1"):
+        with pytest.raises(ValueError, match="cannot find asset asset-1"):
             manager.fetch_asset("tenant-1", "asset-1")
 
     def test_extract_asset_success(self, mocker: MockerFixture):
@@ -42,5 +42,5 @@ class TestPluginAssetManager:
         manager = PluginAssetManager()
         mocker.patch.object(manager, "_request", return_value=MagicMock(status_code=404, content=b""))
 
-        with pytest.raises(ValueError, match="can not found asset org/plugin:1, 404"):
+        with pytest.raises(ValueError, match="cannot find asset org/plugin:1, 404"):
             manager.extract_asset("tenant-1", "org/plugin:1", "README.md")

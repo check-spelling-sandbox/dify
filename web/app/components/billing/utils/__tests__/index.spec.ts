@@ -15,7 +15,7 @@ describe('billing utils', () => {
       expect(parseVectorSpaceToMB('20GB')).toBe(20 * 1024)
     })
 
-    it('should be case insensitive', () => {
+    it('should be case-insensitive', () => {
       expect(parseVectorSpaceToMB('50mb')).toBe(50)
       expect(parseVectorSpaceToMB('5gb')).toBe(5 * 1024)
     })

@@ -668,7 +668,7 @@ describe('CategoriesFilter Component', () => {
       expect(screen.queryByText('Extensions')).not.toBeInTheDocument()
     })
 
-    it('should be case insensitive', async () => {
+    it('should be case-insensitive', async () => {
       // Arrange
       render(<CategoriesFilter value={[]} onChange={vi.fn()} />)
 

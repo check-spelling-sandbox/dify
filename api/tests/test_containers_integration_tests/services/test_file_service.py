@@ -1002,7 +1002,7 @@ class TestFileService:
         self, db_session_with_containers: Session, engine, mock_external_service_dependencies
     ):
         """
-        Test file upload with blocked extension (case insensitive).
+        Test file upload with blocked extension (case-insensitive).
         """
         fake = Faker()
         account = self._create_test_account(db_session_with_containers, mock_external_service_dependencies)

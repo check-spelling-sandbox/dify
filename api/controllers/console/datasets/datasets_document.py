@@ -339,7 +339,7 @@ class DatasetDocumentListApi(Resource):
                 else:
                     raise ArgumentTypeError(
                         f"Truthy value expected: got {fetch_val} but expected one of yes/no, true/false, t/f, y/n, 1/0 "
-                        f"(case insensitive)."
+                        f"(case-insensitive)."
                     )
         except (ArgumentTypeError, ValueError, Exception):
             fetch = False

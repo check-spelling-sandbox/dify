@@ -108,7 +108,7 @@ class TestAdvancedPromptTemplateService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test Baichuan model detection is case insensitive.
+        Test Baichuan model detection is case-insensitive.
 
         This test verifies:
         - Model name detection works regardless of case

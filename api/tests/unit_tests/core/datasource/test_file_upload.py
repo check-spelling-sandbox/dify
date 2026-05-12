@@ -629,7 +629,7 @@ class TestBlacklistedExtensions:
         ("extension", "blacklist", "should_block"),
         [
             ("exe", {"exe", "bat", "sh"}, True),
-            ("EXE", {"exe", "bat", "sh"}, True),  # Case insensitive
+            ("EXE", {"exe", "bat", "sh"}, True),  # Case-insensitive
             ("txt", {"exe", "bat", "sh"}, False),
             ("pdf", {"exe", "bat", "sh"}, False),
             ("bat", {"exe", "bat", "sh"}, True),

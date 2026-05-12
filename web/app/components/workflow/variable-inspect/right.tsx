@@ -139,7 +139,7 @@ const Right = ({
           }
           break
 
-        //  Agent is a plugin, may has many instructions, can not locate which one to update
+        //  Agent is a plugin, may has many instructions, cannot locate which one to update
         // case BlockEnum.Agent:
         //   if (draft?.agent_parameters?.instruction) {
         //     draft.agent_parameters.instruction.value = res.modified

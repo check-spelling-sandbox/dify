@@ -253,7 +253,7 @@ services:
       - "${EXPOSE_WEAVIATE_GRPC_PORT:-50051}:50051"
 
 networks:
-  # create a network between sandbox, api and ssrf_proxy, and can not access outside.
+  # create a network between sandbox, api and ssrf_proxy, and cannot access outside.
   ssrf_proxy_network:
     driver: bridge
     internal: true

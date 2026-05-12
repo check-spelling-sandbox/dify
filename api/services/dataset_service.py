@@ -2112,7 +2112,7 @@ class DocumentService:
                         )
                     else:
                         logger.warning(
-                            "Invalid process rule mode: %s, can not find dataset process rule",
+                            "Invalid process rule mode: %s, cannot find dataset process rule",
                             process_rule.mode,
                         )
                         return [], ""
@@ -2415,7 +2415,7 @@ class DocumentService:
     #                     )
     #                 else:
     #                     logging.warn(
-    #                         f"Invalid process rule mode: {process_rule.mode}, can not find dataset process rule"
+    #                         f"Invalid process rule mode: {process_rule.mode}, cannot find dataset process rule"
     #                     )
     #                     return
     #                 db.session.add(dataset_process_rule)

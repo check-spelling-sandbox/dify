@@ -274,7 +274,7 @@ export const handleStream = (
               return
             }
             if (bufferObj.event === 'message' || bufferObj.event === 'agent_message') {
-              // can not use format here. Because message is splitted.
+              // cannot use format here. Because message is splitted.
               onData(unicodeToChar(bufferObj.answer), isFirstMessage, {
                 conversationId: bufferObj.conversation_id,
                 taskId: bufferObj.task_id,

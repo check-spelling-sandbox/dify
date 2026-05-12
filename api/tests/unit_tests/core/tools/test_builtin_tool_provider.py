@@ -166,7 +166,7 @@ def test_builtin_tool_provider_unauthorized_schema_is_empty():
 
 def test_builtin_tool_provider_init_raises_when_provider_yaml_missing():
     with patch("core.tools.builtin_tool.provider.load_yaml_file_cached", side_effect=RuntimeError("boom")):
-        with pytest.raises(ToolProviderNotFoundError, match="can not load provider yaml"):
+        with pytest.raises(ToolProviderNotFoundError, match="cannot load provider yaml"):
             _ConcreteBuiltinProvider()
 
 

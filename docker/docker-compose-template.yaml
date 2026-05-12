@@ -1180,7 +1180,7 @@ services:
       - ./volumes/unstructured:/app/data
 
 networks:
-  # create a network between sandbox, api and ssrf_proxy, and can not access outside.
+  # create a network between sandbox, api and ssrf_proxy, and cannot access outside.
   ssrf_proxy_network:
     driver: bridge
     internal: true

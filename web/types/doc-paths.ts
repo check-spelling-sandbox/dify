@@ -1,5 +1,5 @@
 // GENERATE BY script
-// DON NOT EDIT IT MANUALLY
+// DO NOT EDIT IT MANUALLY
 //
 // Generated from: https://raw.githubusercontent.com/langgenius/dify-docs/refs/heads/main/docs.json
 // Generated at: 2026-03-25T03:18:49.626Z

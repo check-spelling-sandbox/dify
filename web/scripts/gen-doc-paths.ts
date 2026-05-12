@@ -1,5 +1,5 @@
 // GENERATE BY script
-// DON NOT EDIT IT MANUALLY
+// DO NOT EDIT IT MANUALLY
 //
 // This script fetches the docs.json from dify-docs repository
 // and generates TypeScript types for documentation paths.
@@ -256,7 +256,7 @@ function generateTypeDefinitions(
 ): string {
   const lines: string[] = [
     '// GENERATE BY script',
-    '// DON NOT EDIT IT MANUALLY',
+    '// DO NOT EDIT IT MANUALLY',
     '//',
     '// Generated from: https://raw.githubusercontent.com/langgenius/dify-docs/refs/heads/main/docs.json',
     `// Generated at: ${new Date().toISOString()}`,

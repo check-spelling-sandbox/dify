@@ -56,7 +56,7 @@ const generateSvgComponent = async (fileHandle, entry, relativeSegments, replace
 
   const componentRender = template(`
 // GENERATE BY script
-// DON NOT EDIT IT MANUALLY
+// DO NOT EDIT IT MANUALLY
 
 import * as React from 'react'
 import data from './<%= svgName %>.json'
@@ -112,7 +112,7 @@ const generateImageComponent = async (entry, relativeSegments) => {
 
   const componentRender = template(`
 // GENERATE BY script
-// DON NOT EDIT IT MANUALLY
+// DO NOT EDIT IT MANUALLY
 
 import * as React from 'react'
 import { cn } from '@langgenius/dify-ui/cn'

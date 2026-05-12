@@ -2,10 +2,10 @@ app:
   description: 'This workflow receive ''query'' and ''blocking''.
 
 
-    if blocking == 1, the workflow will outputs the result once(because it from the
+    if blocking == 1, the workflow will output the result once(because it from the
     Template Node).
 
-    otherwise, the workflow will outputs the result streaming.'
+    otherwise, the workflow will output the result streaming.'
   icon: 🤖
   icon_background: '#FFEAD5'
   mode: workflow

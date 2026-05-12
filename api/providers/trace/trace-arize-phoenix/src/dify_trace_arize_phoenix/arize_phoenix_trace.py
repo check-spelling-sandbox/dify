@@ -235,7 +235,7 @@ def setup_tracer(arize_phoenix_config: ArizeConfig | PhoenixConfig) -> tuple[tra
         logger.info("[Arize/Phoenix] Created tracer with name: %s", tracer_name)
         return cast(trace_sdk.Tracer, provider.get_tracer(tracer_name)), processor
     except Exception as e:
-        logger.error("[Arize/Phoenix] Failed to setup the tracer: %s", str(e), exc_info=True)
+        logger.error("[Arize/Phoenix] Failed to set up the tracer: %s", str(e), exc_info=True)
         raise
 
 

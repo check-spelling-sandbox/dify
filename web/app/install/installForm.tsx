@@ -51,7 +51,7 @@ const InstallForm = () => {
       onSubmit: zodSubmitValidator(accountFormSchema),
     },
     onSubmit: async ({ value }) => {
-      // First, setup the admin account
+      // First, set up the admin account
       await setup({
         body: {
           ...value,

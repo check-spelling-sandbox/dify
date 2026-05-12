@@ -137,7 +137,7 @@ class TestEasyUIBasedGenerateTaskPipelineProcessStreamResponse:
         self, pipeline, mock_message_cycle_manager
     ):
         """Expect get_message_event_type to be called when processing the first LLM chunk event."""
-        # Setup a minimal LLM chunk event
+        # Set up a minimal LLM chunk event
         chunk = Mock()
         chunk.delta.message.content = "hi"
         chunk.prompt_messages = []

@@ -71,7 +71,7 @@ How we prioritize:
 1. Please link the issue in the PR description, `fixes #<issue_number>`
 1. Get merged!
 
-### Setup the project
+### Set up the project
 
 #### Frontend
 

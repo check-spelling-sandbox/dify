@@ -20,7 +20,7 @@ class SubscriptionQuery(BaseModel):
 
 
 class PartnerTenantsPayload(BaseModel):
-    click_id: str = Field(..., description="Click Id from partner referral link")
+    click_id: str = Field(..., description="Click ID from partner referral link")
 
 
 register_schema_models(console_ns, SubscriptionQuery, PartnerTenantsPayload)

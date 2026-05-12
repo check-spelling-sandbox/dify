@@ -20,7 +20,7 @@ def delete_conversation_related_data(conversation_id: str):
     Delete related data conversation in correct order from database to respect foreign key constraints
 
     Args:
-        conversation_id: conversation Id
+        conversation_id: conversation ID
     """
 
     logger.info(

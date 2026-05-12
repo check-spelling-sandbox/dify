@@ -14191,7 +14191,7 @@ Form input definition.
 
 | Name | Type | Description | Required |
 | ---- | ---- | ----------- | -------- |
-| click_id | string | Click Id from partner referral link | Yes |
+| click_id | string | Click ID from partner referral link | Yes |
 
 #### PausedNodeResponse
 

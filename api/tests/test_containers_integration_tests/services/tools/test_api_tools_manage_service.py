@@ -448,7 +448,7 @@ class TestApiToolManageService:
         - Correct exception type and message
         - Credentials validation
         """
-        # Arrange: Create test data with missing auth type
+        # Arrange: Create test data without auth type
         fake = Faker()
         account, tenant = self._create_test_account_and_tenant(
             db_session_with_containers, mock_external_service_dependencies

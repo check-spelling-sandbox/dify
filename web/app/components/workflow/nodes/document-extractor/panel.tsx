@@ -36,7 +36,7 @@ const Panel: FC<NodePanelProps<DocExtractorNodeType>> = ({
 
     return [...supportTypes]
       .map(item => extensionMap[item] || item) // map to standardized extension
-      .map(item => item.toLowerCase()) // convert to lower case
+      .map(item => item.toLowerCase()) // convert to lowercase
       .filter((item, index, self) => self.indexOf(item) === index) // remove duplicates
       .join(locale !== LanguagesSupported[1] ? ', ' : '、 ')
   })()

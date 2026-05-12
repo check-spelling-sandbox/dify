@@ -39,7 +39,7 @@ class AwsS3Storage(BaseStorage):
         try:
             self.client.head_bucket(Bucket=self.bucket_name)
         except ClientError as e:
-            # if bucket not exists, create it
+            # if bucket does not exist, create it
             if e.response.get("Error", {}).get("Code") == "404":
                 self.client.create_bucket(Bucket=self.bucket_name)
             # if bucket is not accessible, pass, maybe the bucket is existing but not accessible

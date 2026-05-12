@@ -162,7 +162,7 @@ class DifyAPISQLAlchemyWorkflowRunRepository(APIWorkflowRunRepository):
                 last_workflow_run = session.scalar(last_run_stmt)
 
                 if not last_workflow_run:
-                    raise ValueError("Last workflow run not exists")
+                    raise ValueError("Last workflow run does not exist")
 
                 # Get records created before the last run's timestamp
                 base_stmt = base_stmt.where(

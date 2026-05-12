@@ -65,7 +65,7 @@ export enum ComparisonOperator {
   notIn = 'not in',
   allOf = 'all of',
   exists = 'exists',
-  notExists = 'not exists',
+  notExists = 'does not exist',
   before = 'before',
   after = 'after',
 }

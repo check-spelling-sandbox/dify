@@ -279,7 +279,7 @@ class MessageFeedbackApi(Resource):
             feedback.rating = FeedbackRating(args.rating)
             feedback.content = args.content
         elif not args.rating and not feedback:
-            raise ValueError("rating cannot be None when feedback not exists")
+            raise ValueError("rating cannot be None when feedback does not exist")
         else:
             rating_value = args.rating
             if rating_value is None:

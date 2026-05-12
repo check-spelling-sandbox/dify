@@ -195,7 +195,7 @@ class MessageService:
             feedback.rating = rating
             feedback.content = content
         elif not rating and not feedback:
-            raise ValueError("rating cannot be None when feedback not exists")
+            raise ValueError("rating cannot be None when feedback does not exist")
         else:
             assert rating is not None
             feedback = MessageFeedback(

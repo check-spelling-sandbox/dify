@@ -156,7 +156,7 @@ class PGVector(BaseVector):
             try:
                 cur.execute(f"DELETE FROM {self.table_name} WHERE id IN %s", (tuple(ids),))
             except psycopg2.errors.UndefinedTable:
-                # table not exists
+                # table does not exist
                 logger.warning("Table %s not found, skipping delete operation.", self.table_name)
                 return
             except Exception as e:

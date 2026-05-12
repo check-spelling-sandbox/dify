@@ -523,7 +523,7 @@ class TestMessageService:
         message = self._create_test_message(db_session_with_containers, app, conversation, account, fake)
 
         # Test creating feedback with no rating when no feedback exists
-        with pytest.raises(ValueError, match="rating cannot be None when feedback not exists"):
+        with pytest.raises(ValueError, match="rating cannot be None when feedback does not exist"):
             MessageService.create_feedback(
                 app_model=app, message_id=message.id, user=account, rating=None, content=None
             )

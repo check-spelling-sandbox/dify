@@ -441,7 +441,7 @@ class TestApiToolManageService:
         self, flask_req_ctx_with_containers, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test creation of API tool provider with missing auth type.
+        Test creation of API tool provider missing auth type.
 
         This test verifies:
         - Proper error handling for missing auth type

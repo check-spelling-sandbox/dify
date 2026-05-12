@@ -226,7 +226,7 @@ class TestStorageKeyLoader:
             loader.load_storage_keys([file])
 
     def test_load_storage_keys_nonexistent_upload_file_records(self, db_session_with_containers: Session):
-        """Test with missing UploadFile database records — should raise ValueError."""
+        """Test missing UploadFile database records — should raise ValueError."""
         tenant_id = str(uuid4())
         file = self._create_file(tenant_id, related_id=str(uuid4()), transfer_method=FileTransferMethod.LOCAL_FILE)
 
@@ -237,7 +237,7 @@ class TestStorageKeyLoader:
             loader.load_storage_keys([file])
 
     def test_load_storage_keys_nonexistent_tool_file_records(self, db_session_with_containers: Session):
-        """Test with missing ToolFile database records — should raise ValueError."""
+        """Test missing ToolFile database records — should raise ValueError."""
         tenant_id = str(uuid4())
         file = self._create_file(tenant_id, related_id=str(uuid4()), transfer_method=FileTransferMethod.TOOL_FILE)
 

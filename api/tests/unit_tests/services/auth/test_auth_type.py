@@ -46,7 +46,7 @@ class TestAuthType:
             (AuthType.FIRECRAWL, "firecrawl", True),
             (AuthType.WATERCRAWL, "watercrawl", True),
             (AuthType.JINA, "jinareader", True),
-            (AuthType.FIRECRAWL, "FIRECRAWL", False),  # Case sensitive
+            (AuthType.FIRECRAWL, "FIRECRAWL", False),  # Case-sensitive
             (AuthType.FIRECRAWL, "watercrawl", False),
             (AuthType.JINA, "jina", False),  # Full value mismatch
         ],

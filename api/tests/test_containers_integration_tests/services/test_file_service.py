@@ -523,7 +523,7 @@ class TestFileService:
         self, db_session_with_containers: Session, engine, mock_external_service_dependencies
     ):
         """
-        Test file preview with non-existent file.
+        Test file preview with nonexistent file.
         """
         fake = Faker()
         non_existent_id = str(fake.uuid4())
@@ -641,7 +641,7 @@ class TestFileService:
         self, db_session_with_containers: Session, engine, mock_external_service_dependencies
     ):
         """
-        Test image preview with non-existent file.
+        Test image preview with nonexistent file.
         """
         fake = Faker()
         non_existent_id = str(fake.uuid4())
@@ -746,7 +746,7 @@ class TestFileService:
         self, db_session_with_containers: Session, engine, mock_external_service_dependencies
     ):
         """
-        Test file generator retrieval with non-existent file.
+        Test file generator retrieval with nonexistent file.
         """
         fake = Faker()
         non_existent_id = str(fake.uuid4())
@@ -791,7 +791,7 @@ class TestFileService:
         self, db_session_with_containers: Session, engine, mock_external_service_dependencies
     ):
         """
-        Test public image preview with non-existent file.
+        Test public image preview with nonexistent file.
         """
         fake = Faker()
         non_existent_id = str(fake.uuid4())

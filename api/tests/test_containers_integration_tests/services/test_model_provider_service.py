@@ -589,10 +589,10 @@ class TestModelProviderService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test validation failure for non-existent provider.
+        Test validation failure for nonexistent provider.
 
         This test verifies:
-        - Proper error handling for non-existent provider
+        - Proper error handling for nonexistent provider
         - Correct exception raising
         - Mock interactions with ProviderManager
         """
@@ -1204,7 +1204,7 @@ class TestModelProviderService:
         Test parameter rules retrieval when provider does not exist.
 
         This test verifies:
-        - Proper error handling for non-existent provider
+        - Proper error handling for nonexistent provider
         - ValueError is raised with appropriate message
         - Mock interactions with ProviderManager
         """

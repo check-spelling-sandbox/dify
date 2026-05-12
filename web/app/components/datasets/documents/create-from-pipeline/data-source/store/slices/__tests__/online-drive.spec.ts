@@ -55,7 +55,7 @@ describe('createOnlineDriveSlice', () => {
 
   it('should set preview ref to undefined when selected id not found', () => {
     const store = createTestStore()
-    store.getState().setSelectedFileIds(['non-existent'])
+    store.getState().setSelectedFileIds(['nonexistent'])
     expect(store.getState().previewOnlineDriveFileRef.current).toBeUndefined()
   })
 

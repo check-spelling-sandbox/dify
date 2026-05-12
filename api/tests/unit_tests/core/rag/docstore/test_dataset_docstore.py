@@ -632,7 +632,7 @@ class TestDatasetDocumentStoreSegment:
             assert result == mock_segment
 
     def test_get_document_segment_returns_none(self):
-        """Test getting a non-existent document segment."""
+        """Test getting a nonexistent document segment."""
 
         mock_dataset = MagicMock(spec=Dataset)
         mock_dataset.id = "test-dataset-id"

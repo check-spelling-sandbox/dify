@@ -2471,7 +2471,7 @@ describe('useDatasourceActions - Process Mode for All Datasource Types', () => {
           ...mockStoreState,
           currentCredentialId: 'cred-1',
           bucket: 'test-bucket',
-          selectedFileIds: ['non-existent-file'],
+          selectedFileIds: ['nonexistent-file'],
           onlineDriveFileList: [createMockOnlineDriveFile({ id: 'file-1' })],
         }),
       } as MockDataSourceStore,

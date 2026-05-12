@@ -215,7 +215,7 @@ class TestEnableSegmentsToIndexTask:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test handling of non-existent dataset.
+        Test handling of nonexistent dataset.
 
         This test verifies:
         - Proper error handling for missing datasets
@@ -223,13 +223,13 @@ class TestEnableSegmentsToIndexTask:
         - Database session cleanup
         - No unnecessary index processor calls
         """
-        # Arrange: Use non-existent dataset ID
+        # Arrange: Use nonexistent dataset ID
         fake = Faker()
         non_existent_dataset_id = fake.uuid4()
         non_existent_document_id = fake.uuid4()
         segment_ids = [fake.uuid4()]
 
-        # Act: Execute the task with non-existent dataset
+        # Act: Execute the task with nonexistent dataset
         enable_segments_to_index_task(segment_ids, non_existent_dataset_id, non_existent_document_id)
 
         # Assert: Verify no processing occurred
@@ -240,7 +240,7 @@ class TestEnableSegmentsToIndexTask:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test handling of non-existent document.
+        Test handling of nonexistent document.
 
         This test verifies:
         - Proper error handling for missing documents
@@ -248,7 +248,7 @@ class TestEnableSegmentsToIndexTask:
         - Database session cleanup
         - No unnecessary index processor calls
         """
-        # Arrange: Create dataset but use non-existent document ID
+        # Arrange: Create dataset but use nonexistent document ID
         dataset, _ = self._create_test_dataset_and_document(
             db_session_with_containers, mock_external_service_dependencies
         )
@@ -256,7 +256,7 @@ class TestEnableSegmentsToIndexTask:
         non_existent_document_id = fake.uuid4()
         segment_ids = [fake.uuid4()]
 
-        # Act: Execute the task with non-existent document
+        # Act: Execute the task with nonexistent document
         enable_segments_to_index_task(segment_ids, dataset.id, non_existent_document_id)
 
         # Assert: Verify no processing occurred
@@ -332,11 +332,11 @@ class TestEnableSegmentsToIndexTask:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Use non-existent segment IDs
+        # Use nonexistent segment IDs
         fake = Faker()
         non_existent_segment_ids = [fake.uuid4() for _ in range(3)]
 
-        # Act: Execute the task with non-existent segments
+        # Act: Execute the task with nonexistent segments
         enable_segments_to_index_task(non_existent_segment_ids, dataset.id, document.id)
 
         # Assert: Verify index processor was created but load was not called

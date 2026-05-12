@@ -288,7 +288,7 @@ class TestMessageService:
                 app_model=app,
                 user=account,
                 conversation_id=conversation.id,
-                first_id=fake.uuid4(),  # Non-existent message ID
+                first_id=fake.uuid4(),  # Nonexistent message ID
                 limit=10,
             )
 
@@ -389,7 +389,7 @@ class TestMessageService:
             MessageService.pagination_by_last_id(
                 app_model=app,
                 user=account,
-                last_id=fake.uuid4(),  # Non-existent message ID
+                last_id=fake.uuid4(),  # Nonexistent message ID
                 limit=10,
                 conversation_id=conversation.id,
             )
@@ -625,7 +625,7 @@ class TestMessageService:
         fake = Faker()
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
 
-        # Test getting non-existent message
+        # Test getting nonexistent message
         with pytest.raises(MessageNotExistsError):
             MessageService.get_message(app_model=app, user=account, message_id=fake.uuid4())
 

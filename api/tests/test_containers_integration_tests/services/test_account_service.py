@@ -166,7 +166,7 @@ class TestAccountService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test authentication with non-existent account.
+        Test authentication with nonexistent account.
         """
         fake = Faker()
         email = fake.email()
@@ -851,7 +851,7 @@ class TestAccountService:
 
     def test_load_user_not_found(self, db_session_with_containers: Session, mock_external_service_dependencies):
         """
-        Test loading non-existent user.
+        Test loading nonexistent user.
         """
         fake = Faker()
         non_existent_user_id = fake.uuid4()
@@ -981,7 +981,7 @@ class TestAccountService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test getting user through non-existent email.
+        Test getting user through nonexistent email.
         """
         fake = Faker()
         domain = f"test-{fake.random_letters(10)}.com"
@@ -3043,7 +3043,7 @@ class TestRegisterService:
         """
         fake = Faker()
         invalid_token = fake.uuid4()
-        # Execute validation with non-existent token
+        # Execute validation with nonexistent token
         is_valid = RegisterService.is_valid_invite_token(invalid_token)
 
         # Verify token is invalid
@@ -3228,7 +3228,7 @@ class TestRegisterService:
             password=password,
         )
 
-        # Create a real token but with non-existent tenant ID
+        # Create a real token but with nonexistent tenant ID
         from extensions.ext_redis import redis_client
 
         invitation_data = {

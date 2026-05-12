@@ -242,15 +242,15 @@ class TestDisableSegmentFromIndexTask:
         Test handling when segment is not found.
 
         This test verifies:
-        - Task handles non-existent segment gracefully
+        - Task handles nonexistent segment gracefully
         - No index processor operations are performed
         - Task returns early without errors
         """
-        # Arrange: Use a non-existent segment ID
+        # Arrange: Use a nonexistent segment ID
         fake = Faker()
         non_existent_segment_id = fake.uuid4()
 
-        # Act: Execute the task with non-existent segment
+        # Act: Execute the task with nonexistent segment
         result = disable_segment_from_index_task(non_existent_segment_id)
 
         # Assert: Verify the task handled the error gracefully

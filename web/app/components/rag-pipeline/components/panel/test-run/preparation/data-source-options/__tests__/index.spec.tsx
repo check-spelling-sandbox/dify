@@ -756,7 +756,7 @@ describe('DataSourceOptions', () => {
 
       const { container } = render(
         <DataSourceOptions
-          dataSourceNodeId="non-existent"
+          dataSourceNodeId="nonexistent"
           onSelect={vi.fn()}
         />,
       )
@@ -1165,7 +1165,7 @@ describe('DataSourceOptions', () => {
       })
     })
 
-    it('should handle click on non-existent option value gracefully', () => {
+    it('should handle click on nonexistent option value gracefully', () => {
       const onSelect = vi.fn()
       mockDatasourceOptions = []
 

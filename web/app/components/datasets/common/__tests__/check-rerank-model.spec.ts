@@ -199,7 +199,7 @@ describe('check-rerank-model', () => {
           reranking_enable: true,
           reranking_model: {
             reranking_provider_name: 'cohere',
-            reranking_model_name: 'non-existent-model',
+            reranking_model_name: 'nonexistent-model',
           },
         })
 
@@ -217,7 +217,7 @@ describe('check-rerank-model', () => {
           search_method: RETRIEVE_METHOD.semantic,
           reranking_enable: true,
           reranking_model: {
-            reranking_provider_name: 'non-existent-provider',
+            reranking_provider_name: 'nonexistent-provider',
             reranking_model_name: 'some-model',
           },
         })

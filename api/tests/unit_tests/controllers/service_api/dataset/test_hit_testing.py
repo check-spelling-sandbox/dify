@@ -320,7 +320,7 @@ class TestHitTestingApiPost:
         mock_ns,
         app: Flask,
     ):
-        """Test hit testing with non-existent dataset."""
+        """Test hit testing with nonexistent dataset."""
         dataset_id = str(uuid.uuid4())
         tenant_id = str(uuid.uuid4())
 

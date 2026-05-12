@@ -205,7 +205,7 @@ describe('useGotoAnythingResults', () => {
       }
 
       renderHook(() => useGotoAnythingResults(createMockOptions({
-        cmdVal: 'non-existent',
+        cmdVal: 'nonexistent',
         setCmdVal,
       })))
 

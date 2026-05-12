@@ -771,7 +771,7 @@ class TestRagPipelineRunTasks:
         - Exception logging
         - Function raises ValueError for missing entities
         """
-        # Arrange: Create entity data with valid UUIDs but non-existent entities
+        # Arrange: Create entity data with valid UUIDs but nonexistent entities
         fake = Faker()
         invalid_entity_data = {
             "pipeline_id": str(uuid.uuid4()),
@@ -797,7 +797,7 @@ class TestRagPipelineRunTasks:
             "workflow_thread_pool_id": str(uuid.uuid4()),
         }
 
-        # Act & Assert: Execute the single task with non-existent entities (should raise ValueError)
+        # Act & Assert: Execute the single task with nonexistent entities (should raise ValueError)
         with flask_app_with_containers.app_context():
             with pytest.raises(ValueError, match="Account .* not found"):
                 run_single_rag_pipeline_task(invalid_entity_data, flask_app_with_containers)
@@ -809,14 +809,14 @@ class TestRagPipelineRunTasks:
         self, db_session_with_containers: Session, mock_pipeline_generator, flask_app_with_containers: Flask
     ):
         """
-        Test run_single_rag_pipeline_task with non-existent database entities.
+        Test run_single_rag_pipeline_task with nonexistent database entities.
 
         This test verifies:
         - Proper error handling for missing database entities
         - Exception logging
         - Function raises ValueError for missing entities
         """
-        # Arrange: Create test data with non-existent IDs
+        # Arrange: Create test data with nonexistent IDs
         fake = Faker()
         entity_data = {
             "pipeline_id": str(uuid.uuid4()),
@@ -842,7 +842,7 @@ class TestRagPipelineRunTasks:
             "workflow_thread_pool_id": str(uuid.uuid4()),
         }
 
-        # Act & Assert: Execute the single task with non-existent entities (should raise ValueError)
+        # Act & Assert: Execute the single task with nonexistent entities (should raise ValueError)
         with flask_app_with_containers.app_context():
             with pytest.raises(ValueError, match="Account .* not found"):
                 run_single_rag_pipeline_task(entity_data, flask_app_with_containers)
@@ -854,7 +854,7 @@ class TestRagPipelineRunTasks:
         self, db_session_with_containers: Session, mock_pipeline_generator, mock_file_service
     ):
         """
-        Test priority RAG pipeline run task with non-existent file.
+        Test priority RAG pipeline run task with nonexistent file.
 
         This test verifies:
         - Proper error handling for missing files
@@ -904,7 +904,7 @@ class TestRagPipelineRunTasks:
         self, db_session_with_containers: Session, mock_pipeline_generator, mock_file_service
     ):
         """
-        Test regular RAG pipeline run task with non-existent file.
+        Test regular RAG pipeline run task with nonexistent file.
 
         This test verifies:
         - Proper error handling for missing files

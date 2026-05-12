@@ -222,7 +222,7 @@ class TestGetPaginatedWorkflowRuns:
         repository: DifyAPISQLAlchemyWorkflowRunRepository,
         test_scope: _TestScope,
     ) -> None:
-        """Raise ValueError when last_id refers to a non-existent run."""
+        """Raise ValueError when last_id refers to a nonexistent run."""
         with pytest.raises(ValueError, match="Last workflow run does not exist"):
             repository.get_paginated_workflow_runs(
                 tenant_id=test_scope.tenant_id,

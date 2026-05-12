@@ -302,7 +302,7 @@ class TestDeleteSegmentFromIndexTask:
         non_existent_document_id = fake.uuid4()
         index_node_ids = [f"node_{fake.uuid4()}" for _ in range(3)]
 
-        # Execute the task with non-existent dataset
+        # Execute the task with nonexistent dataset
         result = delete_segment_from_index_task(index_node_ids, non_existent_dataset_id, non_existent_document_id, [])
 
         # Verify the task completed without exceptions
@@ -328,7 +328,7 @@ class TestDeleteSegmentFromIndexTask:
         non_existent_document_id = fake.uuid4()
         index_node_ids = [f"node_{fake.uuid4()}" for _ in range(3)]
 
-        # Execute the task with non-existent document
+        # Execute the task with nonexistent document
         result = delete_segment_from_index_task(index_node_ids, dataset.id, non_existent_document_id, [])
 
         # Verify the task completed without exceptions

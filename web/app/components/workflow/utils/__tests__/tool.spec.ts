@@ -108,7 +108,7 @@ describe('getToolCheckParams', () => {
 
   it('should return empty schemas when tool is not found', () => {
     const result = getToolCheckParams(
-      createToolData({ provider_id: 'non-existent' }),
+      createToolData({ provider_id: 'nonexistent' }),
       [],
       [],
       [],

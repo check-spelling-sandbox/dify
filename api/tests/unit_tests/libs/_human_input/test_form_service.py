@@ -85,9 +85,9 @@ class TestFormService:
         assert retrieved_form.workflow_run_id == created_form.workflow_run_id
 
     def test_get_form_by_id_not_found(self, form_service):
-        """Test getting non-existent form by ID."""
+        """Test getting nonexistent form by ID."""
         with pytest.raises(FormNotFoundError) as exc_info:
-            form_service.get_form_by_id("non-existent-form")
+            form_service.get_form_by_id("nonexistent-form")
 
         assert exc_info.value.error_code == "form_not_found"
 
@@ -103,9 +103,9 @@ class TestFormService:
         assert retrieved_form.form_token == "token-xyz"
 
     def test_get_form_by_token_not_found(self, form_service):
-        """Test getting non-existent form by token."""
+        """Test getting nonexistent form by token."""
         with pytest.raises(FormNotFoundError) as exc_info:
-            form_service.get_form_by_token("non-existent-token")
+            form_service.get_form_by_token("nonexistent-token")
 
         assert exc_info.value.error_code == "form_not_found"
 

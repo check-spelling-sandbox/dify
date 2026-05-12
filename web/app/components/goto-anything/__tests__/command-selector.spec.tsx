@@ -159,7 +159,7 @@ describe('CommandSelector', () => {
           onCommandSelect={onSelect}
           searchFilter=""
           originalQuery="@"
-          commandValue="non-existent"
+          commandValue="nonexistent"
           onCommandValueChange={onCommandValueChange}
         />
       </Command>,

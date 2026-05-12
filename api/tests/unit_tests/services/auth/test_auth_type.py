@@ -71,7 +71,7 @@ class TestAuthType:
         assert "invalid" not in [auth.value for auth in AuthType]
 
     def test_auth_type_invalid_attribute_access(self):
-        """Test accessing non-existent auth type raises AttributeError"""
+        """Test accessing nonexistent auth type raises AttributeError"""
         with pytest.raises(AttributeError):
             _ = AuthType.INVALID_TYPE
 

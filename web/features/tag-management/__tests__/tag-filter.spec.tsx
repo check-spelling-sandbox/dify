@@ -279,8 +279,8 @@ describe('TagFilter', () => {
       expect(screen.getByText(i18n.noTag)).toBeInTheDocument()
     })
 
-    it('should handle value with non-existent tag ids gracefully', () => {
-      render(<TagFilter {...defaultProps} value={['non-existent-id']} />)
+    it('should handle value with nonexistent tag ids gracefully', () => {
+      render(<TagFilter {...defaultProps} value={['nonexistent-id']} />)
       expect(screen.queryByText(i18n.placeholder)).not.toBeInTheDocument()
     })
 

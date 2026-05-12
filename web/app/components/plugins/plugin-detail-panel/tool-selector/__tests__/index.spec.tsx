@@ -2409,7 +2409,7 @@ describe('Additional Coverage Tests', () => {
 
       const onSelect = vi.fn()
       // Use a tool_name that doesn't exist in the provider
-      const value = createToolValue({ provider_name: 'test-provider/tool', tool_name: 'non-existent-tool' })
+      const value = createToolValue({ provider_name: 'test-provider/tool', tool_name: 'nonexistent-tool' })
 
       const { result } = renderHook(
         () => useToolSelectorState({ value, onSelect }),

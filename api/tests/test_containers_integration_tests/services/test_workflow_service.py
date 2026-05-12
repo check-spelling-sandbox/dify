@@ -205,7 +205,7 @@ class TestWorkflowService:
         workflow_service = WorkflowService()
 
         # Act
-        result = workflow_service.get_node_last_run(app, workflow, "non-existent-node")
+        result = workflow_service.get_node_last_run(app, workflow, "nonexistent-node")
 
         # Assert
         assert result is None
@@ -1044,7 +1044,7 @@ class TestWorkflowService:
         Test retrieval of default block configuration for invalid node type.
 
         This test ensures that the service correctly handles requests for
-        invalid or non-existent node types, returning None as expected.
+        invalid or nonexistent node types, returning None as expected.
         """
         # Arrange
         workflow_service = WorkflowService()
@@ -1336,7 +1336,7 @@ class TestWorkflowService:
         Test workflow update when workflow doesn't exist.
 
         This test ensures that the service correctly handles update attempts
-        on non-existent workflows, returning None as expected.
+        on nonexistent workflows, returning None as expected.
         """
         # Arrange
         fake = Faker()
@@ -1492,7 +1492,7 @@ class TestWorkflowService:
 
     def test_delete_workflow_not_found_error(self, db_session_with_containers: Session):
         """
-        Test error when attempting to delete a non-existent workflow.
+        Test error when attempting to delete a nonexistent workflow.
 
         This test ensures that the service correctly handles deletion
         attempts on workflows that don't exist in the system.

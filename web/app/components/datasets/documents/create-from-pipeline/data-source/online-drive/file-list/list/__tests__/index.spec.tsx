@@ -202,7 +202,7 @@ describe('List', () => {
       const props = createDefaultProps({
         isLoading: false,
         fileList: [],
-        keywords: 'non-existent-file',
+        keywords: 'nonexistent-file',
       })
 
       render(<List {...props} />)

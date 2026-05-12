@@ -521,7 +521,7 @@ class TestDeleteWorkflowPause:
         self,
         repository: DifyAPISQLAlchemyWorkflowRunRepository,
     ) -> None:
-        """Raise _WorkflowRunError when deleting a non-existent pause."""
+        """Raise _WorkflowRunError when deleting a nonexistent pause."""
 
         pause_entity = Mock(spec=WorkflowPauseEntity)
         pause_entity.id = str(uuid4())

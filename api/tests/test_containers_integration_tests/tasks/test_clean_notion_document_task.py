@@ -187,7 +187,7 @@ class TestCleanNotionDocumentTask:
         non_existent_dataset_id = str(uuid.uuid4())
         document_ids = [str(uuid.uuid4()), str(uuid.uuid4())]
 
-        # Execute cleanup task with non-existent dataset - expect exception
+        # Execute cleanup task with nonexistent dataset - expect exception
         with pytest.raises(Exception, match="Document has no dataset"):
             clean_notion_document_task(document_ids, non_existent_dataset_id)
 

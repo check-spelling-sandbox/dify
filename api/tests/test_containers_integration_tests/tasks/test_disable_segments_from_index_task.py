@@ -423,7 +423,7 @@ class TestDisableSegmentsFromIndexTask:
         document = self._create_test_document(db_session_with_containers, dataset, account, fake)
         self._create_dataset_process_rule(db_session_with_containers, dataset, fake)
 
-        # Use non-existent segment IDs
+        # Use nonexistent segment IDs
         non_existent_segment_ids = [fake.uuid4() for _ in range(3)]
 
         # Mock Redis client

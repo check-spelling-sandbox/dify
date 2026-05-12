@@ -103,9 +103,9 @@ describe('createDocumentLookup', () => {
     expect(lookup.getDocument('doc-1')).toBe(documents[0])
   })
 
-  it('should return undefined for non-existent id', () => {
+  it('should return undefined for nonexistent id', () => {
     const lookup = createDocumentLookup(documents)
-    expect(lookup.getDocument('non-existent')).toBeUndefined()
+    expect(lookup.getDocument('nonexistent')).toBeUndefined()
   })
 
   it('should get name by id', () => {

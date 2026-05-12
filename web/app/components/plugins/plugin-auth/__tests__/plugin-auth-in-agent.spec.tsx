@@ -155,7 +155,7 @@ describe('PluginAuthInAgent Component', () => {
     })
     const pluginPayload = createPluginPayload()
     render(
-      <PluginAuthInAgent pluginPayload={pluginPayload} credentialId="non-existent-id" />,
+      <PluginAuthInAgent pluginPayload={pluginPayload} credentialId="nonexistent-id" />,
       { wrapper: createWrapper() },
     )
     expect(screen.getByText('plugin.auth.authRemoved'))!.toBeInTheDocument()

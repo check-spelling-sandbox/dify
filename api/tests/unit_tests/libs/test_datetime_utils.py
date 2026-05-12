@@ -151,9 +151,9 @@ class TestParseTimeRange:
 
             # Set up side effects: first call raises exception, second call succeeds
             mock_tz.localize.side_effect = [
-                pytz.NonExistentTimeError("Non-existent time"),  # First call for start
+                pytz.NonExistentTimeError("Nonexistent time"),  # First call for start
                 mock_localized_dt,  # Second call for start (with adjusted time)
-                pytz.NonExistentTimeError("Non-existent time"),  # First call for end
+                pytz.NonExistentTimeError("Nonexistent time"),  # First call for end
                 mock_localized_dt,  # Second call for end (with adjusted time)
             ]
 

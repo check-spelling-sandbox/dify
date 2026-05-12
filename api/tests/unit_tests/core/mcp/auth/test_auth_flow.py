@@ -130,7 +130,7 @@ class TestRedisStateManagement:
 
     @patch("core.mcp.auth.auth_flow.redis_client")
     def test_retrieve_redis_state_not_found(self, mock_redis):
-        """Test retrieving non-existent state from Redis."""
+        """Test retrieving nonexistent state from Redis."""
         mock_redis.get.return_value = None
 
         with pytest.raises(ValueError) as exc_info:

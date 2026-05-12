@@ -235,15 +235,15 @@ describe('Trigger Status Synchronization Integration', () => {
   })
 
   describe('Error Scenarios', () => {
-    it('should handle non-existent node IDs gracefully', () => {
+    it('should handle nonexistent node IDs gracefully', () => {
       mockIsTriggerNode.mockReturnValue(true)
 
       const { getByTestId } = render(
-        <TestTriggerNode nodeId="non-existent-node" nodeType="trigger-webhook" />,
+        <TestTriggerNode nodeId="nonexistent-node" nodeType="trigger-webhook" />,
       )
 
-      // Should default to 'disabled' for non-existent nodes
-      expect(getByTestId('node-non-existent-node')).toHaveAttribute('data-status', 'disabled')
+      // Should default to 'disabled' for nonexistent nodes
+      expect(getByTestId('node-nonexistent-node')).toHaveAttribute('data-status', 'disabled')
     })
 
     it('should handle component unmounting gracefully', () => {

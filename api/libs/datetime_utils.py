@@ -40,7 +40,7 @@ def parse_time_range(
 ) -> tuple[datetime.datetime | None, datetime.datetime | None]:
     """
     Parse time range strings and convert to UTC datetime objects.
-    Handles DST ambiguity and non-existent times gracefully.
+    Handles DST ambiguity and nonexistent times gracefully.
 
     Args:
         start: Start time string (YYYY-MM-DD HH:MM)

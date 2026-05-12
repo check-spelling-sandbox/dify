@@ -481,7 +481,7 @@ def delete_archived_workflow_runs(
 
 def _find_orphaned_draft_variables(batch_size: int = 1000) -> list[str]:
     """
-    Find draft variables that reference non-existent apps.
+    Find draft variables that reference nonexistent apps.
 
     Args:
         batch_size: Maximum number of orphaned app IDs to return
@@ -581,7 +581,7 @@ def cleanup_orphaned_draft_variables(
 
     logger.info("Found %s orphaned draft variables", stats["total_orphaned_variables"])
     logger.info("Found %s associated offload files", stats["total_orphaned_files"])
-    logger.info("Across %s non-existent apps", stats["orphaned_app_count"])
+    logger.info("Across %s nonexistent apps", stats["orphaned_app_count"])
 
     if stats["total_orphaned_variables"] == 0:
         logger.info("No orphaned draft variables found. Exiting.")

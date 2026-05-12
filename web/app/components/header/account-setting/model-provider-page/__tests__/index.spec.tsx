@@ -169,7 +169,7 @@ describe('ModelProviderPage', () => {
   })
 
   it('should show empty state if no configured providers match', () => {
-    renderModelProviderPage({ searchText: 'non-existent' })
+    renderModelProviderPage({ searchText: 'nonexistent' })
     act(() => {
       vi.advanceTimersByTime(600)
     })

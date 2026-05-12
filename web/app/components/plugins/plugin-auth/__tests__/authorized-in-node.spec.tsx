@@ -139,7 +139,7 @@ describe('AuthorizedInNode Component', () => {
     })
     const pluginPayload = createPluginPayload()
     render(
-      <AuthorizedInNode pluginPayload={pluginPayload} onAuthorizationItemClick={vi.fn()} credentialId="non-existent" />,
+      <AuthorizedInNode pluginPayload={pluginPayload} onAuthorizationItemClick={vi.fn()} credentialId="nonexistent" />,
       { wrapper: createWrapper() },
     )
     expect(screen.getByText('plugin.auth.authRemoved'))!.toBeInTheDocument()

@@ -178,7 +178,7 @@ class TestDocumentIndexingUpdateTask:
 
     def test_document_not_found_noop(self, db_session_with_containers: Session, mock_external_dependencies):
         fake = Faker()
-        # Act with non-existent document id
+        # Act with nonexistent document id
         document_indexing_update_task(dataset_id=fake.uuid4(), document_id=fake.uuid4())
 
         # Neither processor nor runner should be called

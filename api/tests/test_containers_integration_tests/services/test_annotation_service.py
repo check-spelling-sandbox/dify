@@ -255,7 +255,7 @@ class TestAnnotationService:
             "answer": fake.text(max_nb_chars=200),
         }
 
-        # Try to insert annotation with non-existent app
+        # Try to insert annotation with nonexistent app
         with pytest.raises(NotFound, match="App not found"):
             AppAnnotationService.insert_app_annotation_directly(annotation_args, non_existent_app_id)
 
@@ -390,7 +390,7 @@ class TestAnnotationService:
             "answer": fake.text(max_nb_chars=200),
         }
 
-        # Try to insert annotation with non-existent app
+        # Try to insert annotation with nonexistent app
         with pytest.raises(NotFound, match="App not found"):
             AppAnnotationService.up_insert_app_annotation_from_message(annotation_args, non_existent_app_id)
 
@@ -545,7 +545,7 @@ class TestAnnotationService:
         # Mock random current user to avoid dependency issues
         self._mock_current_user(mock_external_service_dependencies, fake.uuid4(), fake.uuid4())
 
-        # Try to get annotation list with non-existent app
+        # Try to get annotation list with nonexistent app
         with pytest.raises(NotFound, match="App not found"):
             AppAnnotationService.get_annotation_list_by_app_id(non_existent_app_id, page=1, limit=10, keyword="")
 
@@ -593,7 +593,7 @@ class TestAnnotationService:
         # Mock random current user to avoid dependency issues
         self._mock_current_user(mock_external_service_dependencies, fake.uuid4(), fake.uuid4())
 
-        # Try to delete annotation with non-existent app
+        # Try to delete annotation with nonexistent app
         with pytest.raises(NotFound, match="App not found"):
             AppAnnotationService.delete_app_annotation(non_existent_app_id, annotation_id)
 
@@ -607,7 +607,7 @@ class TestAnnotationService:
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
         non_existent_annotation_id = fake.uuid4()
 
-        # Try to delete non-existent annotation
+        # Try to delete nonexistent annotation
         with pytest.raises(NotFound, match="Annotation not found"):
             AppAnnotationService.delete_app_annotation(app.id, non_existent_annotation_id)
 
@@ -1110,7 +1110,7 @@ class TestAnnotationService:
         # Mock random current user to avoid dependency issues
         self._mock_current_user(mock_external_service_dependencies, fake.uuid4(), fake.uuid4())
 
-        # Try to export annotation list with non-existent app
+        # Try to export annotation list with nonexistent app
         with pytest.raises(NotFound, match="App not found"):
             AppAnnotationService.export_annotation_list_by_app_id(non_existent_app_id)
 

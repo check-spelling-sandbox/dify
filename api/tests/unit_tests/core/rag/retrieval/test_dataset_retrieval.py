@@ -191,7 +191,7 @@ class TestRetrievalService:
 
     7. Error Handling Tests (lines ~790-920)
        - Empty queries
-       - Non-existent datasets
+       - Nonexistent datasets
        - Exception propagation
 
     8. Additional Tests (lines ~920-1080)
@@ -1302,10 +1302,10 @@ class TestRetrievalService:
     @patch("core.rag.datasource.retrieval_service.RetrievalService._get_dataset")
     def test_retrieve_with_nonexistent_dataset(self, mock_get_dataset):
         """
-        Test retrieval with non-existent dataset ID.
+        Test retrieval with nonexistent dataset ID.
 
         Verifies:
-        - Non-existent dataset returns empty results
+        - Nonexistent dataset returns empty results
         - No errors are raised
         """
         # Arrange

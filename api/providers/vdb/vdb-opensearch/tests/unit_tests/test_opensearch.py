@@ -222,7 +222,7 @@ class TestOpenSearchVector:
         assert ids[0] == "mock_id"
 
     def test_delete_nonexistent_index(self, opensearch_module):
-        """ignore_unavailable=True handles non-existent indices gracefully."""
+        """ignore_unavailable=True handles nonexistent indices gracefully."""
         vector = self._make_vector(opensearch_module)
         vector.delete()
 

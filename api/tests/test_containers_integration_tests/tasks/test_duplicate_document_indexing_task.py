@@ -386,7 +386,7 @@ class TestDuplicateDocumentIndexingTasks:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test handling of non-existent dataset.
+        Test handling of nonexistent dataset.
 
         This test verifies:
         - Proper error handling for missing datasets
@@ -394,12 +394,12 @@ class TestDuplicateDocumentIndexingTasks:
         - Database session cleanup
         - No unnecessary indexing runner calls
         """
-        # Arrange: Use non-existent dataset ID
+        # Arrange: Use nonexistent dataset ID
         fake = Faker()
         non_existent_dataset_id = fake.uuid4()
         document_ids = [fake.uuid4() for _ in range(3)]
 
-        # Act: Execute the task with non-existent dataset
+        # Act: Execute the task with nonexistent dataset
         _duplicate_document_indexing_task(non_existent_dataset_id, document_ids)
 
         # Assert: Verify no processing occurred
@@ -415,7 +415,7 @@ class TestDuplicateDocumentIndexingTasks:
 
         This test verifies:
         - Only existing documents are processed
-        - Non-existent documents are ignored
+        - Nonexistent documents are ignored
         - Indexing runner receives only valid documents
         - Database state updates correctly
         """
@@ -424,7 +424,7 @@ class TestDuplicateDocumentIndexingTasks:
             db_session_with_containers, mock_external_service_dependencies, document_count=2
         )
 
-        # Mix existing and non-existent document IDs
+        # Mix existing and nonexistent document IDs
         fake = Faker()
         existing_document_ids = [doc.id for doc in documents]
         non_existent_document_ids = [fake.uuid4() for _ in range(2)]

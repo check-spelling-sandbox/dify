@@ -61,7 +61,7 @@ describe('command-bus', () => {
       expect(handler).not.toHaveBeenCalled()
     })
 
-    it('handles unregistering non-existent commands gracefully', () => {
+    it('handles unregistering nonexistent commands gracefully', () => {
       expect(() => unregisterCommands(['nope'])).not.toThrow()
     })
   })

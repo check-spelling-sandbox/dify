@@ -256,7 +256,7 @@ class TestAddDocumentToIndexTask:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test handling of non-existent document.
+        Test handling of nonexistent document.
 
         This test verifies:
         - Proper error handling for missing documents
@@ -265,11 +265,11 @@ class TestAddDocumentToIndexTask:
         - No unnecessary index processor calls
         - Redis cache key not affected (since it was never created)
         """
-        # Arrange: Use non-existent document ID
+        # Arrange: Use nonexistent document ID
         fake = Faker()
         non_existent_id = str(fake.uuid4())
 
-        # Act: Execute the task with non-existent document
+        # Act: Execute the task with nonexistent document
         add_document_to_index_task(non_existent_id)
 
         # Assert: Verify no processing occurred

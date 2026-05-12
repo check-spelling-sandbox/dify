@@ -271,7 +271,7 @@ describe('utils', () => {
 
       expect(lookup.getName('doc-1')).toBe('file1.txt')
       expect(lookup.getName('doc-2')).toBe('file2.pdf')
-      expect(lookup.getName('non-existent')).toBeUndefined()
+      expect(lookup.getName('nonexistent')).toBeUndefined()
     })
 
     it('should return source type correctly', () => {

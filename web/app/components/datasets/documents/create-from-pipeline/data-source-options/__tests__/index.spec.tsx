@@ -802,7 +802,7 @@ describe('DataSourceOptions', () => {
         const { container } = renderWithProviders(
           <DataSourceOptions
             {...defaultProps}
-            datasourceNodeId="non-existent-node"
+            datasourceNodeId="nonexistent-node"
           />,
         )
 
@@ -1487,7 +1487,7 @@ describe('DataSourceOptions', () => {
       { datasourceNodeId: 'node-1', description: 'first node' },
       { datasourceNodeId: 'node-2', description: 'middle node' },
       { datasourceNodeId: 'node-3', description: 'last node' },
-      { datasourceNodeId: 'non-existent', description: 'non-existent node' },
+      { datasourceNodeId: 'nonexistent', description: 'nonexistent node' },
     ])('should handle datasourceNodeId as $description', ({ datasourceNodeId }) => {
       renderWithProviders(
         <DataSourceOptions

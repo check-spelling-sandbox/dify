@@ -367,7 +367,7 @@ describe('AppNav', () => {
     const { rerender } = render(<AppNav />)
 
     // Act - set appDetail to a non-matching id
-    mockAppDetail = { id: 'non-existent-id', name: 'Unknown' }
+    mockAppDetail = { id: 'nonexistent-id', name: 'Unknown' }
     rerender(<AppNav />)
 
     // Assert - original name should be unchanged

@@ -190,7 +190,7 @@ describe('usePreviewState', () => {
       }))
 
       act(() => {
-        result.current.handlePreviewChange({ id: 'non-existent', name: 'x' })
+        result.current.handlePreviewChange({ id: 'nonexistent', name: 'x' })
       })
       expect(result.current.previewNotionPage).toBe(notionPages[0])
     })

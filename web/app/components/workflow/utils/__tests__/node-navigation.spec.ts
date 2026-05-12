@@ -125,7 +125,7 @@ describe('setupScrollToNodeListener', () => {
     const reactflow = { setCenter: vi.fn() }
 
     const cleanup = setupScrollToNodeListener(nodes, reactflow)
-    scrollToWorkflowNode('non-existent')
+    scrollToWorkflowNode('nonexistent')
 
     expect(reactflow.setCenter).not.toHaveBeenCalled()
 

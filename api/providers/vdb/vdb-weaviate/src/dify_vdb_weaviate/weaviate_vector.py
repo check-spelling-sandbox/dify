@@ -371,7 +371,7 @@ class WeaviateVector(BaseVector):
         """
         Deletes objects by their UUID identifiers.
 
-        Silently ignores 404 errors for non-existent IDs.
+        Silently ignores 404 errors for nonexistent IDs.
         """
         if not self._client.collections.exists(self._collection_name):
             return

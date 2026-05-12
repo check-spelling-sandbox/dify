@@ -316,7 +316,7 @@ describe('Metadata Management Flow - Cross-Module Validation Composition', () =>
       // Rename to invalid format
       expect(renameMetadataField('meta-3', 'Page Count').error).toBe('invalid_format')
 
-      // Rename non-existent item
+      // Rename nonexistent item
       expect(renameMetadataField('meta-999', 'something').error).toBe('not_found')
     })
 

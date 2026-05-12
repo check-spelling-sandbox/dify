@@ -86,7 +86,7 @@ describe('getDataSourceCheckParams', () => {
 
   it('should return empty schemas when data source is not found', () => {
     const result = getDataSourceCheckParams(
-      createDataSourceData({ plugin_id: 'non-existent' }),
+      createDataSourceData({ plugin_id: 'nonexistent' }),
       [createDataSourceCollection()],
       'en_US',
     )

@@ -374,7 +374,7 @@ describe('CredentialSelector', () => {
     it('should auto-select first credential when currentCredential is not found and credentials exist', () => {
       const mockOnChange = vi.fn()
       const props = createDefaultProps({
-        currentCredentialId: 'non-existent-id',
+        currentCredentialId: 'nonexistent-id',
         onCredentialChange: mockOnChange,
       })
 
@@ -544,7 +544,7 @@ describe('CredentialSelector', () => {
     it('should return undefined currentCredential when id not found', () => {
       const mockOnChange = vi.fn()
       const props = createDefaultProps({
-        currentCredentialId: 'non-existent',
+        currentCredentialId: 'nonexistent',
         onCredentialChange: mockOnChange,
       })
 

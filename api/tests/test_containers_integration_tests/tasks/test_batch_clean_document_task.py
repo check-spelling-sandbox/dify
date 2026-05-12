@@ -395,7 +395,7 @@ class TestBatchCleanDocumentTask:
         db_session_with_containers.delete(dataset)
         db_session_with_containers.commit()
 
-        # Execute the task with non-existent dataset
+        # Execute the task with nonexistent dataset
         batch_clean_document_task(
             document_ids=[document_id],
             dataset_id=dataset_id,

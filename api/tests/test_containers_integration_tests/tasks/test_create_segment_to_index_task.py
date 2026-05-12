@@ -237,14 +237,14 @@ class TestCreateSegmentToIndexTask:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test handling of non-existent segment ID.
+        Test handling of nonexistent segment ID.
 
         This test verifies:
         - Task gracefully handles missing segment
         - No exceptions are raised
         - Database session is properly closed
         """
-        # Arrange: Use non-existent segment ID
+        # Arrange: Use nonexistent segment ID
         non_existent_segment_id = str(uuid4())
 
         # Act & Assert: Task should complete without error

@@ -394,7 +394,7 @@ class TestTriggerProviderService:
             mock_external_service_dependencies,
         )
 
-        # HIDDEN_VALUE for non-existent key should use UNKNOWN_VALUE
+        # HIDDEN_VALUE for nonexistent key should use UNKNOWN_VALUE
         new_credentials = {
             "api_key": HIDDEN_VALUE,
             "non_existent_key": HIDDEN_VALUE,  # This key doesn't exist in original

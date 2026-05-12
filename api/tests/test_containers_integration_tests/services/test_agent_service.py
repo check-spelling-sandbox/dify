@@ -352,7 +352,7 @@ class TestAgentService:
         # Create test data
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
 
-        # Execute the method under test with non-existent conversation
+        # Execute the method under test with nonexistent conversation
         with pytest.raises(ValueError, match="Conversation not found"):
             AgentService.get_agent_logs(app, fake.uuid4(), fake.uuid4())
 
@@ -368,7 +368,7 @@ class TestAgentService:
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
         conversation, message = self._create_test_conversation_and_message(db_session_with_containers, app, account)
 
-        # Execute the method under test with non-existent message
+        # Execute the method under test with nonexistent message
         with pytest.raises(ValueError, match="Message not found"):
             AgentService.get_agent_logs(app, conversation.id, fake.uuid4())
 
@@ -468,11 +468,11 @@ class TestAgentService:
         # Create test data
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
 
-        # Create conversation with non-existent account
+        # Create conversation with nonexistent account
         conversation = Conversation(
             id=fake.uuid4(),
             app_id=app.id,
-            from_account_id=fake.uuid4(),  # Non-existent account
+            from_account_id=fake.uuid4(),  # Nonexistent account
             from_end_user_id=None,
             name=fake.sentence(),
             inputs={},
@@ -505,7 +505,7 @@ class TestAgentService:
             id=fake.uuid4(),
             conversation_id=conversation.id,
             app_id=app.id,
-            from_account_id=fake.uuid4(),  # Non-existent account
+            from_account_id=fake.uuid4(),  # Nonexistent account
             from_end_user_id=None,
             inputs={},
             query=fake.text(max_nb_chars=100),

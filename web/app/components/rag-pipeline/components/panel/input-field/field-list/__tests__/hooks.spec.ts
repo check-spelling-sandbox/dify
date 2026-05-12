@@ -244,7 +244,7 @@ describe('useFieldList', () => {
       )
 
       act(() => {
-        result.current.handleOpenInputFieldEditor('non-existent')
+        result.current.handleOpenInputFieldEditor('nonexistent')
       })
 
       expect(mockToggleInputFieldEditPanel).toHaveBeenCalledWith(

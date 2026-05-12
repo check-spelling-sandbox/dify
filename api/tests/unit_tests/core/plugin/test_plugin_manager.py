@@ -150,8 +150,8 @@ class TestPluginDiscovery:
         """Test fetching a plugin by identifier when it doesn't exist."""
         # Arrange: Mock not found response
         with patch.object(plugin_installer, "_request_with_plugin_daemon_response", return_value=False):
-            # Act: Fetch non-existent plugin
-            result = plugin_installer.fetch_plugin_by_identifier("test-tenant", "non-existent/plugin/1.0.0")
+            # Act: Fetch nonexistent plugin
+            result = plugin_installer.fetch_plugin_by_identifier("test-tenant", "nonexistent/plugin/1.0.0")
 
             # Assert: Verify the plugin was not found
             assert result is False
@@ -463,7 +463,7 @@ class TestPluginValidation:
         mock_error = HTTPError("404 Not Found")
 
         with patch.object(plugin_installer, "_request_with_plugin_daemon_response", side_effect=mock_error):
-            # Act: Fetch non-existent readme
+            # Act: Fetch nonexistent readme
             result = plugin_installer.fetch_plugin_readme("test-tenant", "test-org/test-plugin/1.0.0", "en_US")
 
             # Assert: Verify empty string is returned for 404
@@ -802,7 +802,7 @@ class TestErrorHandling:
         ):
             # Act & Assert: Verify error is raised
             with pytest.raises(PluginDaemonNotFoundError):
-                plugin_installer.fetch_plugin_manifest("test-tenant", "non-existent/plugin/1.0.0")
+                plugin_installer.fetch_plugin_manifest("test-tenant", "nonexistent/plugin/1.0.0")
 
     def test_plugin_bad_request_error(self, plugin_installer):
         """Test handling of bad request error."""

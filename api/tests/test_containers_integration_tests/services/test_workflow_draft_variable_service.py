@@ -220,7 +220,7 @@ class TestWorkflowDraftVariableService:
         Test getting a variable that doesn't exist.
 
         This test verifies that the service returns None when trying to
-        retrieve a variable with a non-existent ID. This ensures proper
+        retrieve a variable with a nonexistent ID. This ensures proper
         handling of missing data scenarios.
         """
         fake = Faker()

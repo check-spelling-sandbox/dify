@@ -521,7 +521,7 @@ class TestWorkflowPauseIntegration:
     # ==================== Error Scenario Tests ====================
 
     def test_pause_nonexistent_workflow_run(self):
-        """Test pausing a non-existent workflow run."""
+        """Test pausing a nonexistent workflow run."""
         # Arrange
         nonexistent_id = str(uuid.uuid4())
         test_state = self._create_test_state()
@@ -537,7 +537,7 @@ class TestWorkflowPauseIntegration:
             )
 
     def test_resume_nonexistent_workflow_run(self):
-        """Test resuming a non-existent workflow run."""
+        """Test resuming a nonexistent workflow run."""
         # Arrange
         workflow_run = self._create_test_workflow_run()
         test_state = self._create_test_state()

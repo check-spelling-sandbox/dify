@@ -343,7 +343,7 @@ class TestDealDatasetVectorIndexTask:
         """
         non_existent_dataset_id = str(uuid.uuid4())
 
-        # Execute task with non-existent dataset
+        # Execute task with nonexistent dataset
         deal_dataset_vector_index_task(non_existent_dataset_id, "add")
 
         # Verify that no index processor operations were performed

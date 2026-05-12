@@ -888,11 +888,11 @@ class TestErrorHandling:
         mock_client.assert_called_once_with("test_key", None)
 
     def test_crawl_status_for_nonexistent_job(self, mocker: MockerFixture):
-        """Test handling of status check for non-existent job."""
+        """Test handling of status check for nonexistent job."""
         mock_client = mocker.patch("core.rag.extractor.watercrawl.provider.WaterCrawlAPIClient")
         mock_instance = mock_client.return_value
 
-        # Simulate API error for non-existent job
+        # Simulate API error for nonexistent job
         from core.rag.extractor.watercrawl.exceptions import WaterCrawlBadRequestError
 
         mock_response = Mock()

@@ -499,7 +499,7 @@ class TestTagService:
         Test target ID retrieval when no tags match the criteria.
 
         This test verifies:
-        - Proper handling of non-existent tag IDs
+        - Proper handling of nonexistent tag IDs
         - Correct return value for no matches
         """
         # Arrange: Create test data
@@ -508,7 +508,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent tag IDs
+        # Create nonexistent tag IDs
         import uuid
 
         non_existent_tag_ids = [str(uuid.uuid4()), str(uuid.uuid4())]
@@ -564,7 +564,7 @@ class TestTagService:
         Test tag retrieval by name when no matches exist.
 
         This test verifies:
-        - Proper handling of non-existent tag names
+        - Proper handling of nonexistent tag names
         - Correct return value for no matches
         """
         # Arrange: Create test data
@@ -573,7 +573,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Act: Execute the method under test with non-existent tag name
+        # Act: Execute the method under test with nonexistent tag name
         result = TagService.get_tag_by_tag_name("knowledge", tenant.id, "nonexistent_tag")
 
         # Assert: Verify the expected outcomes
@@ -746,7 +746,7 @@ class TestTagService:
         This test verifies:
         - Proper tag update with new name
         - Correct database state after update
-        - Proper error handling for non-existent tags
+        - Proper error handling for nonexistent tags
         """
         # Arrange: Create test data
         fake = Faker()
@@ -782,10 +782,10 @@ class TestTagService:
 
     def test_update_tags_not_found_error(self, db_session_with_containers: Session, mock_external_service_dependencies):
         """
-        Test tag update for non-existent tag.
+        Test tag update for nonexistent tag.
 
         This test verifies:
-        - Proper error handling for non-existent tags
+        - Proper error handling for nonexistent tags
         - Correct exception type
         """
         # Arrange: Create test data
@@ -794,7 +794,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent tag ID
+        # Create nonexistent tag ID
         import uuid
 
         non_existent_tag_id = str(uuid.uuid4())
@@ -877,11 +877,11 @@ class TestTagService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test binding count retrieval for non-existent tag.
+        Test binding count retrieval for nonexistent tag.
 
         This test verifies:
-        - Proper handling of non-existent tag IDs
-        - Correct return value for non-existent tags
+        - Proper handling of nonexistent tag IDs
+        - Correct return value for nonexistent tags
         """
         # Arrange: Create test data
         fake = Faker()
@@ -889,7 +889,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent tag ID
+        # Create nonexistent tag ID
         import uuid
 
         non_existent_tag_id = str(uuid.uuid4())
@@ -948,10 +948,10 @@ class TestTagService:
 
     def test_delete_tag_not_found_error(self, db_session_with_containers: Session, mock_external_service_dependencies):
         """
-        Test tag deletion for non-existent tag.
+        Test tag deletion for nonexistent tag.
 
         This test verifies:
-        - Proper error handling for non-existent tags
+        - Proper error handling for nonexistent tags
         - Correct exception type
         """
         # Arrange: Create test data
@@ -960,7 +960,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent tag ID
+        # Create nonexistent tag ID
         import uuid
 
         non_existent_tag_id = str(uuid.uuid4())
@@ -1073,7 +1073,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies, tenant.id, "knowledge", 1
         )[0]
 
-        # Create non-existent target ID
+        # Create nonexistent target ID
         import uuid
 
         non_existent_target_id = str(uuid.uuid4())
@@ -1091,7 +1091,7 @@ class TestTagService:
         This test verifies:
         - Proper tag binding deletion from database
         - Correct database state after deletion
-        - Proper error handling for non-existent bindings
+        - Proper error handling for nonexistent bindings
         """
         # Arrange: Create test data
         fake = Faker()
@@ -1137,11 +1137,11 @@ class TestTagService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test tag binding deletion for non-existent binding.
+        Test tag binding deletion for nonexistent binding.
 
         This test verifies:
-        - Proper handling of non-existent tag bindings
-        - No errors when trying to delete non-existent bindings
+        - Proper handling of nonexistent tag bindings
+        - No errors when trying to delete nonexistent bindings
         - Correct database state after operation
         """
         # Arrange: Create test data
@@ -1156,7 +1156,7 @@ class TestTagService:
         )[0]
         app = self._create_test_app(db_session_with_containers, mock_external_service_dependencies, tenant.id)
 
-        # Act: Try to delete non-existent binding
+        # Act: Try to delete nonexistent binding
         delete_payload = TagBindingDeletePayload(type="app", target_id=app.id, tag_ids=[tag.id])
         TagService.delete_tag_binding(delete_payload)
 
@@ -1176,7 +1176,7 @@ class TestTagService:
 
         This test verifies:
         - Proper validation of knowledge dataset existence
-        - Correct error handling for non-existent datasets
+        - Correct error handling for nonexistent datasets
         - Proper tenant filtering
         """
         # Arrange: Create test data
@@ -1198,10 +1198,10 @@ class TestTagService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test target existence check for non-existent knowledge dataset.
+        Test target existence check for nonexistent knowledge dataset.
 
         This test verifies:
-        - Proper error handling for non-existent knowledge datasets
+        - Proper error handling for nonexistent knowledge datasets
         - Correct exception type and message
         """
         # Arrange: Create test data
@@ -1210,7 +1210,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent dataset ID
+        # Create nonexistent dataset ID
         import uuid
 
         non_existent_dataset_id = str(uuid.uuid4())
@@ -1228,7 +1228,7 @@ class TestTagService:
 
         This test verifies:
         - Proper validation of app existence
-        - Correct error handling for non-existent apps
+        - Correct error handling for nonexistent apps
         - Proper tenant filtering
         """
         # Arrange: Create test data
@@ -1250,10 +1250,10 @@ class TestTagService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test target existence check for non-existent app.
+        Test target existence check for nonexistent app.
 
         This test verifies:
-        - Proper error handling for non-existent apps
+        - Proper error handling for nonexistent apps
         - Correct exception type and message
         """
         # Arrange: Create test data
@@ -1262,7 +1262,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent app ID
+        # Create nonexistent app ID
         import uuid
 
         non_existent_app_id = str(uuid.uuid4())
@@ -1288,7 +1288,7 @@ class TestTagService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Create non-existent target ID
+        # Create nonexistent target ID
         import uuid
 
         non_existent_target_id = str(uuid.uuid4())

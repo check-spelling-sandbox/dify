@@ -336,7 +336,7 @@ describe('PermissionSelector', () => {
       // Wait for dropdown to open
       const searchInput = await screen.findByRole('textbox')
 
-      // Search for non-existent member
+      // Search for nonexistent member
       fireEvent.change(searchInput, { target: { value: 'nonexistent12345' } })
 
       // Wait for debounce and no results message

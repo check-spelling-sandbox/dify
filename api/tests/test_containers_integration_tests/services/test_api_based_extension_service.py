@@ -217,7 +217,7 @@ class TestAPIBasedExtensionService:
         )
         non_existent_extension_id = fake.uuid4()
 
-        # Try to get non-existent extension
+        # Try to get nonexistent extension
         with pytest.raises(ValueError, match="API based extension is not found"):
             APIBasedExtensionService.get_with_tenant_id(tenant.id, non_existent_extension_id)
 

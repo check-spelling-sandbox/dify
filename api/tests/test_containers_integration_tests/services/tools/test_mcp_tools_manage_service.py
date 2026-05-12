@@ -137,7 +137,7 @@ class TestMCPToolManageService:
         This test verifies:
         - Proper retrieval of MCP provider by ID
         - Correct tenant isolation
-        - Proper error handling for non-existent providers
+        - Proper error handling for nonexistent providers
         """
         # Arrange: Create test data
         fake = Faker()
@@ -173,7 +173,7 @@ class TestMCPToolManageService:
         Test error handling when MCP provider is not found by provider ID.
 
         This test verifies:
-        - Proper error handling for non-existent provider IDs
+        - Proper error handling for nonexistent provider IDs
         - Correct exception type and message
         - Tenant isolation enforcement
         """
@@ -232,7 +232,7 @@ class TestMCPToolManageService:
         This test verifies:
         - Proper retrieval of MCP provider by server identifier
         - Correct tenant isolation
-        - Proper error handling for non-existent server identifiers
+        - Proper error handling for nonexistent server identifiers
         """
         # Arrange: Create test data
         fake = Faker()
@@ -268,7 +268,7 @@ class TestMCPToolManageService:
         Test error handling when MCP provider is not found by server identifier.
 
         This test verifies:
-        - Proper error handling for non-existent server identifiers
+        - Proper error handling for nonexistent server identifiers
         - Correct exception type and message
         - Tenant isolation enforcement
         """
@@ -966,10 +966,10 @@ class TestMCPToolManageService:
 
     def test_delete_mcp_tool_not_found(self, db_session_with_containers: Session, mock_external_service_dependencies):
         """
-        Test error handling when deleting non-existent MCP tool.
+        Test error handling when deleting nonexistent MCP tool.
 
         This test verifies:
-        - Proper error handling for non-existent provider IDs
+        - Proper error handling for nonexistent provider IDs
         - Correct exception type and message
         - Tenant isolation enforcement
         """

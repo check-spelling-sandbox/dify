@@ -241,9 +241,9 @@ class TestApiTokenCacheIntegration:
 
     @patch("services.api_token_service.redis_client")
     def test_cache_penetration_prevention(self, mock_redis):
-        """Test that non-existent tokens are cached as null."""
+        """Test that nonexistent tokens are cached as null."""
         # Set null token (cache miss)
-        ApiTokenCache.set("non-existent-token", "app", None)
+        ApiTokenCache.set("nonexistent-token", "app", None)
 
         args = mock_redis.setex.call_args[0]
         assert args[2] == b"null"

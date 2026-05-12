@@ -106,7 +106,7 @@ class TestEmailCodeLoginSendEmailApi:
         Test sending email code to new user when registration is allowed.
 
         Verifies that:
-        - Email code is sent even for non-existent accounts
+        - Email code is sent even for nonexistent accounts
         - Registration is allowed by system features
         """
         # Arrange
@@ -137,7 +137,7 @@ class TestEmailCodeLoginSendEmailApi:
         Test sending email code to new user when registration is disabled.
 
         Verifies that:
-        - AccountNotFound is raised for non-existent accounts
+        - AccountNotFound is raised for nonexistent accounts
         - Registration is blocked by system features
         """
         # Arrange

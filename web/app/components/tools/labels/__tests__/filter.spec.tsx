@@ -227,7 +227,7 @@ describe('LabelFilter', () => {
       expect(screen.getByText('common.tag.placeholder')).toBeInTheDocument()
     })
 
-    it('should handle value with non-existent label', () => {
+    it('should handle value with nonexistent label', () => {
       render(<LabelFilter value={['nonexistent']} onChange={mockOnChange} />)
 
       // Should still render without crashing

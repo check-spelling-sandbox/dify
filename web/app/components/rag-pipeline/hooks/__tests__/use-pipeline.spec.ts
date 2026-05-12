@@ -284,13 +284,13 @@ describe('usePipeline', () => {
       expect(nodeIds).toContain('node-3')
     })
 
-    it('should return empty array for non-existent node', () => {
+    it('should return empty array for nonexistent node', () => {
       mockGetNodes.mockReturnValue([createNode('ds-1', 'data-source')])
       mockFindUsedVarNodes.mockReturnValue([])
 
       const { result } = renderHook(() => usePipeline())
 
-      const isUsed = result.current.isVarUsedInNodes(['rag', 'non-existent', 'var1'])
+      const isUsed = result.current.isVarUsedInNodes(['rag', 'nonexistent', 'var1'])
       expect(isUsed).toBe(false)
     })
 

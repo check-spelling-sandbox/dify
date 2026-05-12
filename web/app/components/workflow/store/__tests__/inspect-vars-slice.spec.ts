@@ -72,7 +72,7 @@ describe('Inspect Vars Slice', () => {
       const store = createStore()
       store.getState().setNodesWithInspectVars([makeNodeWithVar('n1', [makeVar()])])
 
-      store.getState().setNodeInspectVars('non-existent', [])
+      store.getState().setNodeInspectVars('nonexistent', [])
 
       expect(store.getState().nodesWithInspectVars[0]!.vars).toHaveLength(1)
     })

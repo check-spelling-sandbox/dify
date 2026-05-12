@@ -560,7 +560,7 @@ class TestSavedMessageService:
     def test_delete_non_existent_does_nothing(
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
-        """Test that deleting a non-existent saved message is a no-op."""
+        """Test that deleting a nonexistent saved message is a no-op."""
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
 
         # Should not raise — use a valid UUID that doesn't exist in DB

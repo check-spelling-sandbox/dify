@@ -405,7 +405,7 @@ class TestMetadataService:
         mock_external_service_dependencies["current_user"].current_tenant_id = tenant.id
         mock_external_service_dependencies["current_user"].id = account.id
 
-        # Try to update non-existent metadata
+        # Try to update nonexistent metadata
         import uuid
 
         fake_metadata_id = str(uuid.uuid4())  # Use valid UUID format
@@ -465,7 +465,7 @@ class TestMetadataService:
         mock_external_service_dependencies["current_user"].current_tenant_id = tenant.id
         mock_external_service_dependencies["current_user"].id = account.id
 
-        # Try to delete non-existent metadata
+        # Try to delete nonexistent metadata
         import uuid
 
         fake_metadata_id = str(uuid.uuid4())  # Use valid UUID format

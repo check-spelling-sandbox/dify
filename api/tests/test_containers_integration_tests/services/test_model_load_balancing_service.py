@@ -243,7 +243,7 @@ class TestModelLoadBalancingService:
         Test error handling when provider does not exist.
 
         This test verifies:
-        - Proper error handling for non-existent provider
+        - Proper error handling for nonexistent provider
         - Correct exception type and message
         - No database state changes
         """
@@ -362,7 +362,7 @@ class TestModelLoadBalancingService:
         Test error handling when provider does not exist in get_load_balancing_configs.
 
         This test verifies:
-        - Proper error handling for non-existent provider
+        - Proper error handling for nonexistent provider
         - Correct exception type and message
         - No database state changes
         """

@@ -89,7 +89,7 @@ class TestPipelineTemplateDetailApi:
                 return_value=service,
             ),
         ):
-            response, status = method(api, "non-existent-id")
+            response, status = method(api, "nonexistent-id")
 
         assert status == 404
         assert "error" in response
@@ -108,7 +108,7 @@ class TestPipelineTemplateDetailApi:
                 return_value=service,
             ),
         ):
-            response, status = method(api, "non-existent-id")
+            response, status = method(api, "nonexistent-id")
 
         assert status == 404
         assert "error" in response

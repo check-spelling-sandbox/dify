@@ -100,7 +100,7 @@ describe('useImageFiles', () => {
     expect(result.current.files).toHaveLength(0)
   })
 
-  it('should not modify files when onRemove is called with non-existent id', () => {
+  it('should not modify files when onRemove is called with nonexistent id', () => {
     const { result } = renderHook(() => useImageFiles())
     const imageFile = createImageFile({ _id: 'file-1' })
 
@@ -109,7 +109,7 @@ describe('useImageFiles', () => {
     })
 
     act(() => {
-      result.current.onRemove('non-existent')
+      result.current.onRemove('nonexistent')
     })
 
     expect(result.current.files).toHaveLength(1)
@@ -130,7 +130,7 @@ describe('useImageFiles', () => {
     expect(result.current.files[0]!.progress).toBe(-1)
   })
 
-  it('should not modify files when onImageLinkLoadError is called with non-existent id', () => {
+  it('should not modify files when onImageLinkLoadError is called with nonexistent id', () => {
     const { result } = renderHook(() => useImageFiles())
     const imageFile = createImageFile({ _id: 'file-1', progress: 0 })
 
@@ -139,7 +139,7 @@ describe('useImageFiles', () => {
     })
 
     act(() => {
-      result.current.onImageLinkLoadError('non-existent')
+      result.current.onImageLinkLoadError('nonexistent')
     })
 
     expect(result.current.files[0]!.progress).toBe(0)
@@ -160,7 +160,7 @@ describe('useImageFiles', () => {
     expect(result.current.files[0]!.progress).toBe(100)
   })
 
-  it('should not modify files when onImageLinkLoadSuccess is called with non-existent id', () => {
+  it('should not modify files when onImageLinkLoadSuccess is called with nonexistent id', () => {
     const { result } = renderHook(() => useImageFiles())
     const imageFile = createImageFile({ _id: 'file-1', progress: 50 })
 
@@ -169,7 +169,7 @@ describe('useImageFiles', () => {
     })
 
     act(() => {
-      result.current.onImageLinkLoadSuccess('non-existent')
+      result.current.onImageLinkLoadSuccess('nonexistent')
     })
 
     expect(result.current.files[0]!.progress).toBe(50)
@@ -222,7 +222,7 @@ describe('useImageFiles', () => {
       const { result } = renderHook(() => useImageFiles())
 
       act(() => {
-        result.current.onReUpload('non-existent')
+        result.current.onReUpload('nonexistent')
       })
 
       expect(mockImageUpload).not.toHaveBeenCalled()

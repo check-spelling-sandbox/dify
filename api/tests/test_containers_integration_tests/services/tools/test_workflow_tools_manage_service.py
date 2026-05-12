@@ -299,7 +299,7 @@ class TestWorkflowToolManageService:
         Test workflow tool creation fails when app does not exist.
 
         This test verifies:
-        - Proper error handling for non-existent apps
+        - Proper error handling for nonexistent apps
         - Correct error message
         - No database changes when app is invalid
         """
@@ -310,16 +310,16 @@ class TestWorkflowToolManageService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Generate non-existent app ID
+        # Generate nonexistent app ID
         non_existent_app_id = fake.uuid4()
 
-        # Attempt to create workflow tool with non-existent app
+        # Attempt to create workflow tool with nonexistent app
         tool_parameters = self._create_test_workflow_tool_parameters()
         with pytest.raises(ValueError) as exc_info:
             WorkflowToolManageService.create_workflow_tool(
                 user_id=account.id,
                 tenant_id=account.current_tenant.id,
-                workflow_app_id=non_existent_app_id,  # Non-existent app ID
+                workflow_app_id=non_existent_app_id,  # Nonexistent app ID
                 name=fake.word(),
                 label=fake.word(),
                 icon={"type": "emoji", "emoji": "🔧"},
@@ -731,7 +731,7 @@ class TestWorkflowToolManageService:
         Test workflow tool update fails when tool does not exist.
 
         This test verifies:
-        - Proper error handling for non-existent tools
+        - Proper error handling for nonexistent tools
         - Correct error message
         - No database changes when tool is invalid
         """
@@ -742,16 +742,16 @@ class TestWorkflowToolManageService:
             db_session_with_containers, mock_external_service_dependencies
         )
 
-        # Generate non-existent tool ID
+        # Generate nonexistent tool ID
         non_existent_tool_id = fake.uuid4()
 
-        # Attempt to update non-existent workflow tool
+        # Attempt to update nonexistent workflow tool
         tool_parameters = self._create_test_workflow_tool_parameters()
         with pytest.raises(ValueError) as exc_info:
             WorkflowToolManageService.update_workflow_tool(
                 user_id=account.id,
                 tenant_id=account.current_tenant.id,
-                workflow_tool_id=non_existent_tool_id,  # Non-existent tool ID
+                workflow_tool_id=non_existent_tool_id,  # Nonexistent tool ID
                 name=fake.word(),
                 label=fake.word(),
                 icon={"type": "emoji", "emoji": "🔧"},

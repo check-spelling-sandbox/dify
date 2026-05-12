@@ -340,11 +340,11 @@ class TestBatchCreateSegmentToIndexTask:
         account, tenant = self._create_test_account_and_tenant(db_session_with_containers)
         upload_file = self._create_test_upload_file(db_session_with_containers, account, tenant)
 
-        # Use non-existent IDs
+        # Use nonexistent IDs
         non_existent_dataset_id = str(uuid.uuid4())
         non_existent_document_id = str(uuid.uuid4())
 
-        # Execute the task with non-existent dataset
+        # Execute the task with nonexistent dataset
         job_id = str(uuid.uuid4())
         batch_create_segment_to_index_task(
             job_id=job_id,
@@ -389,10 +389,10 @@ class TestBatchCreateSegmentToIndexTask:
         dataset = self._create_test_dataset(db_session_with_containers, account, tenant)
         upload_file = self._create_test_upload_file(db_session_with_containers, account, tenant)
 
-        # Use non-existent document ID
+        # Use nonexistent document ID
         non_existent_document_id = str(uuid.uuid4())
 
-        # Execute the task with non-existent document
+        # Execute the task with nonexistent document
         job_id = str(uuid.uuid4())
         batch_create_segment_to_index_task(
             job_id=job_id,
@@ -538,10 +538,10 @@ class TestBatchCreateSegmentToIndexTask:
         dataset = self._create_test_dataset(db_session_with_containers, account, tenant)
         document = self._create_test_document(db_session_with_containers, account, tenant, dataset)
 
-        # Use non-existent upload file ID
+        # Use nonexistent upload file ID
         non_existent_upload_file_id = str(uuid.uuid4())
 
-        # Execute the task with non-existent upload file
+        # Execute the task with nonexistent upload file
         job_id = str(uuid.uuid4())
         batch_create_segment_to_index_task(
             job_id=job_id,

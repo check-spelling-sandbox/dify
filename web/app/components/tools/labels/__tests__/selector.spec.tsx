@@ -354,7 +354,7 @@ describe('LabelSelector', () => {
       expect(screen.getByText('tools.createTool.toolInput.labelPlaceholder')).toBeInTheDocument()
     })
 
-    it('should handle value with non-existent label', () => {
+    it('should handle value with nonexistent label', () => {
       render(<LabelSelector value={['nonexistent']} onChange={mockOnChange} />)
 
       // Should still render without crashing, undefined label will be filtered

@@ -688,7 +688,7 @@ describe('PageSelector', () => {
       const orphanPage = createMockPage({
         page_id: 'orphan-page',
         page_name: 'Orphan Page',
-        parent_id: 'non-existent-parent',
+        parent_id: 'nonexistent-parent',
       })
       const props = createDefaultProps({
         list: [orphanPage],
@@ -1169,7 +1169,7 @@ describe('PageSelector', () => {
       const orphanPage = createMockPage({
         page_id: 'orphan',
         page_name: 'Orphan Page',
-        parent_id: 'non-existent-parent',
+        parent_id: 'nonexistent-parent',
       })
       // Create pagesMap without the parent
       const pagesMap = createMockPagesMap([orphanPage])

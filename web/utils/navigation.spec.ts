@@ -113,7 +113,7 @@ describe('navigation', () => {
       expect(result).toEqual({ page: '3', limit: '10', keyword: 'test' })
     })
 
-    it('ignores non-existent parameters', () => {
+    it('ignores nonexistent parameters', () => {
       const result = extractQueryParams(['page', 'nonexistent'])
       expect(result).toEqual({ page: '3' })
     })

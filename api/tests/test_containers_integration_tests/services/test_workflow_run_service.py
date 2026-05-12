@@ -400,7 +400,7 @@ class TestWorkflowRunService:
         Test workflow run retrieval when run ID does not exist.
 
         This test verifies:
-        - Proper handling of non-existent workflow run IDs
+        - Proper handling of nonexistent workflow run IDs
         - Repository method calls with proper parameters
         - Return value for missing records
         """
@@ -408,7 +408,7 @@ class TestWorkflowRunService:
         fake = Faker()
         app, account = self._create_test_app_and_account(db_session_with_containers, mock_external_service_dependencies)
 
-        # Use a non-existent UUID
+        # Use a nonexistent UUID
         non_existent_id = str(uuid.uuid4())
 
         # Act: Execute the method under test
@@ -516,7 +516,7 @@ class TestWorkflowRunService:
         This test verifies:
         - Empty result when no node executions exist
         - Proper handling of empty data
-        - No errors when querying non-existent executions
+        - No errors when querying nonexistent executions
         """
         # Arrange: Setup test data
         account_service = AccountService()

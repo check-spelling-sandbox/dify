@@ -1058,7 +1058,7 @@ class TestDocumentBatchIndexingStatusApi:
 
 class TestDocumentIndexingStatusApi:
     def test_get_status_document_not_found(self, app: Flask, patch_tenant):
-        """Test getting status for non-existent document"""
+        """Test getting status for nonexistent document"""
         api = DocumentIndexingStatusApi()
         method = unwrap(api.get)
 

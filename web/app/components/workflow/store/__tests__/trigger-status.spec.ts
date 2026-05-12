@@ -18,10 +18,10 @@ describe('useTriggerStatusStore', () => {
       expect(result.current.triggerStatuses).toEqual({})
     })
 
-    it('should return "disabled" for non-existent trigger status', () => {
+    it('should return "disabled" for nonexistent trigger status', () => {
       const { result } = renderHook(() => useTriggerStatusStore())
 
-      const status = result.current.getTriggerStatus('non-existent-id')
+      const status = result.current.getTriggerStatus('nonexistent-id')
       expect(status).toBe('disabled')
     })
   })
@@ -147,10 +147,10 @@ describe('useTriggerStatusStore', () => {
       expect(result.current.getTriggerStatus('disabled-node')).toBe('disabled')
     })
 
-    it('should return "disabled" as default for non-existent nodes', () => {
+    it('should return "disabled" as default for nonexistent nodes', () => {
       const { result } = renderHook(() => useTriggerStatusStore())
 
-      expect(result.current.getTriggerStatus('non-existent')).toBe('disabled')
+      expect(result.current.getTriggerStatus('nonexistent')).toBe('disabled')
       expect(result.current.getTriggerStatus('')).toBe('disabled')
       expect(result.current.getTriggerStatus('undefined-node')).toBe('disabled')
     })

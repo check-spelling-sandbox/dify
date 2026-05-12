@@ -354,7 +354,7 @@ class TestExternalDatasetCreateApiAdvanced:
 
 class TestExternalKnowledgeHitTestingApiAdvanced:
     def test_hit_testing_dataset_not_found(self, app: Flask, mock_auth, current_user):
-        """Test hit testing on non-existent dataset"""
+        """Test hit testing on nonexistent dataset"""
         api = ExternalKnowledgeHitTestingApi()
         method = unwrap(api.post)
 

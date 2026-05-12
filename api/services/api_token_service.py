@@ -53,7 +53,7 @@ class CachedApiToken(BaseModel):
 
 CACHE_KEY_PREFIX = "api_token"
 CACHE_TTL_SECONDS = 600  # 10 minutes
-CACHE_NULL_TTL_SECONDS = 60  # 1 minute for non-existent tokens
+CACHE_NULL_TTL_SECONDS = 60  # 1 minute for nonexistent tokens
 ACTIVE_TOKEN_KEY_PREFIX = "api_token_active:"
 
 

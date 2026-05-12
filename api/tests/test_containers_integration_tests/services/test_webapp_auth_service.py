@@ -242,13 +242,13 @@ class TestWebAppAuthService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test authentication with non-existent email.
+        Test authentication with nonexistent email.
 
         This test verifies:
-        - Proper error handling for non-existent accounts
+        - Proper error handling for nonexistent accounts
         - Correct exception type and message
         """
-        # Arrange: Generate a guaranteed non-existent email
+        # Arrange: Generate a guaranteed nonexistent email
         # Use UUID and timestamp to ensure uniqueness
         unique_id = str(uuid.uuid4()).replace("-", "")
         timestamp = str(int(time.time() * 1000000))  # microseconds
@@ -420,13 +420,13 @@ class TestWebAppAuthService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test user retrieval with non-existent email.
+        Test user retrieval with nonexistent email.
 
         This test verifies:
-        - Proper handling for non-existent users
+        - Proper handling for nonexistent users
         - Correct return value (None)
         """
-        # Arrange: Use non-existent email
+        # Arrange: Use nonexistent email
         non_existent_email = f"nonexistent_{uuid.uuid4().hex}@example.com"
 
         # Act: Execute user retrieval
@@ -682,13 +682,13 @@ class TestWebAppAuthService:
         self, db_session_with_containers: Session, mock_external_service_dependencies
     ):
         """
-        Test end user creation with non-existent site code.
+        Test end user creation with nonexistent site code.
 
         This test verifies:
-        - Proper error handling for non-existent sites
+        - Proper error handling for nonexistent sites
         - Correct exception type and message
         """
-        # Arrange: Use non-existent site code
+        # Arrange: Use nonexistent site code
         fake = Faker()
         non_existent_code = fake.unique.lexify(text="??????")
 

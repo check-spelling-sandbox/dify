@@ -75,7 +75,7 @@ def test_get_file_attribute(pool, file):
     assert result is not None
     assert result.value == file.filename
 
-    # Test getting a non-existent attribute
+    # Test getting a nonexistent attribute
     result = pool.get(("node_1", "file_var", "non_existent_attr"))
     assert result is None
 

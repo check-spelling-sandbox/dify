@@ -83,7 +83,7 @@ class TestWebsiteCrawlDatasourcePluginProviderController:
 
     def test_get_datasource_not_found(self, mock_entity):
         # Arrange
-        datasource_name = "non-existent"
+        datasource_name = "nonexistent"
         mock_entity.datasources = []
 
         controller = WebsiteCrawlDatasourcePluginProviderController(

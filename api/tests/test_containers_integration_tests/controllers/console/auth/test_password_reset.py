@@ -450,7 +450,7 @@ class TestForgotPasswordResetApi:
     @patch("controllers.console.auth.forgot_password.AccountService.get_account_by_email_with_case_fallback")
     def test_reset_password_account_not_found(self, mock_get_account, mock_revoke_token, mock_get_data, app: Flask):
         """
-        Test password reset for non-existent account.
+        Test password reset for nonexistent account.
 
         Verifies that:
         - AccountNotFound is raised when account doesn't exist

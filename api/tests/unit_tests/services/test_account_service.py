@@ -453,7 +453,7 @@ class TestAccountService:
         mock_db_dependencies["db"].session.get.return_value = None
 
         # Execute test
-        result = AccountService.load_user("non-existent-user")
+        result = AccountService.load_user("nonexistent-user")
 
         # Verify results
         assert result is None

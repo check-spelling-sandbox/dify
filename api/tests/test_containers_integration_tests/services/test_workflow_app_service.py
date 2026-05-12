@@ -964,7 +964,7 @@ class TestWorkflowAppService:
         account.email = original_email
         db_session_with_containers.commit()
 
-        # Test filtering by non-existent session ID
+        # Test filtering by nonexistent session ID
         result_no_session = service.get_paginate_workflow_app_logs(
             session=db_session_with_containers,
             app_model=app,
@@ -974,7 +974,7 @@ class TestWorkflowAppService:
         )
         assert result_no_session["total"] == 0
 
-        # Test filtering by non-existent account email, is unexpected input, should raise ValueError
+        # Test filtering by nonexistent account email, is unexpected input, should raise ValueError
         with pytest.raises(ValueError) as exc_info:
             service.get_paginate_workflow_app_logs(
                 session=db_session_with_containers,

@@ -185,7 +185,7 @@ class EnumText[T: enum.StrEnum](TypeDecorator[T | None]):
                 raise ValueError("length should be greater than enum value length.")
             self._length = length
         else:
-            # leave some rooms for future longer enum values.
+            # leave some room for future longer enum values.
             self._length = max(max_enum_value_len, 20)
 
     @override

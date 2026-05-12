@@ -60,7 +60,7 @@ const Options: FC<TimeOptionsProps> = ({
                 key={period}
                 isSelected={isSelected}
                 onClick={handleSelectPeriod.bind(null, period)}
-                noAutoScroll // if choose PM which would hide(scrolled) AM that may make user confused that there's no am.
+                noAutoScroll // if choose PM which would hide(scrolled) AM that may make user confused that there's no AM.
               >
                 {period}
               </OptionListItem>

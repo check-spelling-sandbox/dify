@@ -89,7 +89,7 @@ class TestApiToolInvoke:
         # Verify the text contains the JSON-serialized string
         # Check if message is a TextMessage
         assert isinstance(text_message.message, ToolInvokeMessage.TextMessage)
-        # Verify it's a valid JSON string and equals to the mock response
+        # Verify it's a valid JSON string and equals the mock response
         parsed_back = json.loads(text_message.message.text)
         assert parsed_back == json_response_data
 

@@ -144,7 +144,7 @@ class ModelConfigResource(Resource):
                 )
                 manager.delete_tool_parameters_cache()
 
-                # override parameters if it equals to masked parameters
+                # override parameters if it equals masked parameters
                 if agent_tool_entity.tool_parameters:
                     if key not in masked_parameter_map:
                         continue

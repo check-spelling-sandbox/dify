@@ -175,7 +175,7 @@ class FileLifecycleManager:
             filename: File name
 
         Returns:
-            File metadata, returns None if not exists
+            File metadata, returns None if it does not exist
         """
         try:
             metadata_dict = self._load_metadata()

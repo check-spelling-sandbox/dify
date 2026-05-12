@@ -144,7 +144,7 @@ class IrisConnectionPool:
                 cursor.execute(check_sql, (schema,))  # Must be tuple or list
                 exists = cursor.fetchone()[0] > 0
 
-                if not exists:
+                if it does not exist:
                     # Schema doesn't exist, create it
                     cursor.execute(f"CREATE SCHEMA {schema}")
                     conn.commit()

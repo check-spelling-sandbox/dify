@@ -634,7 +634,7 @@ class ProviderManager:
         tenant_id: str, provider_name_to_provider_records_dict: dict[str, list[Provider]]
     ) -> dict[str, list[Provider]]:
         """
-        Initialize trial provider records if not exists.
+        Initialize trial provider records if it does not exist.
 
         :param tenant_id: workspace id
         :param provider_name_to_provider_records_dict: provider name to provider records dict
@@ -661,7 +661,7 @@ class ProviderManager:
 
             for quota in configuration.quotas:
                 if quota.quota_type in (ProviderQuotaType.TRIAL, ProviderQuotaType.PAID):
-                    # Init trial provider records if not exists
+                    # Init trial provider records if it does not exist
                     if quota.quota_type not in provider_quota_to_provider_record_dict:
                         try:
                             # FIXME ignore the type error, only TrialHostingQuota has limit need to change the logic

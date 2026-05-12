@@ -27,7 +27,7 @@ class CacheEmbedding(Embeddings):
 
     def embed_documents(self, texts: list[str]) -> list[list[float]]:
         """Embed search docs in batches of 10."""
-        # use doc embedding cache or store if not exists
+        # use doc embedding cache or store if it does not exist
         text_embeddings: list[Any] = [None for _ in range(len(texts))]
         embedding_queue_indices = []
         for i, text in enumerate(texts):
@@ -108,7 +108,7 @@ class CacheEmbedding(Embeddings):
 
     def embed_multimodal_documents(self, multimodel_documents: list[dict[str, Any]]) -> list[list[float]]:
         """Embed file documents."""
-        # use doc embedding cache or store if not exists
+        # use doc embedding cache or store if it does not exist
         multimodel_embeddings: list[Any] = [None for _ in range(len(multimodel_documents))]
         embedding_queue_indices = []
         for i, multimodel_document in enumerate(multimodel_documents):
@@ -191,7 +191,7 @@ class CacheEmbedding(Embeddings):
 
     def embed_query(self, text: str) -> list[float]:
         """Embed query text."""
-        # use doc embedding cache or store if not exists
+        # use doc embedding cache or store if it does not exist
         hash = helper.generate_text_hash(text)
         embedding_cache_key = f"{self._model_instance.provider}_{self._model_instance.model_name}_{hash}"
         embedding = redis_client.get(embedding_cache_key)
@@ -234,7 +234,7 @@ class CacheEmbedding(Embeddings):
 
     def embed_multimodal_query(self, multimodel_document: dict[str, Any]) -> list[float]:
         """Embed multimodal documents."""
-        # use doc embedding cache or store if not exists
+        # use doc embedding cache or store if it does not exist
         file_id = multimodel_document["file_id"]
         embedding_cache_key = f"{self._model_instance.provider}_{self._model_instance.model_name}_{file_id}"
         embedding = redis_client.get(embedding_cache_key)

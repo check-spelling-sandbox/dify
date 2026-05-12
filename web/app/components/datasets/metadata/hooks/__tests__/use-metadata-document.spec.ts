@@ -229,7 +229,7 @@ describe('useMetadataDocument', () => {
   })
 
   describe('handleSelectMetaData', () => {
-    it('should add metadata to tempList if not exists', () => {
+    it('should add metadata to tempList if it does not exist', () => {
       const { result } = renderHook(() => useMetadataDocument(defaultProps))
 
       act(() => {

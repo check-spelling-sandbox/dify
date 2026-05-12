@@ -229,7 +229,7 @@ describe('NotionPageSelector Base', () => {
     expect(onSelectCredential).toHaveBeenCalledWith('c1')
   })
 
-  it('should fallback to first credential when current credential is removed in error mode', async () => {
+  it('should fall back to first credential when current credential is removed in error mode', async () => {
     vi.mocked(usePreImportNotionPages).mockReturnValue(createPreImportResult({ isError: true }))
     const onSelect = vi.fn()
     const onSelectCredential = vi.fn()

@@ -41,7 +41,7 @@ const Blocks = ({
   const blocksFromHooks = useBlocks()
   const previewCardHandle = useMemo(() => createPreviewCardHandle<BlockPreviewPayload>(), [])
 
-  // Use external blocks if provided; otherwise, fallback to hook-based blocks
+  // Use external blocks if provided; otherwise, fall back to hook-based blocks
   const blocks = blocksFromProps || blocksFromHooks.map(block => ({
     metaData: {
       classification: block.classification,

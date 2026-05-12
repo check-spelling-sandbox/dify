@@ -199,7 +199,7 @@ describe('useFormatTimeFromNow', () => {
      * Test fallback to English for unsupported locales
      * Unknown locales should default to English
      */
-    it('should fallback to English for unsupported locale', () => {
+    it('should fall back to English for unsupported locale', () => {
       ;(useLocale as Mock).mockReturnValue('xx-XX' as any)
 
       const { result } = renderHook(() => useFormatTimeFromNow())

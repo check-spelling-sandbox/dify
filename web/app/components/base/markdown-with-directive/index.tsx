@@ -11,7 +11,7 @@ import WithIconCardList from './components/with-icon-card-list'
 
 // Adapter to map generic props to WithIconListProps
 function WithIconCardListAdapter(props: Record<string, unknown>) {
-  // Extract expected props, fallback to undefined if not present
+  // Extract expected props, fall back to undefined if not present
   const { children, className } = props
   return (
     <WithIconCardList

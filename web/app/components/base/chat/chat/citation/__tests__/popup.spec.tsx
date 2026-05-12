@@ -639,7 +639,7 @@ describe('Popup', () => {
         expect(screen.getByTestId('popup-source-item'))!.toBeInTheDocument()
       })
 
-      it('should fallback to \'doc\' when all ids are missing', async () => {
+      it('should fall back to \'doc\' when all ids are missing', async () => {
         const user = userEvent.setup()
         render(
           <Popup
@@ -653,7 +653,7 @@ describe('Popup', () => {
         expect(screen.getByTestId('popup-source-item'))!.toBeInTheDocument()
       })
 
-      it('should fallback to index when segment_position is missing', async () => {
+      it('should fall back to index when segment_position is missing', async () => {
         const user = userEvent.setup()
         render(
           <Popup

@@ -42,7 +42,7 @@ describe('useGetValidators', () => {
     expect(validators).toBe(customValidators)
   })
 
-  it('should fallback to field name when label is a react element', () => {
+  it('should fall back to field name when label is a react element', () => {
     const { result } = renderHook(() => useGetValidators())
     const validators = result.current.getValidators({
       name: 'apiKey',

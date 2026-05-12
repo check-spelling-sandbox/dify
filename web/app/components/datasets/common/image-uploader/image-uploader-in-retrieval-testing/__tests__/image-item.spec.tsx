@@ -140,7 +140,7 @@ describe('ImageItem (image-uploader-in-retrieval-testing)', () => {
       expect(container.firstChild).toBeInTheDocument()
     })
 
-    it('should fallback to sourceUrl', () => {
+    it('should fall back to sourceUrl', () => {
       const file = createMockFile({ base64Url: undefined })
       const { container } = render(<ImageItem file={file} />)
       expect(container.firstChild).toBeInTheDocument()

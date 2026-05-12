@@ -191,7 +191,7 @@ describe('getNodesConnectedSourceOrTargetHandleIdsMap', () => {
     expect(result.a._connectedSourceHandleIds).toContain('h2')
   })
 
-  it('should fallback to empty arrays when node data has no handle id arrays', () => {
+  it('should fall back to empty arrays when node data has no handle id arrays', () => {
     const node1 = createNode({ id: 'a', data: { type: BlockEnum.Start, title: '', desc: '' } })
     const node2 = createNode({ id: 'b', data: { type: BlockEnum.Code, title: '', desc: '' } })
     Reflect.deleteProperty(node1.data, '_connectedSourceHandleIds')

@@ -1504,7 +1504,7 @@ describe('Form', () => {
   })
 
   describe('Language fallback branches', () => {
-    it('should fallback to en_US for labels, placeholders, and tooltips when language key is missing', () => {
+    it('should fall back to en_US for labels, placeholders, and tooltips when language key is missing', () => {
       mockLanguageRef.value = 'fr_FR'
 
       const formSchemas: AnyFormSchema[] = [
@@ -1550,7 +1550,7 @@ describe('Form', () => {
       expect(screen.getByText('Agree Fallback'))!.toBeInTheDocument()
     })
 
-    it('should fallback to en_US for modelSelector, toolSelector, and appSelector labels', () => {
+    it('should fall back to en_US for modelSelector, toolSelector, and appSelector labels', () => {
       mockLanguageRef.value = 'fr_FR'
 
       const formSchemas: AnyFormSchema[] = [

@@ -69,7 +69,7 @@ type FormProps<
     formSchema: CustomFormSchema,
     props: Omit<FormProps<CustomFormSchema>, 'override' | 'customRenderField'>,
   ) => ReactNode
-  // If return falsy value, this field will fallback to default render
+  // If return falsy value, this field will fall back to default render
   override?: [Array<FormTypeEnum>, (formSchema: CredentialFormSchema, props: Omit<FormProps<CustomFormSchema>, 'override' | 'customRenderField'>) => ReactNode]
   nodeId?: string
   nodeOutputVars?: NodeOutPutVar[]

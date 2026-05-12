@@ -26,7 +26,7 @@ describe('useDocumentSort', () => {
       expect(result.current.sortOrder).toBe('asc')
     })
 
-    it('should fallback to inactive field for unsupported sort key', () => {
+    it('should fall back to inactive field for unsupported sort key', () => {
       const onRemoteSortChange = vi.fn()
       const { result } = renderHook(() => useDocumentSort({
         remoteSortValue: '-name',

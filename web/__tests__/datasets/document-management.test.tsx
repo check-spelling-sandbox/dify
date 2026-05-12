@@ -69,7 +69,7 @@ describe('Document Management Flow', () => {
       expect(sanitizeStatusValue('error')).toBe('error')
     })
 
-    it('should fallback to "all" for invalid values', () => {
+    it('should fall back to "all" for invalid values', () => {
       expect(sanitizeStatusValue(null)).toBe('all')
       expect(sanitizeStatusValue(undefined)).toBe('all')
       expect(sanitizeStatusValue('')).toBe('all')

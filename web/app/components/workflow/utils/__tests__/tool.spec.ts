@@ -137,7 +137,7 @@ describe('getToolCheckParams', () => {
     expect(result.toolInputsSchema).toHaveLength(1)
   })
 
-  it('should fallback to en_US label when language key is missing', () => {
+  it('should fall back to en_US label when language key is missing', () => {
     const tool = createToolCollection({
       tools: [
         {

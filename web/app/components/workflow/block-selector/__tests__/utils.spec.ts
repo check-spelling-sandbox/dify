@@ -87,7 +87,7 @@ describe('transformDataSourceToTool', () => {
     ])
   })
 
-  it('should fallback to empty arrays when tags and credentials schema are missing', () => {
+  it('should fall back to empty arrays when tags and credentials schema are missing', () => {
     const baseDataSourceItem = createDataSourceItem()
     const dataSourceItem = createDataSourceItem({
       declaration: {

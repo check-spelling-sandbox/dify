@@ -55,7 +55,7 @@ describe('Clipboard Utilities', () => {
      * When Clipboard API is unavailable, should use document.execCommand('copy')
      * This involves creating a temporary textarea element
      */
-    it('should fallback to execCommand when clipboard API not available', async () => {
+    it('should fall back to execCommand when clipboard API not available', async () => {
       Object.defineProperty(navigator, 'clipboard', {
         value: undefined,
         writable: true,

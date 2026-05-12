@@ -307,7 +307,7 @@ def test_workflow_trace_no_message_id(trace_instance, monkeypatch: pytest.Monkey
         conversation_id="conv-1",
         start_time=_dt(),
         end_time=_dt(),
-        trace_id=None,  # Should fallback to workflow_run_id
+        trace_id=None,  # Should fall back to workflow_run_id
         metadata={"app_id": "app-1"},
         workflow_app_log_id="log-1",
         error="",

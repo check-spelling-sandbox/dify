@@ -88,7 +88,7 @@ describe('Thought', () => {
       expect(screen.getByText('custom-tool'))!.toBeInTheDocument()
     })
 
-    it('should fallback to tool name when tool_labels is undefined', () => {
+    it('should fall back to tool name when tool_labels is undefined', () => {
       const thought = createThought({
         tool: 'fallback-tool',
         tool_labels: undefined,
@@ -99,7 +99,7 @@ describe('Thought', () => {
       expect(screen.getByText('fallback-tool'))!.toBeInTheDocument()
     })
 
-    it('should fallback to tool name when toolName property is missing', () => {
+    it('should fall back to tool name when toolName property is missing', () => {
       const thought = createThought({
         tool: 'another-tool',
         tool_labels: {},
@@ -110,7 +110,7 @@ describe('Thought', () => {
       expect(screen.getByText('another-tool'))!.toBeInTheDocument()
     })
 
-    it('should fallback to tool name when language property is missing', () => {
+    it('should fall back to tool name when language property is missing', () => {
       const thought = createThought({
         tool: 'test-tool',
         tool_labels: {

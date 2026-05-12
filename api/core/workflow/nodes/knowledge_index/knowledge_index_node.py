@@ -80,7 +80,7 @@ class KnowledgeIndexNode(Node[KnowledgeIndexNodeData]):
                 # Preview mode: generate summaries for chunks directly without saving to database
                 # Format preview and generate summaries on-the-fly
                 # Get indexing_technique and summary_index_setting from node_data (workflow graph config)
-                # or fallback to dataset if not available in node_data
+                # or fall back to dataset if not available in node_data
 
                 outputs = self.index_processor.get_preview_output(
                     chunks, dataset_id, document_id, node_data.chunk_structure, summary_index_setting

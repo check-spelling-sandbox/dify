@@ -142,7 +142,7 @@ def test_flask_configs(monkeypatch: pytest.MonkeyPatch):
 
     # value from env file
     assert config["CONSOLE_API_URL"] == "https://example.com"
-    # fallback to alias choices value as CONSOLE_API_URL
+    # fall back to alias choices value as CONSOLE_API_URL
     assert config["FILES_URL"] == "https://example.com"
 
     assert config["SQLALCHEMY_DATABASE_URI"] == "postgresql://postgres:postgres@localhost:5432/dify"

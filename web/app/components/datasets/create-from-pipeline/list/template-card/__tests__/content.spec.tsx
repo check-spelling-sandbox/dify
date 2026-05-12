@@ -110,7 +110,7 @@ describe('Content', () => {
       expect(screen.getByText(/chunkingMode/i)).toBeInTheDocument()
     })
 
-    it('should fallback to General icon for unknown chunk structure', () => {
+    it('should fall back to General icon for unknown chunk structure', () => {
       const { container } = render(
         <Content {...defaultProps} chunkStructure={'unknown' as ChunkingMode} />,
       )

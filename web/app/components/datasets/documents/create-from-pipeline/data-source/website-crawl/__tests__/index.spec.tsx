@@ -953,7 +953,7 @@ describe('WebsiteCrawl', () => {
       )
     })
 
-    it('should handle undefined paramsConfig.variables (fallback to empty array)', () => {
+    it('should handle undefined paramsConfig.variables (fall back to empty array)', () => {
       // Arrange - Test the || [] fallback on line 169
       mockUsePublishedPipelinePreProcessingParams.mockReturnValue({
         data: { variables: undefined },
@@ -967,7 +967,7 @@ describe('WebsiteCrawl', () => {
       expect(screen.getByTestId('options-variables-count')).toHaveTextContent('0')
     })
 
-    it('should handle undefined paramsConfig (fallback to empty array)', () => {
+    it('should handle undefined paramsConfig (fall back to empty array)', () => {
       // Arrange - Test when paramsConfig is undefined
       mockUsePublishedPipelinePreProcessingParams.mockReturnValue({
         data: undefined,

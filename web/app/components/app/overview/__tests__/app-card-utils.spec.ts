@@ -291,7 +291,7 @@ describe('app-card-utils', () => {
     expect(result.length).toBeGreaterThan(0)
   })
 
-  it('should fallback to plain base64 when CompressionStream is unavailable', async () => {
+  it('should fall back to plain base64 when CompressionStream is unavailable', async () => {
     const original = globalThis.CompressionStream
     // @ts-expect-error remove for test
     delete globalThis.CompressionStream

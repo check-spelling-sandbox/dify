@@ -135,7 +135,7 @@ describe('DocumentTypeDisplay', () => {
       expect(onClick).toHaveBeenCalled()
     })
 
-    it('should fallback to "book" display when displayType is empty and no change link', () => {
+    it('should fall back to "book" display when displayType is empty and no change link', () => {
       render(<DocumentTypeDisplay displayType="" showChangeLink={false} />)
 
       expect(screen.getByText('Book')).toBeInTheDocument()

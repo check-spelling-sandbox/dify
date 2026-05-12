@@ -122,7 +122,7 @@ describe('EmptyState', () => {
     })
 
     describe('unknown search mode', () => {
-      it('should fallback to generic no results message', () => {
+      it('should fall back to generic no results message', () => {
         render(<EmptyState variant="no-results" searchMode="@unknown" />)
 
         expect(screen.getByText('app.gotoAnything.noResults')).toBeInTheDocument()

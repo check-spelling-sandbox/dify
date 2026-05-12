@@ -2419,7 +2419,7 @@ describe('Additional Coverage Tests', () => {
       // Provider should be found but tool should not
       expect(result.current.currentProvider).toBeDefined()
       expect(result.current.currentTool).toBeUndefined()
-      // Parameters should fallback to empty arrays due to || []
+      // Parameters should fall back to empty arrays due to || []
       expect(result.current.currentToolSettings).toEqual([])
       expect(result.current.currentToolParams).toEqual([])
 

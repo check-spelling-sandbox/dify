@@ -62,7 +62,7 @@ describe('base scenario schema generator', () => {
     expect(schema.safeParse({}).success).toBe(false)
   })
 
-  it('should fallback to any schema for unsupported field types', () => {
+  it('should fall back to any schema for unsupported field types', () => {
     const schema = generateZodSchema([{
       type: BaseFieldType.file,
       variable: 'attachment',

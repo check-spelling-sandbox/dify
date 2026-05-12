@@ -54,7 +54,7 @@ describe('CredentialIcon', () => {
   })
 
   describe('User Interactions', () => {
-    it('should fallback to letter when image fails to load', () => {
+    it('should fall back to letter when image fails to load', () => {
       render(<CredentialIcon name="Test" avatarUrl="https://example.com/broken.png" />)
 
       // Initially shows image

@@ -113,7 +113,7 @@ describe('pluginInstallLimit', () => {
     expect(pluginInstallLimit(plugin as never, features as never).canInstall).toBe(true)
   })
 
-  it('should fallback to canInstall true for unrecognized scope', () => {
+  it('should fall back to canInstall true for unrecognized scope', () => {
     const features = {
       plugin_installation_permission: {
         restrict_to_marketplace_only: false,

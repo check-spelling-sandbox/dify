@@ -259,7 +259,7 @@ describe('FileInAttachmentItem', () => {
     windowOpen.mockRestore()
   })
 
-  it('should fallback to base64Url when url is empty for NewPage preview', () => {
+  it('should fall back to base64Url when url is empty for NewPage preview', () => {
     const windowOpen = vi.spyOn(window, 'open').mockImplementation(() => null)
     render(
       <FileInAttachmentItem

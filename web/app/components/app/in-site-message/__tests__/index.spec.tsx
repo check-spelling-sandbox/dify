@@ -62,7 +62,7 @@ describe('InSiteMessage', () => {
       expect(learnMoreButton).toBeInTheDocument()
     })
 
-    it('should fallback to default header background when headerBgUrl is empty string', () => {
+    it('should fall back to default header background when headerBgUrl is empty string', () => {
       const actions: InSiteMessageActionItem[] = [{ action: 'close', action_name: 'dismiss', text: 'Close', type: 'default' }]
 
       const { container } = renderComponent(actions, { headerBgUrl: '' })

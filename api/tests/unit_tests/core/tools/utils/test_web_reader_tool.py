@@ -224,7 +224,7 @@ def test_get_url_content_disposition_filename_detection(monkeypatch: pytest.Monk
 
 def test_get_url_html_encoding_fallback_when_decode_fails(monkeypatch: pytest.MonkeyPatch, stub_support_types):
     """
-    If chardet returns an encoding but content.decode raises, should fallback to response.text.
+    If chardet returns an encoding but content.decode raises, should fall back to response.text.
     """
 
     def fake_head(url, headers=None, follow_redirects=True, timeout=None):

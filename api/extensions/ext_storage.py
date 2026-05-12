@@ -77,7 +77,7 @@ class Storage:
 
                 def create_clickzetta_volume_storage():
                     # ClickZettaVolumeConfig will automatically read from environment variables
-                    # and fallback to CLICKZETTA_* config if CLICKZETTA_VOLUME_* is not set
+                    # and fall back to CLICKZETTA_* config if CLICKZETTA_VOLUME_* is not set
                     volume_config = ClickZettaVolumeConfig()
                     return ClickZettaVolumeStorage(volume_config)
 

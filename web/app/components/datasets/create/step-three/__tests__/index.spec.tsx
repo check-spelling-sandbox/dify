@@ -230,7 +230,7 @@ describe('StepThree', () => {
         expect(description).toBeInTheDocument()
       })
 
-      it('should fallback to creationCache dataset name when datasetName is not provided', () => {
+      it('should fall back to creationCache dataset name when datasetName is not provided', () => {
         const creationCache = createMockCreationCache()
         creationCache.dataset!.name = 'Cache Dataset Name'
 

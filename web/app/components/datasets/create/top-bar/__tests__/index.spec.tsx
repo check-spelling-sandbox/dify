@@ -138,7 +138,7 @@ describe('TopBar', () => {
       it('should handle empty string datasetId', () => {
         renderTopBar({ datasetId: '' })
 
-        // Assert - Empty string is falsy, so fallback to /datasets
+        // Assert - Empty string is falsy, so fall back to /datasets
         const backLink = screen.getByTestId('back-link')
         expect(backLink).toHaveAttribute('href', '/datasets')
       })

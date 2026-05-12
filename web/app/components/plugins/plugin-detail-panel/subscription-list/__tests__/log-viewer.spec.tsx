@@ -154,7 +154,7 @@ describe('LogViewer', () => {
     expect(screen.getAllByTestId('code-editor')[0]).toHaveTextContent('"hello":1')
   })
 
-  it('should fallback to raw payload when decoding fails', () => {
+  it('should fall back to raw payload when decoding fails', () => {
     const log = createLog({ request: { ...createLog().request, data: 'payload=%E0%A4%A' } })
 
     render(<LogViewer logs={[log]} />)

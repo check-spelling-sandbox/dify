@@ -87,7 +87,7 @@ describe('human-input utils', () => {
       })
     })
 
-    it('should fallback to empty string when variable default is missing', () => {
+    it('should fall back to empty string when variable default is missing', () => {
       const formInputs = [
         createInput({
           type: InputVarType.textInput,

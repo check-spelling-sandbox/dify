@@ -196,7 +196,7 @@ describe('BuiltInPipelineList', () => {
       )
     })
 
-    it('should fallback to default language for unsupported locales', () => {
+    it('should fall back to default language for unsupported locales', () => {
       mockLocale = 'fr-FR'
       mockUsePipelineTemplateList.mockReturnValue({
         data: { pipeline_templates: [] },
@@ -212,7 +212,7 @@ describe('BuiltInPipelineList', () => {
       )
     })
 
-    it('should fallback to default language for en-US locale', () => {
+    it('should fall back to default language for en-US locale', () => {
       mockLocale = 'en-US'
       mockUsePipelineTemplateList.mockReturnValue({
         data: { pipeline_templates: [] },

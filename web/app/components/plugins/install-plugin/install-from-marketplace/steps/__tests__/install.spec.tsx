@@ -254,7 +254,7 @@ describe('Install Component (steps/install.tsx)', () => {
       expect(screen.getByTestId('to-install-version')).toHaveTextContent('2.0.0')
     })
 
-    it('should fallback to latest_version when version is undefined', () => {
+    it('should fall back to latest_version when version is undefined', () => {
       const manifest = createMockManifest({ version: undefined as unknown as string, latest_version: '3.0.0' })
       render(<Install {...defaultProps} payload={manifest} />)
 

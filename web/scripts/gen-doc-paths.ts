@@ -144,7 +144,7 @@ async function fetchOpenAPIAndExtractPaths(openapiPath: string): Promise<Endpoin
     for (const method of httpMethods) {
       const operation = pathItem[method]
       if (operation?.summary) {
-        // Try to get tag from operation, fallback to path segment
+        // Try to get tag from operation, fall back to path segment
         const tag = operation.tags?.[0]
         const segment = tag ? summaryToSlug(tag) : getFirstPathSegment(apiPath)
         if (!segment)

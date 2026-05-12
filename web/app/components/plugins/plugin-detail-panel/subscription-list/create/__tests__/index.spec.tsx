@@ -1869,8 +1869,8 @@ describe('CreateSubscriptionButton', () => {
       // Act
       const { container } = render(<CreateSubscriptionButton {...props} />)
 
-      // Assert - should render null when supported methods fallback to empty
-      // Assert - should render null when supported methods fallback to empty
+      // Assert - should render null when supported methods fall back to empty
+      // Assert - should render null when supported methods fall back to empty
       expect(container)!.toBeEmptyDOMElement()
     })
 

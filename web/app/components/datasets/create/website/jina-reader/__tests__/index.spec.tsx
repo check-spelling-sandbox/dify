@@ -963,7 +963,7 @@ describe('JinaReader', () => {
         status: 'completed',
         current: 0,
         total: 0,
-        // data is undefined - should fallback to empty array
+        // data is undefined - should fall back to empty array
       })
 
       const props = createDefaultProps({ onCheckedCrawlResultChange })
@@ -1053,7 +1053,7 @@ describe('JinaReader', () => {
         current: 0,
         total: 0,
         time_consuming: 1.5,
-        // data is undefined - should fallback to empty array
+        // data is undefined - should fall back to empty array
       })
 
       const props = createDefaultProps({ onCheckedCrawlResultChange })
@@ -1101,7 +1101,7 @@ describe('JinaReader', () => {
       })
     })
 
-    it('should fallback to limit when crawlResult has zero total', async () => {
+    it('should fall back to limit when crawlResult has zero total', async () => {
       const mockCreateTask = createJinaReaderTask as Mock
       const mockCheckStatus = checkJinaReaderTaskStatus as Mock
       let resolveCheckStatus: () => void

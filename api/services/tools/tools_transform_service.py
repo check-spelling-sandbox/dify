@@ -249,7 +249,7 @@ class ToolTransformService:
     ) -> ToolProviderApiEntity:
         from core.entities.mcp_provider import MCPConfiguration
 
-        # Use provided user_name to avoid N+1 query, fallback to load_user() if not provided
+        # Use provided user_name to avoid N+1 query, fall back to load_user() if not provided
         if user_name is None:
             user = db_provider.load_user()
             user_name = user.name if user else None
@@ -280,7 +280,7 @@ class ToolTransformService:
     def mcp_tool_to_user_tool(
         mcp_provider: MCPToolProvider, tools: list[MCPTool], user_name: str | None = None
     ) -> list[ToolApiEntity]:
-        # Use provided user_name to avoid N+1 query, fallback to load_user() if not provided
+        # Use provided user_name to avoid N+1 query, fall back to load_user() if not provided
         if user_name is None:
             user = mcp_provider.load_user()
             user_name = user.name if user else "Anonymous"

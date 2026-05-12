@@ -137,7 +137,7 @@ describe('useToolIcon', () => {
     }).result.current).toBe('/datasource.svg')
   })
 
-  it('should fallback to provider_icon when no collection match', () => {
+  it('should fall back to provider_icon when no collection match', () => {
     const data = {
       ...baseNodeData,
       type: BlockEnum.Tool,

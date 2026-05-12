@@ -528,7 +528,7 @@ class DatasourceProviderService:
             )
             is_verified = PluginService.is_plugin_verified(tenant_id, provider_controller.plugin_unique_identifier)
             if is_verified:
-                # fallback to system oauth client params
+                # fall back to system oauth client params
                 oauth_client_params = session.scalar(
                     select(DatasourceOauthParamConfig)
                     .where(

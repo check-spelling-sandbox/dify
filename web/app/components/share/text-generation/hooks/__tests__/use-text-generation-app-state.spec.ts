@@ -231,7 +231,7 @@ describe('useTextGenerationAppState', () => {
     expect(notifyMock).not.toHaveBeenCalled()
   })
 
-  it('should fallback to null custom config when the share metadata omits it', async () => {
+  it('should fall back to null custom config when the share metadata omits it', async () => {
     mockWebAppState.appInfo = {
       ...defaultAppInfo,
       custom_config: null,

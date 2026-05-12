@@ -206,7 +206,7 @@ describe('Form', () => {
       expect(screen.queryByText('*')).not.toBeInTheDocument()
     })
 
-    it('should fallback to en_US label when current language label is not available', () => {
+    it('should fall back to en_US label when current language label is not available', () => {
       const schemasWithEnOnly: FormSchema[] = [
         {
           variable: 'test',

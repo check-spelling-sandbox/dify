@@ -380,7 +380,7 @@ class ClickzettaVector(BaseVector):
 
         # Ensure document_id exists (critical for Dify's format_retrieval_documents)
         if "document_id" not in metadata:
-            metadata["document_id"] = row_id  # fallback to segment id
+            metadata["document_id"] = row_id  # fall back to segment id
 
         return metadata
 
@@ -954,7 +954,7 @@ class ClickzettaVector(BaseVector):
 
                         # Ensure document_id exists (critical for Dify's format_retrieval_documents)
                         if "document_id" not in metadata:
-                            metadata["document_id"] = row[0]  # fallback to segment id
+                            metadata["document_id"] = row[0]  # fall back to segment id
 
                         # Add a relevance score for full-text search
                         metadata["score"] = 1.0  # Clickzetta doesn't provide relevance scores

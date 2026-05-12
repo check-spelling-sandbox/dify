@@ -166,7 +166,7 @@ describe('TriggerByDisplay', () => {
       expect(screen.getByText('Custom Plugin Event')).toBeInTheDocument()
     })
 
-    it('should fallback to default plugin text when no event_name', () => {
+    it('should fall back to default plugin text when no event_name', () => {
       const metadata = createTriggerMetadata({})
 
       render(
@@ -209,7 +209,7 @@ describe('TriggerByDisplay', () => {
       expect(blockIcon).toHaveAttribute('data-tool-icon', 'dark-icon.png')
     })
 
-    it('should fallback to light icon when dark icon not available in dark theme', () => {
+    it('should fall back to light icon when dark icon not available in dark theme', () => {
       mockTheme = Theme.dark
       const metadata = createTriggerMetadata({ icon: 'light-icon.png' })
 
@@ -302,7 +302,7 @@ describe('TriggerByDisplay', () => {
       // Test with a type cast to simulate unknown trigger type
       render(<TriggerByDisplay triggeredFrom={'unknown-type' as WorkflowRunTriggeredFrom} />)
 
-      // Should fallback to default (app-run) icon styling
+      // Should fall back to default (app-run) icon styling
       expect(screen.getByText('unknown-type')).toBeInTheDocument()
     })
 

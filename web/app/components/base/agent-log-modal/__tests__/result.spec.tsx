@@ -83,7 +83,7 @@ describe('ResultPanel', () => {
     expect(screen.getByText('appDebug.agent.agentModeType.ReACT')).toBeInTheDocument()
   })
 
-  it('should fallback to zero tokens when total_tokens is undefined', () => {
+  it('should fall back to zero tokens when total_tokens is undefined', () => {
     render(<ResultPanel {...mockProps} total_tokens={undefined} />)
     expect(screen.getByText('0 Tokens')).toBeInTheDocument()
   })

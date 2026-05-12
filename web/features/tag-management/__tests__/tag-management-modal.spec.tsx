@@ -108,7 +108,7 @@ describe('TagManagementModal', () => {
       expect(screen.getByRole('textbox', { name: i18n.addNew })).toBeInTheDocument()
     })
 
-    it('should fallback to empty placeholder when translation returns empty', () => {
+    it('should fall back to empty placeholder when translation returns empty', () => {
       const mockedTranslation = {
         t: vi.fn().mockReturnValue(''),
         i18n: {} as ReturnType<typeof ReactI18next.useTranslation>['i18n'],

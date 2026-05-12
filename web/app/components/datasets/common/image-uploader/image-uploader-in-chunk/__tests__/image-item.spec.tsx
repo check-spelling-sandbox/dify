@@ -53,7 +53,7 @@ describe('ImageItem (image-uploader-in-chunk)', () => {
       expect(container.firstChild).toBeInTheDocument()
     })
 
-    it('should fallback to sourceUrl when base64Url is not available', () => {
+    it('should fall back to sourceUrl when base64Url is not available', () => {
       const file = createMockFile({ base64Url: undefined })
       const { container } = render(<ImageItem file={file} />)
       expect(container.firstChild).toBeInTheDocument()

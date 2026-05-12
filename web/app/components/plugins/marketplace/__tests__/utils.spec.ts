@@ -451,7 +451,7 @@ describe('getMarketplacePlugins', () => {
     expect(result.page_size).toBe(40)
   })
 
-  it('should handle response with bundles fallback to plugins fallback to empty', async () => {
+  it('should handle response with bundles fallback to plugins fall back to empty', async () => {
     // No bundles and no plugins in response
     mockSearchAdvanced.mockResolvedValueOnce({
       data: { total: 0 },

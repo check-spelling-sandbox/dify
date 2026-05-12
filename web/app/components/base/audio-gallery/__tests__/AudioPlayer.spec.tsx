@@ -435,7 +435,7 @@ describe('AudioPlayer — missing coverage', () => {
     HTMLCanvasElement.prototype.getContext = originalGetContext
   })
 
-  it('should fallback to fillRect when roundRect is missing in drawWaveform', async () => {
+  it('should fall back to fillRect when roundRect is missing in drawWaveform', async () => {
     // Note: React 18 / testing-library wraps updates automatically, but we still wait for advanceWaveformTimer
     const originalGetContext = HTMLCanvasElement.prototype.getContext
     let fillRectCalled = false

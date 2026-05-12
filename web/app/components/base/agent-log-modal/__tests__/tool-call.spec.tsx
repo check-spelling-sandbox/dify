@@ -46,7 +46,7 @@ describe('ToolCallItem', () => {
     expect(screen.getByTestId('block-icon')).toHaveAttribute('data-type', BlockEnum.Tool)
   })
 
-  it('should fallback to locale key with underscores when hyphenated key is missing', () => {
+  it('should fall back to locale key with underscores when hyphenated key is missing', () => {
     vi.mocked(useLocale).mockReturnValueOnce('en-US')
     const fallbackLocaleToolCall = {
       ...mockToolCall,

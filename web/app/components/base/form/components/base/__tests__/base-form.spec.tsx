@@ -233,7 +233,7 @@ describe('BaseForm', () => {
     expect(container)!.toBeEmptyDOMElement()
   })
 
-  it('should fallback to schema class names if props are missing', () => {
+  it('should fall back to schema class names if props are missing', () => {
     const schemaWithClasses: FormSchema[] = [{
       ...baseSchemas[0]!,
       fieldClassName: 'schema-field',

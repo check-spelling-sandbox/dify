@@ -21,7 +21,7 @@ class TraceContextFilter(logging.Filter):
         # Get trace context from OpenTelemetry
         trace_id, span_id = self._get_otel_context()
 
-        # Set trace_id (fallback to ContextVar if no OTEL context)
+        # Set trace_id (fall back to ContextVar if no OTEL context)
         if trace_id:
             record.trace_id = trace_id
         else:

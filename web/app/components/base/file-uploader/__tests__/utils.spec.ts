@@ -326,7 +326,7 @@ describe('file-uploader utils', () => {
       })
     })
 
-    it('should fallback to empty string when url is missing', () => {
+    it('should fall back to empty string when url is missing', () => {
       const files = [{
         id: '123',
         name: 'test.txt',
@@ -343,7 +343,7 @@ describe('file-uploader utils', () => {
       expect(result[0]!.url).toBe('')
     })
 
-    it('should fallback to empty string when uploadedId is missing', () => {
+    it('should fall back to empty string when uploadedId is missing', () => {
       const files = [{
         id: '123',
         name: 'test.txt',

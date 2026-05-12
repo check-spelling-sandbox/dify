@@ -945,7 +945,7 @@ describe('ModerationSettingModal', () => {
     }))
   })
 
-  it('should fallback to empty translated strings for optional placeholders and titles', async () => {
+  it('should fall back to empty translated strings for optional placeholders and titles', async () => {
     const useTranslationSpy = vi.spyOn(i18n, 'useTranslation').mockReturnValue({
       t: (key: string) => [
         'feature.moderation.modal.keywords.placeholder',

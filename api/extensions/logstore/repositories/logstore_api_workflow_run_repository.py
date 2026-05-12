@@ -157,7 +157,7 @@ class LogstoreAPIWorkflowRunRepository(APIWorkflowRunRepository):
         logger.debug("LogstoreAPIWorkflowRunRepository.__init__: initializing")
         self.logstore_client = AliyunLogStore()
 
-        # Control flag for dual-read (fallback to PostgreSQL when LogStore returns no results)
+        # Control flag for dual-read (fall back to PostgreSQL when LogStore returns no results)
         # Set to True to enable fallback for safe migration from PostgreSQL to LogStore
         # Set to False for new deployments without legacy data in PostgreSQL
         self._enable_dual_read = os.environ.get("LOGSTORE_DUAL_READ_ENABLED", "true").lower() == "true"
@@ -282,12 +282,12 @@ class LogstoreAPIWorkflowRunRepository(APIWorkflowRunRepository):
                 # Use PG protocol with SQL query (get latest version of record)
                 sql_query = f"""
                     SELECT * FROM (
-                        SELECT *, 
+                        SELECT *,
                             ROW_NUMBER() OVER (PARTITION BY id ORDER BY log_version DESC) as rn
                         FROM "{AliyunLogStore.workflow_execution_logstore}"
-                        WHERE id = '{escaped_run_id}' 
-                          AND tenant_id = '{escaped_tenant_id}' 
-                          AND app_id = '{escaped_app_id}' 
+                        WHERE id = '{escaped_run_id}'
+                          AND tenant_id = '{escaped_tenant_id}'
+                          AND app_id = '{escaped_app_id}'
                           AND __time__ > 0
                     ) AS subquery WHERE rn = 1
                     LIMIT 100
@@ -384,7 +384,7 @@ class LogstoreAPIWorkflowRunRepository(APIWorkflowRunRepository):
                 # Use PG protocol with SQL query (get latest version of record)
                 sql_query = f"""
                     SELECT * FROM (
-                        SELECT *, 
+                        SELECT *,
                             ROW_NUMBER() OVER (PARTITION BY id ORDER BY log_version DESC) as rn
                         FROM "{AliyunLogStore.workflow_execution_logstore}"
                         WHERE id = '{escaped_run_id}' AND __time__ > 0

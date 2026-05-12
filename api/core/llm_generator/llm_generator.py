@@ -184,7 +184,7 @@ class LLMGenerator:
                     use_configured_model = True
                 except Exception:
                     logger.warning(
-                        "Failed to use configured suggested-questions model %s/%s, fallback to default model",
+                        "Failed to use configured suggested-questions model %s/%s, fall back to default model",
                         provider,
                         model_name,
                         exc_info=True,

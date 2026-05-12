@@ -255,7 +255,7 @@ describe('Card', () => {
 
       const { container } = render(<Card payload={plugin} />)
 
-      // Should fallback to light icon
+      // Should fall back to light icon
       const iconElement = container.querySelector('[style*="background-image"]')
       expect(iconElement).toBeInTheDocument()
       expect(iconElement).toHaveStyle({ backgroundImage: 'url(/light-icon.png)' })

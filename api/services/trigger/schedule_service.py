@@ -141,7 +141,7 @@ class ScheduleService:
         ).scalar_one_or_none()
 
         if not result:
-            # Owner may not exist in some tenant configurations, fallback to admin
+            # Owner may not exist in some tenant configurations, fall back to admin
             result = session.execute(
                 select(TenantAccountJoin)
                 .where(TenantAccountJoin.tenant_id == tenant_id, TenantAccountJoin.role == "admin")

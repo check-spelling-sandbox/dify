@@ -153,7 +153,7 @@ describe('InSiteMessageNotification', () => {
       })
     })
 
-    it('should fallback to raw body and default close action when body is invalid json', async () => {
+    it('should fall back to raw body and default close action when body is invalid json', async () => {
       mockNotification.mockResolvedValue({
         notifications: [
           {
@@ -191,7 +191,7 @@ describe('InSiteMessageNotification', () => {
       })
     })
 
-    it('should fallback to default close action when parsed actions are all invalid', async () => {
+    it('should fall back to default close action when parsed actions are all invalid', async () => {
       mockNotification.mockResolvedValue({
         notifications: [
           {

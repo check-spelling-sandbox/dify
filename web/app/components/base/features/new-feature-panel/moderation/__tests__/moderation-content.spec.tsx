@@ -126,7 +126,7 @@ describe('ModerationContent', () => {
     expect(screen.getByText('100')).toBeInTheDocument()
   })
 
-  it('should fallback to empty placeholder when translation is empty', () => {
+  it('should fall back to empty placeholder when translation is empty', () => {
     const useTranslationSpy = vi.spyOn(i18n, 'useTranslation').mockReturnValue({
       t: (key: string) => key === 'feature.moderation.modal.content.placeholder' ? '' : key,
       i18n: { language: 'en-US' },

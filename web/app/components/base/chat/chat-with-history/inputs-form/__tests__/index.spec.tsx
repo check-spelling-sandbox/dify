@@ -141,7 +141,7 @@ describe('InputsFormNode', () => {
     expect(outerDiv).toHaveClass('pt-4')
 
     // Check padding in expanded content (p-4 for mobile)
-    // Prefer a test id for the content wrapper; fallback to finding the label's closest ancestor
+    // Prefer a test id for the content wrapper; fall back to finding the label's closest ancestor
     const contentWrapper = screen.queryByTestId('inputs-form-content-wrapper') ?? screen.getByText('Test Label').closest('.p-4')
     expect(contentWrapper).toBeInTheDocument()
   })

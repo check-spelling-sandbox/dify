@@ -165,7 +165,7 @@ describe('HITLInputNode', () => {
     })
   })
 
-  it('should fallback to empty form inputs when imported payload omits formInputs', () => {
+  it('should fall back to empty form inputs when imported payload omits formInputs', () => {
     const editor = createTestEditor()
     const props = createNodeProps()
 

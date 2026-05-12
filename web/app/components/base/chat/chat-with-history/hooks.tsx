@@ -124,7 +124,7 @@ export const useChatWithHistory = (installedAppInfo?: InstalledApp) => {
       }
       catch {
         // localStorage may be disabled in private browsing mode or by security settings
-        // fallback to default value
+        // fall back to default value
         return false
       }
     }

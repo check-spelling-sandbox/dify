@@ -256,7 +256,7 @@ class TestStructuredJSONFormatter:
         # Set is not serializable by orjson
         record.attributes = {"items": {1, 2, 3}, "custom": object()}
 
-        # Should not raise, fallback to json.dumps with default=str
+        # Should not raise, fall back to json.dumps with default=str
         output = formatter.format(record)
 
         # Verify it's valid JSON (parsed by stdlib json since orjson may fail)

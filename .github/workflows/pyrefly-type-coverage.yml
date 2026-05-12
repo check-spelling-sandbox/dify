@@ -99,7 +99,7 @@ jobs:
             }
             const prNumber = context.payload.pull_request.number;
 
-            // Update existing comment if one exists, otherwise create new
+            // Update existing comment if one exists; otherwise, create new
             const { data: comments } = await github.rest.issues.listComments({
               issue_number: prNumber,
               owner: context.repo.owner,

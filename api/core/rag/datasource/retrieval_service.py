@@ -627,7 +627,7 @@ class RetrievalService:
                     if segment.id not in include_segment_ids:
                         include_segment_ids.add(segment.id)
                         # Check if this segment was retrieved via summary
-                        # Use summary score as base score if available, otherwise 0.0
+                        # Use summary score as base score if available; otherwise, 0.0
                         max_score = summary_score_map.get(segment.id, 0.0)
 
                         if child_chunks or attachment_infos:

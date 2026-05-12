@@ -92,7 +92,7 @@ jobs:
               throw new Error('PR number not found in artifact or workflow_run payload');
             }
 
-            // Update existing comment if one exists, otherwise create new
+            // Update existing comment if one exists; otherwise, create new
             const { data: comments } = await github.rest.issues.listComments({
               issue_number: prNumber,
               owner: context.repo.owner,

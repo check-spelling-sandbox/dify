@@ -12,7 +12,7 @@ def handle(sender, **kwargs):
 
     tenant = sender
 
-    # Determine source from kwargs if available, otherwise use generic
+    # Determine source from kwargs if available; otherwise, use generic
     source = kwargs.get("source", "tenant_created")
 
     # Queue credential sync task to Redis for enterprise backend to process

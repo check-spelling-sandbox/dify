@@ -197,7 +197,7 @@ class TestSetDefaultProvider:
     @patch(f"{MODULE}.sessionmaker")
     @patch(f"{MODULE}.db")
     def test_clear_default_is_tenant_scoped_not_user_scoped(self, mock_db, mock_sm_cls):
-        # Regression: clearing prior defaults must NOT filter by user_id, otherwise
+        # Regression: clearing prior defaults must NOT filter by user_id; otherwise,
         # two workspace members can each leave their own credential as default at
         # the same time (the default flag is tenant-scoped, not per-user).
         session = _mock_sessionmaker(mock_sm_cls)

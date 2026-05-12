@@ -76,7 +76,7 @@ const useBatchEditDocumentMetadata = ({ datasetId, docList, selectedDocumentIds,
         return true
       return false
     })
-    // Use selectedDocumentIds if available, otherwise fall back to docList
+    // Use selectedDocumentIds if available; otherwise, fall back to docList
     const documentIds = selectedDocumentIds || docList.map(doc => doc.id)
     const res: MetadataBatchEditToServer = documentIds.map((documentId) => {
       // Find the document in docList to get its metadata

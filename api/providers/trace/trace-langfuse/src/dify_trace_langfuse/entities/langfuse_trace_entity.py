@@ -115,7 +115,7 @@ class LangfuseSpan(BaseModel):
 
     id: str | None = Field(
         default=None,
-        description="The id of the span can be set, otherwise a random id is generated. Spans are upserted on id.",
+        description="The id of the span can be set; otherwise, a random id is generated. Spans are upserted on id.",
     )
     session_id: str | None = Field(
         default=None,

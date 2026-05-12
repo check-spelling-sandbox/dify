@@ -96,7 +96,7 @@ def ssrf_proxy_sse_connect(url: str, **kwargs) -> AbstractContextManager[httpx_s
         will be cleaned up automatically.
     """
 
-    # Extract client if provided, otherwise create one
+    # Extract client if provided; otherwise, create one
     client = kwargs.pop("client", None)
     if client is None:
         # Create client with SSRF proxy configuration

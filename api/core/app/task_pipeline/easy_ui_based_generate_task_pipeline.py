@@ -534,7 +534,7 @@ class EasyUIBasedGenerateTaskPipeline(BasedGenerateTaskPipeline):
         """
         Handle output moderation chunk.
         :param text: text
-        :return: True if output moderation should direct output, otherwise False
+        :return: True if output moderation should direct output; otherwise, False
         """
         if self.output_moderation_handler:
             if self.output_moderation_handler.should_direct_output():

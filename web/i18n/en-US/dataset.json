@@ -107,7 +107,7 @@
   "localDocs": "Local Docs",
   "metadata.addMetadata": "Add Metadata",
   "metadata.batchEditMetadata.applyToAllSelectDocument": "Apply to all selected documents",
-  "metadata.batchEditMetadata.applyToAllSelectDocumentTip": "Automatically create all the above edited and new metadata for all selected documents, otherwise editing metadata will only apply to documents with it.",
+  "metadata.batchEditMetadata.applyToAllSelectDocumentTip": "Automatically create all the above edited and new metadata for all selected documents; otherwise, editing metadata will only apply to documents with it.",
   "metadata.batchEditMetadata.editDocumentsNum": "Editing {{num}} documents",
   "metadata.batchEditMetadata.editMetadata": "Edit Metadata",
   "metadata.batchEditMetadata.multipleValue": "Multiple Value",

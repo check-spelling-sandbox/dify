@@ -49,7 +49,7 @@ class CorrelationIdGenerator(IdGenerator):
 
     - trace_id: always derived from correlation_id (groups all spans in one trace)
     - span_id: derived from span_id_source when set (enables deterministic
-      parent-child linking), otherwise random
+      parent-child linking); otherwise, random
     """
 
     def generate_trace_id(self) -> int:

@@ -181,7 +181,7 @@ class SummaryIndexService:
             original_session is not None,
         )
 
-        # Reuse existing index_node_id if available (like segment does), otherwise generate new one
+        # Reuse existing index_node_id if available (like segment does); otherwise, generate new one
         old_summary_node_id = summary_record.summary_index_node_id
         if old_summary_node_id:
             # Reuse existing index_node_id (like segment behavior)
@@ -275,7 +275,7 @@ class SummaryIndexService:
                     )
 
                 # Success - update summary record with index node info
-                # Use provided session if available, otherwise create a new one
+                # Use provided session if available; otherwise, create a new one
                 use_provided_session = session is not None
                 if not use_provided_session:
                     logger.debug("Creating new session for vectorization of segment %s", segment.id)

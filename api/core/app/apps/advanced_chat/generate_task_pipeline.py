@@ -1091,7 +1091,7 @@ class AdvancedChatAppGenerateTaskPipeline(GraphRuntimeStateSupport):
         """
         Handle output moderation chunk.
         :param text: text
-        :return: True if output moderation should direct output, otherwise False
+        :return: True if output moderation should direct output; otherwise, False
         """
         if self._base_task_pipeline.output_moderation_handler:
             if self._base_task_pipeline.output_moderation_handler.should_direct_output():

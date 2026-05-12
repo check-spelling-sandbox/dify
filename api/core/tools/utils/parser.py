@@ -229,7 +229,7 @@ class ApiBasedToolSchemaParser:
             value: The default value from OpenAPI schema
 
         Returns:
-            None for complex types (list, dict), otherwise the original value
+            None for complex types (list, dict); otherwise, the original value
         """
         if isinstance(value, (list, dict)):
             return None

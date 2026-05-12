@@ -173,7 +173,7 @@ class WeaviateVector(BaseVector):
         """
         Retrieves or generates the collection name for a dataset.
 
-        Uses existing index structure if available, otherwise generates from dataset ID.
+        Uses existing index structure if available; otherwise, generates from dataset ID.
         """
         if dataset.index_struct_dict:
             class_prefix: str = dataset.index_struct_dict["vector_store"]["class_prefix"]

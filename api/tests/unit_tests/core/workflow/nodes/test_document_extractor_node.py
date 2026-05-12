@@ -560,7 +560,7 @@ def _make_docx_zip(use_backslash: bool) -> bytes:
     """Helper to build a minimal in-memory DOCX zip.
 
     When use_backslash=True the ZIP entry names use backslash separators
-    (as produced by Evernote on Windows), otherwise forward slashes are used.
+    (as produced by Evernote on Windows); otherwise, forward slashes are used.
     """
     import zipfile
 

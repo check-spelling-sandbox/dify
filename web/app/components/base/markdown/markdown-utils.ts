@@ -55,7 +55,7 @@ export const preprocessThinkTag = (content: string) => {
  *    'http:', 'https:', 'mailto:', 'xmpp:', 'irc:', 'ircs:'.
  * 6. Intelligently distinguishes colons used for schemes from colons within
  *    paths, query parameters, or fragments of relative-like URLs.
- * 7. Returns the original URI if allowed, otherwise returns `undefined` to
+ * 7. Returns the original URI if allowed; otherwise, returns `undefined` to
  *    signal that the URI should be removed/disallowed by react-markdown.
  */
 export const customUrlTransform = (uri: string): string | undefined => {

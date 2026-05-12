@@ -103,7 +103,7 @@ class MilvusVector(BaseVector):
     def _check_hybrid_search_support(self) -> bool:
         """
         Check if the current Milvus version supports hybrid search.
-        Returns True if the version is >= 2.5.0, otherwise False.
+        Returns True if the version is >= 2.5.0; otherwise, False.
         """
         if not self._client_config.enable_hybrid_search:
             return False

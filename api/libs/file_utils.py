@@ -11,7 +11,7 @@ def search_file_upwards(
     :param base_dir_path: Starting directory path to search from.
     :param target_file_name: Name of the file to search for.
     :param max_search_parent_depth: Maximum number of parent directories to search upwards.
-    :return: Path of the file if found, otherwise None.
+    :return: Path of the file if found; otherwise, None.
     """
     current_path = base_dir_path.resolve()
     for _ in range(max_search_parent_depth):

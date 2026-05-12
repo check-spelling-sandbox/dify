@@ -861,7 +861,7 @@ class WebhookService:
         status_code = node_data.status_code
         response_body = node_data.response_body
 
-        # Parse response body as JSON if it's valid JSON, otherwise return as text
+        # Parse response body as JSON if it's valid JSON; otherwise, return as text
         try:
             if response_body:
                 try:

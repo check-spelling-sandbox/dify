@@ -12,7 +12,7 @@ body:
           required: true
         - label: I have searched for existing issues [search for existing issues](https://github.com/langgenius/dify/issues), including closed ones.
           required: true
-        - label: I confirm that I am using English to submit this report, otherwise it will be closed.
+        - label: I confirm that I am using English to submit this report; otherwise, it will be closed.
           required: true
         - label: "Please do not modify this template :) and fill in all the required fields."
           required: true

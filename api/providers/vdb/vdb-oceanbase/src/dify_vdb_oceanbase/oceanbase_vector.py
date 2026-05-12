@@ -219,7 +219,7 @@ class OceanBaseVector(BaseVector):
     def _check_hybrid_search_support(self) -> bool:
         """
         Check if the current OceanBase version supports hybrid search.
-        Returns True if the version is >= 4.3.5.1, otherwise False.
+        Returns True if the version is >= 4.3.5.1; otherwise, False.
         """
         if not self._config.enable_hybrid_search:
             return False

@@ -168,7 +168,7 @@ def generate_traceparent_header() -> str | None:
     """
     Generate a W3C traceparent header from the current context.
 
-    Uses OpenTelemetry context if available, otherwise uses the
+    Uses OpenTelemetry context if available; otherwise, uses the
     ContextVar-based trace_id from the logging context.
 
     Format: {version}-{trace_id}-{span_id}-{flags}

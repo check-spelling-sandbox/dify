@@ -203,7 +203,7 @@
   "generate.instructionPlaceHolderTitle": "Describe how you would like to improve this Prompt. For example:",
   "generate.latest": "Latest",
   "generate.loading": "Orchestrating the application for you...",
-  "generate.newNoDataLine1": "Write a instruction in the left column, and click Generate to see response. ",
+  "generate.newNoDataLine1": "Write an instruction in the left column, and click Generate to see response. ",
   "generate.optimizationNote": "Optimization Note",
   "generate.optimizePromptTooltip": "Optimize in Prompt Generator",
   "generate.optional": "Optional",

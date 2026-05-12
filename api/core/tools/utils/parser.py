@@ -189,7 +189,7 @@ class ApiBasedToolSchemaParser:
                 if count > 1:
                     warning["duplicated_parameter"] = f"Parameter {name} is duplicated."
 
-            # check if there is a operation id, use $path_$method as operation id if not
+            # check if there is an operation id, use $path_$method as operation id if not
             if "operationId" not in interface["operation"]:
                 # remove special characters like / to ensure the operation id is valid ^[a-zA-Z0-9_-]{1,64}$
                 path = interface["path"]

@@ -118,7 +118,7 @@ def sort_to_dict_by_position_map[T](
     name_func: Callable[[T], str],
 ) -> OrderedDict[str, T]:
     """
-    Sort the objects into a ordered dict by the position map.
+    Sort the objects into an ordered dict by the position map.
     If the name of the object is not in the position map, it will be put at the end.
     :param position_map: the map holding positions in the form of {name: index}
     :param name_func: the function to get the name of the object

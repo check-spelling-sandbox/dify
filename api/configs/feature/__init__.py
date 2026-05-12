@@ -35,7 +35,7 @@ class SecurityConfig(BaseSettings):
     )
 
     EMAIL_REGISTER_TOKEN_EXPIRY_MINUTES: PositiveInt = Field(
-        description="Duration in minutes for which a email register token remains valid",
+        description="Duration in minutes for which an email register token remains valid",
         default=5,
     )
 
@@ -45,7 +45,7 @@ class SecurityConfig(BaseSettings):
     )
 
     OWNER_TRANSFER_TOKEN_EXPIRY_MINUTES: PositiveInt = Field(
-        description="Duration in minutes for which a owner transfer token remains valid",
+        description="Duration in minutes for which an owner transfer token remains valid",
         default=5,
     )
 
@@ -414,7 +414,7 @@ class FileUploadConfig(BaseSettings):
     )
 
     IMAGE_FILE_BATCH_LIMIT: PositiveInt = Field(
-        description="Maximum number of files allowed in a image batch upload operation",
+        description="Maximum number of files allowed in an image batch upload operation",
         default=10,
     )
 
@@ -1405,7 +1405,7 @@ class LoginConfig(BaseSettings):
 
 class AccountConfig(BaseSettings):
     ACCOUNT_DELETION_TOKEN_EXPIRY_MINUTES: PositiveInt = Field(
-        description="Duration in minutes for which a account deletion token remains valid",
+        description="Duration in minutes for which an account deletion token remains valid",
         default=5,
     )
 

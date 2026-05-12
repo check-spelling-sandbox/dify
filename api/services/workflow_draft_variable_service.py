@@ -215,7 +215,7 @@ class WorkflowDraftVariableService:
         """
         self._session = session
         engine = session.get_bind()
-        # Ensure the session is bound to a engine.
+        # Ensure the session is bound to an engine.
         assert isinstance(engine, Engine)
         session_maker = sessionmaker(bind=engine, expire_on_commit=False)
         self._api_node_execution_repo = DifyAPIRepositoryFactory.create_api_workflow_node_execution_repository(

@@ -1,4 +1,4 @@
-"""add app_mode for messsage
+"""add app_mode for message
 
 Revision ID: d98acf217d43
 Revises: 68519ad5cd18

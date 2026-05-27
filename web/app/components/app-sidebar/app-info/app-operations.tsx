@@ -35,7 +35,7 @@ const AppOperations = ({
   gap,
 }: AppOperationsProps) => {
   const { t } = useTranslation()
-  const [visibleOpreations, setVisibleOperations] = useState<Operation[]>([])
+  const [visibleOperations, setVisibleOperations] = useState<Operation[]>([])
   const [moreOperations, setMoreOperations] = useState<Operation[]>([])
   const [showMore, setShowMore] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
@@ -156,7 +156,7 @@ const AppOperations = ({
         </Button>
       </div>
       <div className="flex items-center self-stretch overflow-hidden" style={{ gap }}>
-        {visibleOpreations.map(operation => (
+        {visibleOperations.map(operation => (
           <Button
             key={operation.id}
             data-targetid={operation.id}

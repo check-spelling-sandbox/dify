@@ -80,7 +80,7 @@ const CredentialSelector = ({
       </PopoverTrigger>
       <PopoverContent
         sideOffset={0}
-        popupClassName="border-ccomponents-panel-border rounded-xl border-[0.5px] bg-components-panel-bg-blur p-0"
+        popupClassName="border-components-panel-border rounded-xl border-[0.5px] bg-components-panel-bg-blur p-0"
         popupProps={{ style: { width: 'var(--anchor-width, auto)' } }}
       >
         <div className="max-h-[320px] overflow-y-auto p-1">

@@ -1,7 +1,7 @@
 import * as z from 'zod'
 
-const arrayStringSchemaParttern = z.array(z.string())
-const arrayNumberSchemaParttern = z.array(z.number())
+const arrayStringSchemaPattern = z.array(z.string())
+const arrayNumberSchemaPattern = z.array(z.number())
 
 // # jsonSchema from https://zod.dev/?id=json-type
 const literalSchema = z.union([z.string(), z.number(), z.boolean(), z.null()])
@@ -12,11 +12,11 @@ const arrayJsonSchema: z.ZodType<Json[]> = z.lazy(() => z.array(jsonSchema))
 
 export const validateJSONSchema = (schema: any, type: string) => {
   if (type === 'array[string]') {
-    const result = arrayStringSchemaParttern.safeParse(schema)
+    const result = arrayStringSchemaPattern.safeParse(schema)
     return result
   }
   else if (type === 'array[number]') {
-    const result = arrayNumberSchemaParttern.safeParse(schema)
+    const result = arrayNumberSchemaPattern.safeParse(schema)
     return result
   }
   else if (type === 'object') {

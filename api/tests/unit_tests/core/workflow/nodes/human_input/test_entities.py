@@ -361,7 +361,7 @@ class TestHumanInputNodeData:
             HumanInputNodeData(title="Test Node", user_actions=duplicate_actions)
 
     def test_extract_outputs_field_names(self):
-        content = r"""This is titile {{#start.title#}}
+        content = r"""This is title {{#start.title#}}
 
         A content is required:
 

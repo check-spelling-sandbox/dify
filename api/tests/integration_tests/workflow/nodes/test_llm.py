@@ -311,7 +311,7 @@ def test_execute_llm_with_jinja2(monkeypatch):
 
 def test_extract_json():
     llm_texts = [
-        '<think>\n\n</think>{"name": "test", "age": 123',  # resoning model (deepseek-r1)
+        '<think>\n\n</think>{"name": "test", "age": 123',  # reasoning model (deepseek-r1)
         '{"name":"test","age":123}',  # json schema model (gpt-4o)
         '{\n    "name": "test",\n    "age": 123\n}',  # small model (llama-3.2-1b)
         '```json\n{"name": "test", "age": 123}\n```',  # json markdown (deepseek-chat)

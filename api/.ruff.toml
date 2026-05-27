@@ -47,7 +47,7 @@ select = [
     "S110",    # disallow the try-except-pass pattern.
 
     # security related linting rules
-    # RCE proctection (sort of)
+    # RCE protection (sort of)
     "S102", # exec-builtin, disallow use of `exec`
     "S307", # suspicious-eval-usage, disallow use of `eval` and `ast.literal_eval`
     "S301", # suspicious-pickle-usage, disallow use of `pickle` and its wrappers.

@@ -708,7 +708,7 @@ services:
       - weaviate
     restart: always
     volumes:
-      # Mount the Weaviate data directory to the con tainer.
+      # Mount the Weaviate data directory to the container.
       - ./volumes/weaviate:/var/lib/weaviate
     environment:
       # The Weaviate configurations

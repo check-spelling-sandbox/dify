@@ -19,7 +19,7 @@ import useConfig from './use-config'
 
 const i18nPrefix = 'nodes.agent'
 
-function strategyParamToCredientialForm(param: StrategyParamItem): CredentialFormSchema {
+function strategyParamToCredentialForm(param: StrategyParamItem): CredentialFormSchema {
   return {
     ...param as any,
     variable: param.name,
@@ -79,7 +79,7 @@ const AgentPanel: FC<NodePanelProps<AgentNodeType>> = (props) => {
               })
               resetEditor(Date.now())
             }}
-            formSchema={currentStrategy?.parameters?.map(strategyParamToCredientialForm) || []}
+            formSchema={currentStrategy?.parameters?.map(strategyParamToCredentialForm) || []}
             formValue={formData}
             onFormValueChange={onFormChange}
             nodeOutputVars={availableVars}

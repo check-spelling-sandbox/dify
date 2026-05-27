@@ -1,4 +1,4 @@
-"""add_app_anntation_setting
+"""add_app_annotation_setting
 
 Revision ID: 246ba09cbbdb
 Revises: 714aafe25d39

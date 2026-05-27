@@ -99,7 +99,7 @@ class EnterpriseOtelTrace:
             case PromptGenerationTraceInfo():
                 self._prompt_generation_trace(trace_info)
             case _:
-                raise AssertionError("this statment should be unreachable")
+                raise AssertionError("this statement should be unreachable")
 
     def _common_attrs(self, trace_info: BaseTraceInfo) -> dict[str, Any]:
         metadata = self._metadata(trace_info)

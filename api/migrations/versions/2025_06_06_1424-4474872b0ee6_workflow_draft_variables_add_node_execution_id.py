@@ -1,4 +1,4 @@
-"""`workflow_draft_varaibles` add `node_execution_id` column, add an index for `workflow_node_executions`.
+"""`workflow_draft_variables` add `node_execution_id` column, add an index for `workflow_node_executions`.
 
 Revision ID: 4474872b0ee6
 Revises: 2adcbe1f5dfb

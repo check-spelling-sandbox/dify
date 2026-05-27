@@ -27,7 +27,7 @@ from services.errors.audio import (
     AudioTooLargeServiceError,
     NoAudioUploadedServiceError,
     ProviderNotSupportSpeechToTextServiceError,
-    ProviderNotSupportTextToSpeechLanageServiceError,
+    ProviderNotSupportTextToSpeechLanguageServiceError,
     UnsupportedAudioTypeServiceError,
 )
 
@@ -143,7 +143,7 @@ def test_console_text_modes_language_error(app, monkeypatch: pytest.MonkeyPatch)
     monkeypatch.setattr(
         AudioService,
         "transcript_tts_voices",
-        lambda **_kwargs: (_ for _ in ()).throw(ProviderNotSupportTextToSpeechLanageServiceError()),
+        lambda **_kwargs: (_ for _ in ()).throw(ProviderNotSupportTextToSpeechLanguageServiceError()),
     )
 
     api = TextModesApi()

@@ -18,5 +18,5 @@ class ProviderNotSupportTextToSpeechServiceError(Exception):
     pass
 
 
-class ProviderNotSupportTextToSpeechLanageServiceError(Exception):
+class ProviderNotSupportTextToSpeechLanguageServiceError(Exception):
     pass

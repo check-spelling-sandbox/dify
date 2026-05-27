@@ -2071,7 +2071,7 @@ class WorkflowPauseReason(DefaultFieldsDCMixin, TypeBase):
     # message records the text description of this pause reason. For example,
     # "The workflow has been paused due to scheduling."
     #
-    # Empty message means that this pause reason is not speified.
+    # Empty message means that this pause reason is not specified.
     message: Mapped[str] = mapped_column(
         String(255),
         nullable=False,

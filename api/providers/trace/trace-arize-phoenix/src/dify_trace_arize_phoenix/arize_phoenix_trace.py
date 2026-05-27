@@ -274,7 +274,7 @@ def safe_json_dumps(obj: Any) -> str:
 
 
 def wrap_span_metadata(metadata, **kwargs):
-    """Add common metatada to all trace entity types for Arize/Phoenix."""
+    """Add common metadata to all trace entity types for Arize/Phoenix."""
     metadata["created_from"] = "Dify"
     metadata.update(kwargs)
     return metadata

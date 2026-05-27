@@ -142,14 +142,14 @@ class TencentVector(BaseVector):
                 metric_type,
                 params,
             )
-            index_metadate = vdb_index.FilterIndex(self.field_metadata, enum.FieldType.Json, enum.IndexType.FILTER)
+            index_metadata = vdb_index.FilterIndex(self.field_metadata, enum.FieldType.Json, enum.IndexType.FILTER)
             index_sparse_vector = vdb_index.SparseIndex(
                 name="sparse_vector",
                 field_type=enum.FieldType.SparseVector,
                 index_type=enum.IndexType.SPARSE_INVERTED,
                 metric_type=enum.MetricType.IP,
             )
-            indexes = [index_id, index_vector, index_metadate]
+            indexes = [index_id, index_vector, index_metadata]
             if self._enable_hybrid_search:
                 indexes.append(index_sparse_vector)
             try:
@@ -165,10 +165,10 @@ class TencentVector(BaseVector):
                 if "fieldType:json" not in e.message:
                     raise e
                 # vdb version not support json, use string
-                index_metadate = vdb_index.FilterIndex(
+                index_metadata = vdb_index.FilterIndex(
                     self.field_metadata, enum.FieldType.String, enum.IndexType.FILTER
                 )
-                indexes = [index_id, index_vector, index_metadate]
+                indexes = [index_id, index_vector, index_metadata]
                 if self._enable_hybrid_search:
                     indexes.append(index_sparse_vector)
                 self._client.create_collection(

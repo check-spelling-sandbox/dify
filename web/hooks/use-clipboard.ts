@@ -23,7 +23,7 @@ export function useClipboard({
   const [copied, setCopied] = useState(false)
   const copyTimeoutRef = useRef<number | null>(null)
 
-  const stablizedOnCopyError = useStableHandler<[e: Error], void>(onCopyError || noop)
+  const stabilizedOnCopyError = useStableHandler<[e: Error], void>(onCopyError || noop)
 
   const handleCopyResult = useCallback((isCopied: boolean) => {
     if (copyTimeoutRef.current) {
@@ -37,8 +37,8 @@ export function useClipboard({
 
   const handleCopyError = useCallback((e: Error) => {
     setError(e)
-    stablizedOnCopyError(e)
-  }, [stablizedOnCopyError])
+    stabilizedOnCopyError(e)
+  }, [stabilizedOnCopyError])
 
   const copy = useCallback(async (valueToCopy: string) => {
     try {

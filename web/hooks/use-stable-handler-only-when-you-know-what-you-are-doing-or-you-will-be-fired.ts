@@ -39,6 +39,6 @@ export function useStableHandler<Args extends any[], Result>(
  */
 function shouldNotBeInvokedBeforeMount() {
   throw new Error(
-    'foxact: the stablized handler cannot be invoked before the component has mounted.',
+    'foxact: the stabilized handler cannot be invoked before the component has mounted.',
   )
 }

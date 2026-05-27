@@ -60,7 +60,7 @@ class TriggerPostLayer(GraphEngineLayer):
                 # Extract relevant data from result
                 outputs = self.graph_runtime_state.outputs
 
-                # BASICLY, workflow_execution_id is the same as workflow_run_id
+                # BASICALLY, workflow_execution_id is the same as workflow_run_id
                 workflow_run_id = get_system_text(
                     self.graph_runtime_state.variable_pool,
                     SystemVariableKey.WORKFLOW_EXECUTION_ID,

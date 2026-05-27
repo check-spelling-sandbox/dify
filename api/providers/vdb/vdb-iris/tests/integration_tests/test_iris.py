@@ -39,6 +39,6 @@ def test_iris_vector(setup_mock_redis) -> None:
     """Run all IRIS vector store tests.
 
     Args:
-        setup_mock_redis: Pytest fixture for mock Redis setup
+        setup_mock_redis: pytest fixture for mock Redis setup
     """
     IrisVectorTest().run_all_tests()

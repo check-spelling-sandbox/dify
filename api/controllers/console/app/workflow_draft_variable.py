@@ -480,12 +480,12 @@ class VariableResetApi(Resource):
             variable_id=variable_id_str,
         )
 
-        resetted = draft_var_srv.reset_variable(draft_workflow, variable)
+        reset = draft_var_srv.reset_variable(draft_workflow, variable)
         db.session.commit()
-        if resetted is None:
+        if reset is None:
             return Response("", 204)
         else:
-            return marshal(resetted, workflow_draft_variable_model)
+            return marshal(reset, workflow_draft_variable_model)
 
 
 def _get_variable_list(app_model: App, node_id) -> WorkflowDraftVariableList:

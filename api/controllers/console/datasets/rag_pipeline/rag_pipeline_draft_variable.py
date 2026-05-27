@@ -289,12 +289,12 @@ class RagPipelineVariableResetApi(Resource):
         if variable.app_id != pipeline.id:
             raise NotFoundError(description=f"variable not found, id={variable_id_str}")
 
-        resetted = draft_var_srv.reset_variable(draft_workflow, variable)
+        reset = draft_var_srv.reset_variable(draft_workflow, variable)
         db.session.commit()
-        if resetted is None:
+        if reset is None:
             return Response("", 204)
         else:
-            return marshal(resetted, _WORKFLOW_DRAFT_VARIABLE_FIELDS)
+            return marshal(reset, _WORKFLOW_DRAFT_VARIABLE_FIELDS)
 
 
 def _get_variable_list(pipeline: Pipeline, node_id) -> WorkflowDraftVariableList:

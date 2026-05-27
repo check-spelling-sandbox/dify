@@ -1,4 +1,4 @@
-"""add_tenant_plugin_permisisons
+"""add_tenant_plugin_permissions
 
 Revision ID: 08ec4f75af5e
 Revises: ddcc8bbef391

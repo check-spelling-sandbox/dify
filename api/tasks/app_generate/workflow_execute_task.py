@@ -51,7 +51,7 @@ class _EndUser(BaseModel):
     end_user_id: str
 
 
-def _get_user_type_descriminator(value: Any):
+def _get_user_type_discriminator(value: Any):
     if isinstance(value, (_Account, _EndUser)):
         return value.TYPE
     elif isinstance(value, dict):
@@ -70,7 +70,7 @@ def _get_user_type_descriminator(value: Any):
 
 type User = Annotated[
     (Annotated[_Account, Tag(_UserType.ACCOUNT)] | Annotated[_EndUser, Tag(_UserType.END_USER)]),
-    Discriminator(_get_user_type_descriminator),
+    Discriminator(_get_user_type_discriminator),
 ]
 
 

@@ -109,7 +109,7 @@ function createMockProviderContext(overrides: Partial<ProviderContextState> = {}
         ],
       },
     ],
-    hasSettedApiKey: true,
+    hasSetApiKey: true,
     modelProviders: [],
     speech2textDefaultModel: null,
     ttsDefaultModel: null,

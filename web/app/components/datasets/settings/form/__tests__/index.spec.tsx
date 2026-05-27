@@ -180,7 +180,7 @@ vi.mock('@/context/provider-context', () => ({
     speech2textModelList: [],
     ttsModelList: [],
     moderationModelList: [],
-    hasSettedApiKey: true,
+    hasSetApiKey: true,
     plan: { type: 'free' },
     enableBilling: false,
     onPlanInfoChanged: vi.fn(),

@@ -28,7 +28,7 @@ def downgrade():
     # between database  and model definitions.
     #
     # The original
-    # DROP SERVER default is idemponent.
+    # DROP SERVER default is idempotent.
     # Besides, the original migration has been updated to
     # reflect the
     pass

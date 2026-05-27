@@ -5,12 +5,12 @@ import * as React from 'react'
 import { useTranslation } from 'react-i18next'
 import s from './style.module.css'
 
-type IContrlBtnGroupProps = {
+type IControlBtnGroupProps = {
   onSave: () => void
   onReset: () => void
 }
 
-const ContrlBtnGroup: FC<IContrlBtnGroupProps> = ({ onSave, onReset }) => {
+const ControlBtnGroup: FC<IControlBtnGroupProps> = ({ onSave, onReset }) => {
   const { t } = useTranslation()
   return (
     <div className="fixed bottom-0 left-[224px] h-[64px] w-[519px]">
@@ -21,4 +21,4 @@ const ContrlBtnGroup: FC<IContrlBtnGroupProps> = ({ onSave, onReset }) => {
     </div>
   )
 }
-export default React.memo(ContrlBtnGroup)
+export default React.memo(ControlBtnGroup)

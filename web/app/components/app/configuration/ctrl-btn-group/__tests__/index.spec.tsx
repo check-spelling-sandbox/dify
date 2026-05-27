@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import ContrlBtnGroup from '../index'
+import ControlBtnGroup from '../index'
 
-describe('ContrlBtnGroup', () => {
+describe('ControlBtnGroup', () => {
   beforeEach(() => {
     vi.clearAllMocks()
   })
@@ -14,7 +14,7 @@ describe('ContrlBtnGroup', () => {
       const onReset = vi.fn()
 
       // Act
-      render(<ContrlBtnGroup onSave={onSave} onReset={onReset} />)
+      render(<ControlBtnGroup onSave={onSave} onReset={onReset} />)
 
       // Assert
       expect(screen.getByRole('button', { name: 'appDebug.operation.applyConfig' })).toBeInTheDocument()
@@ -28,7 +28,7 @@ describe('ContrlBtnGroup', () => {
       // Arrange
       const onSave = vi.fn()
       const onReset = vi.fn()
-      render(<ContrlBtnGroup onSave={onSave} onReset={onReset} />)
+      render(<ControlBtnGroup onSave={onSave} onReset={onReset} />)
 
       // Act
       fireEvent.click(screen.getByRole('button', { name: 'appDebug.operation.applyConfig' }))

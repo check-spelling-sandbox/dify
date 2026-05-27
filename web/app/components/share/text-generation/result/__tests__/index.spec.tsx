@@ -266,7 +266,7 @@ describe('Result', () => {
     expect(onCompleted).toHaveBeenCalledWith('{"answer":"Hello"}', undefined, true)
   })
 
-  it('should render batch task ids for both short and long indexes', () => {
+  it('should render batch task ids for both long and short indexes', () => {
     const { rerender } = render(
       <Result
         {...baseProps}

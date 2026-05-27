@@ -42,7 +42,7 @@ class _CloserProtocol(Protocol):
     """_Closer is any type which implement the close() method."""
 
     def close(self):
-        """close the current object, release any external resouece (file, transaction, connection etc.)
+        """close the current object, release any external resource (file, transaction, connection etc.)
         associated with it.
         """
         pass

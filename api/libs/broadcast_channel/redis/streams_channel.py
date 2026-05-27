@@ -100,7 +100,7 @@ class _StreamsSubscription(Subscription):
         # The `_lock` lock is used to
         #
         # 1. protect the _listener attribute
-        # 2. prevent repeated releases of underlying resoueces. (The _closed flag.)
+        # 2. prevent repeated releases of underlying resources. (The _closed flag.)
         #
         # INVARIANT: the implementation must hold the lock while
         # reading and writing the _listener / `_closed` attribute.

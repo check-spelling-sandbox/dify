@@ -2078,7 +2078,7 @@ class WorkflowPauseReason(DefaultFieldsDCMixin, TypeBase):
         default="",
     )
 
-    # `node_id` is the identifier of node causing the pasue, correspond to
+    # `node_id` is the identifier of node causing the pause, correspond to
     # `Node.id`. Empty `node_id` means that this pause reason is not caused by any specific node
     # (E.G. time slicing pauses.)
     node_id: Mapped[str] = mapped_column(

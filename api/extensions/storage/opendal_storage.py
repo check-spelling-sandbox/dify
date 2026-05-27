@@ -64,7 +64,7 @@ class OpenDALStorage(BaseStorage):
         with self.op.open(
             path=filename,
             mode="rb",
-            chunck=batch_size,
+            chunk=batch_size,
         ) as file:
             while chunk := file.read(batch_size):
                 yield chunk

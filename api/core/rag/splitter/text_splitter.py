@@ -199,7 +199,7 @@ class TokenTextSplitter(TextSplitter):
         except ImportError:
             raise ImportError(
                 "Could not import tiktoken python package. "
-                "This is needed in order to for TokenTextSplitter. "
+                "This is needed for TokenTextSplitter. "
                 "Please install it with `pip install tiktoken`."
             )
 

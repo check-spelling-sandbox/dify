@@ -91,7 +91,7 @@ class AsyncWorkflowService:
         # 2. Get workflow
         workflow = cls._get_workflow(workflow_service, app_model, trigger_data.workflow_id, session=session)
 
-        # commit read only session before starting the billig rpc call
+        # commit read only session before starting the billing rpc call
         session.commit()
 
         # 3. Get dispatcher based on tenant subscription

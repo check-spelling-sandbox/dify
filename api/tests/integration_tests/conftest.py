@@ -17,7 +17,7 @@ from extensions.ext_database import db
 from models import Account, DifySetup, Tenant, TenantAccountJoin
 from services.account_service import AccountService, RegisterService
 
-_DEFUALT_TEST_ENV = ".env"
+_DEFAULT_TEST_ENV = ".env"
 _DEFAULT_VDB_TEST_ENV = "vdb.env"
 
 _logger = logging.getLogger(__name__)
@@ -27,7 +27,7 @@ _logger = logging.getLogger(__name__)
 def _load_env():
     current_file_path = pathlib.Path(__file__).absolute()
     env_file_paths = [
-        pathlib.Path(os.getenv("DIFY_TEST_ENV_FILE", str(current_file_path.parent / _DEFUALT_TEST_ENV))),
+        pathlib.Path(os.getenv("DIFY_TEST_ENV_FILE", str(current_file_path.parent / _DEFAULT_TEST_ENV))),
     ]
     vdb_env_path = pathlib.Path(
         os.getenv("DIFY_VDB_TEST_ENV_FILE", str(current_file_path.parent / _DEFAULT_VDB_TEST_ENV))

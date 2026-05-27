@@ -2,7 +2,7 @@ app:
   description: 'this is a chatflow with 2 answer nodes.
 
 
-    it''s outouts should like:
+    its outputs should look like:
 
 
     ```

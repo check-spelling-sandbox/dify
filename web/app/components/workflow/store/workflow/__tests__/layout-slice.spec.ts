@@ -9,7 +9,7 @@ describe('createLayoutSlice', () => {
   it('reads persisted panel sizes and maximize state from localStorage', () => {
     localStorage.setItem('workflow-node-panel-width', '460')
     localStorage.setItem('debug-and-preview-panel-width', '520')
-    localStorage.setItem('workflow-variable-inpsect-panel-height', '240')
+    localStorage.setItem('workflow-variable-inspect-panel-height', '240')
     localStorage.setItem('workflow-canvas-maximize', 'true')
 
     const store = createStore(createLayoutSlice)

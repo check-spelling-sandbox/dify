@@ -49,7 +49,7 @@ export const createLayoutSlice: StateCreator<LayoutSliceShape> = set => ({
   bottomPanelHeight: 324,
   setBottomPanelHeight: height => set(state =>
     state.bottomPanelHeight === height ? state : ({ bottomPanelHeight: height })),
-  variableInspectPanelHeight: localStorage.getItem('workflow-variable-inpsect-panel-height') ? Number.parseFloat(localStorage.getItem('workflow-variable-inpsect-panel-height')!) : 320,
+  variableInspectPanelHeight: localStorage.getItem('workflow-variable-inspect-panel-height') ? Number.parseFloat(localStorage.getItem('workflow-variable-inspect-panel-height')!) : 320,
   setVariableInspectPanelHeight: height => set(state =>
     state.variableInspectPanelHeight === height ? state : ({ variableInspectPanelHeight: height })),
   maximizeCanvas: localStorage.getItem('workflow-canvas-maximize') === 'true',

@@ -22,7 +22,7 @@ const VariableInspectPanel: FC = () => {
   }, [workflowCanvasHeight])
 
   const handleResize = useCallback((width: number, height: number) => {
-    localStorage.setItem('workflow-variable-inpsect-panel-height', `${height}`)
+    localStorage.setItem('workflow-variable-inspect-panel-height', `${height}`)
     setVariableInspectPanelHeight(height)
   }, [setVariableInspectPanelHeight])
 

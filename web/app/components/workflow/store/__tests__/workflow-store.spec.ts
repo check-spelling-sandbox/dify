@@ -212,7 +212,7 @@ describe('createWorkflowStore', () => {
     })
 
     it('should read variableInspectPanelHeight from localStorage', () => {
-      localStorage.setItem('workflow-variable-inpsect-panel-height', '200')
+      localStorage.setItem('workflow-variable-inspect-panel-height', '200')
       const store = createStore()
       expect(store.getState().variableInspectPanelHeight).toBe(200)
     })

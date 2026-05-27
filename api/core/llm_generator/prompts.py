@@ -273,7 +273,7 @@ Your task is to convert simple user descriptions into properly formatted JSON Sc
                     "duration": {
                         "type": "string"
                     },
-                    "aritst": {
+                    "artist": {
                         "type": "string"
                     }
                 },
@@ -281,7 +281,7 @@ Your task is to convert simple user descriptions into properly formatted JSON Sc
                     "name",
                     "id",
                     "duration",
-                    "aritst"
+                    "artist"
                 ]
             }
         }

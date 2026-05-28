@@ -27,7 +27,7 @@ depends_on = None
 def upgrade():
     # Create provider_model_credentials table
     conn = op.get_bind()
-    
+
     if _is_pg(conn):
         op.create_table('provider_model_credentials',
         sa.Column('id', models.types.StringUUID(), server_default=sa.text('uuidv7()'), nullable=False),
@@ -86,7 +86,7 @@ def upgrade():
 
 def migrate_existing_provider_models_data():
     """migrate provider_models table data to provider_model_credentials"""
-    # Define table structure for data manipulatio
+    # Define table structure for data manipulation
     provider_models_table = table('provider_models',
         column('id', models.types.StringUUID()),
         column('tenant_id', models.types.StringUUID()),

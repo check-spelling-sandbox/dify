@@ -146,7 +146,7 @@ const WorkflowChecklist = ({
               )
             : (
                 <div className="mx-4 mb-3 rounded-lg py-4 text-center text-xs text-text-tertiary">
-                  <span className="mx-auto mb-[5px] i-custom-vender-line-general-checklist-square block h-8 w-8 text-text-quaternary" />
+                  <span className="mx-auto mb-[5px] i-custom-vendor-line-general-checklist-square block h-8 w-8 text-text-quaternary" />
                   {t('panel.checklistResolved', { ns: 'workflow' })}
                 </div>
               )}

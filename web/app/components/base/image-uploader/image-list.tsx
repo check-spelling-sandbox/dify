@@ -4,7 +4,7 @@ import { cn } from '@langgenius/dify-ui/cn'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@langgenius/dify-ui/tooltip'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { AlertTriangle } from '@/app/components/base/icons/src/vender/solid/alertsAndFeedback'
+import { AlertTriangle } from '@/app/components/base/icons/src/vendor/solid/alertsAndFeedback'
 import ImagePreview from '@/app/components/base/image-uploader/image-preview'
 import { TransferMethod } from '@/types/app'
 
@@ -63,7 +63,7 @@ const ImageList: FC<ImageListProps> = ({
                     className="size-5 border-none bg-transparent p-0 text-white focus-visible:ring-1 focus-visible:ring-white focus-visible:outline-hidden"
                     onClick={() => onReUpload?.(item._id)}
                   >
-                    <span className="i-custom-vender-line-arrows-refresh-ccw-01 size-5" aria-hidden="true" />
+                    <span className="i-custom-vendor-line-arrows-refresh-ccw-01 size-5" aria-hidden="true" />
                   </button>
                 )}
               </div>

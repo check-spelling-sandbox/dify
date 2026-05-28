@@ -11,7 +11,7 @@ import {
   useCallback,
   useState,
 } from 'react'
-import { Plus02 } from '@/app/components/base/icons/src/vender/line/general'
+import { Plus02 } from '@/app/components/base/icons/src/vendor/line/general'
 import AddVariablePopup from '@/app/components/workflow/nodes/_base/components/add-variable-popup'
 import { useVariableAssigner } from '../../hooks'
 

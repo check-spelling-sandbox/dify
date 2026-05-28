@@ -15,7 +15,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import { useNodes } from 'reactflow'
 import ActionButton, { ActionButtonState } from '@/app/components/base/action-button'
-import { RefreshCcw01 } from '@/app/components/base/icons/src/vender/line/arrows'
+import { RefreshCcw01 } from '@/app/components/base/icons/src/vendor/line/arrows'
 import { useEdgesInteractionsWithoutSync } from '@/app/components/workflow/hooks/use-edges-interactions-without-sync'
 import { useNodesInteractionsWithoutSync } from '@/app/components/workflow/hooks/use-nodes-interactions-without-sync'
 import { useStore } from '@/app/components/workflow/store'

@@ -9,7 +9,7 @@ import { useBoolean } from 'ahooks'
 import * as React from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
 import ImagePreview from '@/app/components/base/image-uploader/image-preview'
 
 type Props = {

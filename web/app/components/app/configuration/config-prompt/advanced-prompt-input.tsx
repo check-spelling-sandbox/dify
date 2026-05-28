@@ -19,7 +19,7 @@ import { ADD_EXTERNAL_DATA_TOOL } from '@/app/components/app/configuration/confi
 import {
   Copy,
   CopyCheck,
-} from '@/app/components/base/icons/src/vender/line/files'
+} from '@/app/components/base/icons/src/vendor/line/files'
 import { Infotip } from '@/app/components/base/infotip'
 import PromptEditor from '@/app/components/base/prompt-editor'
 import { INSERT_VARIABLE_VALUE_BLOCK_COMMAND } from '@/app/components/base/prompt-editor/plugins/variable-block'

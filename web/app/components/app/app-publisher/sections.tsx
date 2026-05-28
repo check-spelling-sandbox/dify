@@ -329,7 +329,7 @@ export const PublisherActionsSection = ({
             <SuggestedAction
               onClick={handleEmbed}
               disabled={!publishedAt}
-              icon={<span className="i-custom-vender-line-development-code-browser size-4" />}
+              icon={<span className="i-custom-vendor-line-development-code-browser size-4" />}
             >
               {t('common.embedIntoSite', { ns: 'workflow' })}
             </SuggestedAction>

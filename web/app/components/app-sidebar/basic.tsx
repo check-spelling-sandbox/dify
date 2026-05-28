@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import {
   ApiAggregate,
   WindowCursor,
-} from '@/app/components/base/icons/src/vender/workflow'
+} from '@/app/components/base/icons/src/vendor/workflow'
 import { Infotip } from '@/app/components/base/infotip'
 import AppIcon from '../base/app-icon'
 

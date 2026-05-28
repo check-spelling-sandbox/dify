@@ -7,9 +7,9 @@ import {
   DropdownMenuTrigger,
 } from '@langgenius/dify-ui/dropdown-menu'
 import { useTranslation } from 'react-i18next'
-import { Brush01 } from '@/app/components/base/icons/src/vender/solid/editor'
-import { Scales02 } from '@/app/components/base/icons/src/vender/solid/FinanceAndECommerce'
-import { Target04 } from '@/app/components/base/icons/src/vender/solid/general'
+import { Brush01 } from '@/app/components/base/icons/src/vendor/solid/editor'
+import { Scales02 } from '@/app/components/base/icons/src/vendor/solid/FinanceAndECommerce'
+import { Target04 } from '@/app/components/base/icons/src/vendor/solid/general'
 import { TONE_LIST } from '@/config'
 
 const PRESET_TONE_LIST = TONE_LIST.slice(0, 3)

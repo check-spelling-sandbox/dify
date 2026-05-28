@@ -27,7 +27,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import {
   Plus02,
-} from '@/app/components/base/icons/src/vender/line/general'
+} from '@/app/components/base/icons/src/vendor/line/general'
 import Input from '@/app/components/base/input'
 import SearchBox from '@/app/components/plugins/marketplace/search-box'
 import useNodes from '@/app/components/workflow/store/workflow/use-nodes'

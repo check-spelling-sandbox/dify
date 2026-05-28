@@ -8,7 +8,7 @@ vi.mock('@/app/components/base/app-icon', () => ({
   ),
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/other', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/other', () => ({
   Mcp: () => <span data-testid="mcp-icon" />,
 }))
 

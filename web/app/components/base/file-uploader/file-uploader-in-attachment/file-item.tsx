@@ -13,7 +13,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import ActionButton from '@/app/components/base/action-button'
 import { PreviewMode } from '@/app/components/base/features/types'
-import { ReplayLine } from '@/app/components/base/icons/src/vender/other'
+import { ReplayLine } from '@/app/components/base/icons/src/vendor/other'
 import ImagePreview from '@/app/components/base/image-uploader/image-preview'
 import { SupportUploadFileTypes } from '@/app/components/workflow/types'
 import { downloadUrl } from '@/utils/download'

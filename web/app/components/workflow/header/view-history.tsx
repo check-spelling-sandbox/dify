@@ -82,7 +82,7 @@ const ViewHistory = ({
                       'data-popup-open:bg-components-button-secondary-bg-hover',
                     )}
                   >
-                    <span className="mr-1 i-custom-vender-line-time-clock-play size-4" />
+                    <span className="mr-1 i-custom-vendor-line-time-clock-play size-4" />
                     {t('common.showRunHistory', { ns: 'workflow' })}
                   </button>
                 )}
@@ -103,7 +103,7 @@ const ViewHistory = ({
                           onClearLogAndMessageModal?.()
                         }}
                       >
-                        <span className="i-custom-vender-line-time-clock-play size-4 text-components-button-ghost-text group-hover:text-components-button-secondary-accent-text group-data-popup-open:text-components-button-secondary-accent-text" />
+                        <span className="i-custom-vendor-line-time-clock-play size-4 text-components-button-ghost-text group-hover:text-components-button-secondary-accent-text group-data-popup-open:text-components-button-secondary-accent-text" />
                       </button>
                     )}
                   />
@@ -152,7 +152,7 @@ const ViewHistory = ({
                   {
                     !data?.data.length && (
                       <div className="py-12">
-                        <span className="mx-auto mb-2 i-custom-vender-line-time-clock-play-slim size-8 text-text-quaternary" />
+                        <span className="mx-auto mb-2 i-custom-vendor-line-time-clock-play-slim size-8 text-text-quaternary" />
                         <div className="text-center text-[13px] text-text-quaternary">
                           {t('common.notRunning', { ns: 'workflow' })}
                         </div>
@@ -183,7 +183,7 @@ const ViewHistory = ({
                       >
                         {
                           !isChatMode && [WorkflowRunningStatus.Stopped, WorkflowRunningStatus.Paused].includes(item.status) && (
-                            <span className="mt-0.5 mr-1.5 i-custom-vender-line-alertsAndFeedback-alert-triangle h-3.5 w-3.5 text-[#F79009]" />
+                            <span className="mt-0.5 mr-1.5 i-custom-vendor-line-alertsAndFeedback-alert-triangle h-3.5 w-3.5 text-[#F79009]" />
                           )
                         }
                         {

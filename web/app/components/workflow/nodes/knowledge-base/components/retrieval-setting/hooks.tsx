@@ -8,7 +8,7 @@ import {
   FullTextSearch,
   HybridSearch,
   VectorSearch,
-} from '@/app/components/base/icons/src/vender/knowledge'
+} from '@/app/components/base/icons/src/vendor/knowledge'
 import {
   HybridSearchModeEnum,
   IndexMethodEnum,

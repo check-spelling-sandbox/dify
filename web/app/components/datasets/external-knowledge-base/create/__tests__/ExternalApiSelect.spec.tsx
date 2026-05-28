@@ -28,7 +28,7 @@ vi.mock('@/context/external-knowledge-api-context', () => ({
   }),
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/solid/development', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/development', () => ({
   ApiConnectionMod: (props: Record<string, unknown>) => <span data-testid="api-icon" {...props} />,
 }))
 

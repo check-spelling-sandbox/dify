@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import CornerMark from '../corner-mark'
 
-vi.mock('../../../../base/icons/src/vender/plugin', () => ({
+vi.mock('../../../../base/icons/src/vendor/plugin', () => ({
   LeftCorner: ({ className }: { className: string }) => <svg data-testid="left-corner" className={className} />,
 }))
 

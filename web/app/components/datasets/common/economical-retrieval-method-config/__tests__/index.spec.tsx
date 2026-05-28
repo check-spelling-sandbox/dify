@@ -31,7 +31,7 @@ vi.mock('../../retrieval-param-config', () => ({
   ),
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/knowledge', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/knowledge', () => ({
   VectorSearch: () => <svg data-testid="vector-search-icon" />,
 }))
 

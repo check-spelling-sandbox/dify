@@ -4,7 +4,7 @@ import {
   GeneralChunk,
   ParentChildChunk,
   QuestionAndAnswer,
-} from '@/app/components/base/icons/src/vender/knowledge'
+} from '@/app/components/base/icons/src/vendor/knowledge'
 import { ChunkingMode } from '@/models/datasets'
 import { EffectColor } from './types'
 

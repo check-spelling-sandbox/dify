@@ -18,6 +18,6 @@ describe('ExecutedAction', () => {
     expect(trans).toHaveAttribute('data-i18n-key', 'nodes.humanInput.userActions.triggered')
 
     // Check for the trigger icon class
-    expect(screen.getByTestId('executed-action').querySelector('.i-custom-vender-workflow-trigger-all')).toBeInTheDocument()
+    expect(screen.getByTestId('executed-action').querySelector('.i-custom-vendor-workflow-trigger-all')).toBeInTheDocument()
   })
 })

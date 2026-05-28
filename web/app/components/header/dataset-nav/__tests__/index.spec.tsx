@@ -47,11 +47,11 @@ vi.mock('@/app/components/app/type-selector', () => ({
   AppTypeIcon: () => <div data-testid="app-type-icon" />,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/line/arrows', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/arrows', () => ({
   ArrowNarrowLeft: () => <div data-testid="arrow-left-icon" />,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/line/files', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/files', () => ({
   FileArrow01: () => <div data-testid="file-arrow-icon" />,
   FilePlus01: () => <div data-testid="file-plus-1-icon" />,
   FilePlus02: () => <div data-testid="file-plus-2-icon" />,

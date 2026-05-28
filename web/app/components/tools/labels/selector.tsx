@@ -9,7 +9,7 @@ import {
 import { useDebounceFn } from 'ahooks'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Tag03 } from '@/app/components/base/icons/src/vender/line/financeAndECommerce'
+import { Tag03 } from '@/app/components/base/icons/src/vendor/line/financeAndECommerce'
 import Input from '@/app/components/base/input'
 import { useTags } from '@/app/components/plugins/hooks'
 

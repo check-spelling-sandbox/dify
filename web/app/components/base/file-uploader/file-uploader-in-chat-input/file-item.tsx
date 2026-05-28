@@ -124,7 +124,7 @@ const FileItem = ({
                 className="size-4 cursor-pointer border-none bg-transparent p-0 text-text-tertiary focus-visible:ring-1 focus-visible:ring-components-input-border-active focus-visible:outline-hidden"
                 onClick={() => onReUpload?.(id)}
               >
-                <span className="i-custom-vender-other-replay-line block size-4" aria-hidden="true" />
+                <span className="i-custom-vendor-other-replay-line block size-4" aria-hidden="true" />
               </button>
             )
           }

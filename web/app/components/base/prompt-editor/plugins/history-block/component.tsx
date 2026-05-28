@@ -7,7 +7,7 @@ import {
 } from '@remixicon/react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { MessageClockCircle } from '@/app/components/base/icons/src/vender/solid/general'
+import { MessageClockCircle } from '@/app/components/base/icons/src/vendor/solid/general'
 import { useEventEmitterContextContext } from '@/context/event-emitter'
 import { UPDATE_HISTORY_EVENT_EMITTER } from '../../constants'
 import { useSelectOrDelete, useTrigger } from '../../hooks'

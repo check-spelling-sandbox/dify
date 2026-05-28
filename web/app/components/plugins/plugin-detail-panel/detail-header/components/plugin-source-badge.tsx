@@ -4,7 +4,7 @@ import type { FC, ReactNode } from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@langgenius/dify-ui/tooltip'
 import { useTranslation } from 'react-i18next'
 import { Github } from '@/app/components/base/icons/src/public/common'
-import { BoxSparkleFill } from '@/app/components/base/icons/src/vender/plugin'
+import { BoxSparkleFill } from '@/app/components/base/icons/src/vendor/plugin'
 import { PluginSource } from '../../../types'
 
 type SourceConfig = {

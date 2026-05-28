@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import UpgradeBanner from '../upgrade-banner'
 
-vi.mock('@/app/components/base/icons/src/vender/solid/general', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/general', () => ({
   ZapFast: (props: React.SVGProps<SVGSVGElement>) => <svg data-testid="zap-icon" {...props} />,
 }))
 vi.mock('@/app/components/billing/upgrade-btn', () => ({

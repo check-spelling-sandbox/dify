@@ -13,7 +13,7 @@ import {
   OptionCardEffectPurple,
   OptionCardEffectTeal,
 } from '@/app/components/base/icons/src/public/knowledge'
-import { ArrowShape } from '@/app/components/base/icons/src/vender/knowledge'
+import { ArrowShape } from '@/app/components/base/icons/src/vendor/knowledge'
 
 const HEADER_EFFECT_MAP: Record<string, ReactNode> = {
   'blue': <OptionCardEffectBlue />,

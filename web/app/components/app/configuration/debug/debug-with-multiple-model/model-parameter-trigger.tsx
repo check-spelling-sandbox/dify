@@ -103,7 +103,7 @@ const ModelParameterTrigger: FC<ModelParameterTriggerProps> = ({
             {
               (!iconProvider || isEmpty) && (
                 <div className="mr-1 flex size-4 items-center justify-center rounded-sm">
-                  <span className="i-custom-vender-line-shapes-cube-outline size-4 text-text-accent" />
+                  <span className="i-custom-vendor-line-shapes-cube-outline size-4 text-text-accent" />
                 </div>
               )
             }
@@ -137,7 +137,7 @@ const ModelParameterTrigger: FC<ModelParameterTriggerProps> = ({
                     render={(
                       <span
                         aria-label={t((statusTooltipKey || statusLabelKey) as 'modelProvider.selector.incompatible', { ns: 'common' })}
-                        className="i-custom-vender-line-alertsAndFeedback-alert-triangle h-4 w-4 text-[#F79009]"
+                        className="i-custom-vendor-line-alertsAndFeedback-alert-triangle h-4 w-4 text-[#F79009]"
                       />
                     )}
                   />

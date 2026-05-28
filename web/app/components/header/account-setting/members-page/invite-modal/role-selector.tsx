@@ -63,7 +63,7 @@ const RoleSelector = ({ value, onChange }: RoleSelectorProps) => {
               {value === 'normal' && (
                 <div
                   aria-hidden="true"
-                  className="absolute top-0.5 left-0 i-custom-vender-line-general-check size-4 text-text-accent"
+                  className="absolute top-0.5 left-0 i-custom-vendor-line-general-check size-4 text-text-accent"
                 />
               )}
             </div>
@@ -83,7 +83,7 @@ const RoleSelector = ({ value, onChange }: RoleSelectorProps) => {
               {value === 'editor' && (
                 <div
                   aria-hidden="true"
-                  className="absolute top-0.5 left-0 i-custom-vender-line-general-check size-4 text-text-accent"
+                  className="absolute top-0.5 left-0 i-custom-vendor-line-general-check size-4 text-text-accent"
                 />
               )}
             </div>
@@ -103,7 +103,7 @@ const RoleSelector = ({ value, onChange }: RoleSelectorProps) => {
               {value === 'admin' && (
                 <div
                   aria-hidden="true"
-                  className="absolute top-0.5 left-0 i-custom-vender-line-general-check size-4 text-text-accent"
+                  className="absolute top-0.5 left-0 i-custom-vendor-line-general-check size-4 text-text-accent"
                 />
               )}
             </div>
@@ -124,7 +124,7 @@ const RoleSelector = ({ value, onChange }: RoleSelectorProps) => {
                 {value === 'dataset_operator' && (
                   <div
                     aria-hidden="true"
-                    className="absolute top-0.5 left-0 i-custom-vender-line-general-check size-4 text-text-accent"
+                    className="absolute top-0.5 left-0 i-custom-vendor-line-general-check size-4 text-text-accent"
                   />
                 )}
               </div>

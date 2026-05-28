@@ -4,7 +4,7 @@ import { RiArrowRightUpLine } from '@remixicon/react'
 import { useTranslation } from 'react-i18next'
 import useTheme from '@/hooks/use-theme'
 import Link from '@/next/link'
-import { NoToolPlaceholder } from '../../base/icons/src/vender/other'
+import { NoToolPlaceholder } from '../../base/icons/src/vendor/other'
 import { ToolTypeEnum } from '../../workflow/block-selector/types'
 
 type Props = {

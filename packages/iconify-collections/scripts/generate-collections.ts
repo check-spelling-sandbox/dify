@@ -88,9 +88,9 @@ const customPublicCollections = importSvgCollections({
   parseColors: false,
 }) as ImportedCollections
 
-const customVenderCollections = importSvgCollections({
-  source: path.resolve(packageDir, 'assets/vender'),
-  prefix: 'custom-vender',
+const customVendorCollections = importSvgCollections({
+  source: path.resolve(packageDir, 'assets/vendor'),
+  prefix: 'custom-vendor',
   ignoreImportErrors: true,
   cleanupSVG: true,
   deOptimisePaths: true,
@@ -221,11 +221,11 @@ async function main(): Promise<void> {
     await readFile(path.resolve(packageDir, 'package.json'), 'utf8'),
   ) as PackageJson
   const customPublicCollection = flattenCollections(customPublicCollections, 'custom-public')
-  const customVenderCollection = flattenCollections(customVenderCollections, 'custom-vender')
+  const customVendorCollection = flattenCollections(customVendorCollections, 'custom-vendor')
 
   await rm(path.resolve(packageDir, 'src'), { recursive: true, force: true })
   await rm(path.resolve(packageDir, 'custom-public'), { recursive: true, force: true })
-  await rm(path.resolve(packageDir, 'custom-vender'), { recursive: true, force: true })
+  await rm(path.resolve(packageDir, 'custom-vendor'), { recursive: true, force: true })
 
   await writeCollectionPackage(
     'custom-public',
@@ -234,9 +234,9 @@ async function main(): Promise<void> {
     packageJson.version,
   )
   await writeCollectionPackage(
-    'custom-vender',
-    customVenderCollection,
-    'Dify Custom Vender',
+    'custom-vendor',
+    customVendorCollection,
+    'Dify Custom Vendor',
     packageJson.version,
   )
 }

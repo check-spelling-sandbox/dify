@@ -9,7 +9,7 @@ import {
   Schedule,
   WebhookLine,
   WindowCursor,
-} from '@/app/components/base/icons/src/vender/workflow'
+} from '@/app/components/base/icons/src/vendor/workflow'
 import BlockIcon from '@/app/components/workflow/block-icon'
 import { BlockEnum } from '@/app/components/workflow/types'
 import useTheme from '@/hooks/use-theme'

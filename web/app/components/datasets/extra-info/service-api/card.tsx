@@ -5,7 +5,7 @@ import { RiBookOpenLine, RiKey2Line } from '@remixicon/react'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
 import CopyFeedback from '@/app/components/base/copy-feedback'
-import { ApiAggregate } from '@/app/components/base/icons/src/vender/knowledge'
+import { ApiAggregate } from '@/app/components/base/icons/src/vendor/knowledge'
 import { useDatasetApiAccessUrl } from '@/hooks/use-api-access-url'
 import Link from '@/next/link'
 

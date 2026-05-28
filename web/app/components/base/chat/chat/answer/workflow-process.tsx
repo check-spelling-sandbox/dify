@@ -70,7 +70,7 @@ const WorkflowProcessItem = ({
         {
           succeeded && (
             <div
-              className="mr-1 i-custom-vender-solid-general-check-circle size-3.5 shrink-0 text-text-success"
+              className="mr-1 i-custom-vendor-solid-general-check-circle size-3.5 shrink-0 text-text-success"
               data-testid="status-icon-success"
             />
           )

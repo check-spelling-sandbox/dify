@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
-import { BubbleX, Env, GlobalVariable } from '@/app/components/base/icons/src/vender/line/others'
-import { InputField } from '@/app/components/base/icons/src/vender/pipeline'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
-import { Loop } from '@/app/components/base/icons/src/vender/workflow'
+import { BubbleX, Env, GlobalVariable } from '@/app/components/base/icons/src/vendor/line/others'
+import { InputField } from '@/app/components/base/icons/src/vendor/pipeline'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
+import { Loop } from '@/app/components/base/icons/src/vendor/workflow'
 import { VAR_SHOW_NAME_MAP } from '@/app/components/workflow/constants'
 import { VarInInspectType } from '@/types/workflow'
 import {

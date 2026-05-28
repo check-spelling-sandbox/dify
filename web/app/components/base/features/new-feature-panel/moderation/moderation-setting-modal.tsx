@@ -269,7 +269,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
           {
             !isLoading && !isOpenAIProviderConfigured && localeData.type === 'openai_moderation' && (
               <div className="mt-2 flex items-center rounded-lg border border-[#FEF0C7] bg-[#FFFAEB] px-3 py-2">
-                <span className="mr-1 i-custom-vender-line-general-info-circle h-4 w-4 text-[#F79009]" />
+                <span className="mr-1 i-custom-vendor-line-general-info-circle h-4 w-4 text-[#F79009]" />
                 <div className="flex items-center text-xs font-medium text-gray-700">
                   {t('feature.moderation.modal.openaiNotConfig.before', { ns: 'appDebug' })}
                   <span
@@ -323,7 +323,7 @@ const ModerationSettingModal: FC<ModerationSettingModalProps> = ({
                   rel="noopener noreferrer"
                   className="group flex items-center text-xs text-text-tertiary hover:text-primary-600"
                 >
-                  <span className="mr-1 i-custom-vender-line-education-book-open-01 size-3 text-text-tertiary group-hover:text-primary-600" />
+                  <span className="mr-1 i-custom-vendor-line-education-book-open-01 size-3 text-text-tertiary group-hover:text-primary-600" />
                   {t('apiBasedExtension.link', { ns: 'common' })}
                 </a>
               </div>

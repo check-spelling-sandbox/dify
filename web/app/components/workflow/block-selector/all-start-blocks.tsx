@@ -18,7 +18,7 @@ import {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 import Divider from '@/app/components/base/divider'
-import { SearchMenu } from '@/app/components/base/icons/src/vender/line/general'
+import { SearchMenu } from '@/app/components/base/icons/src/vendor/line/general'
 import Link from '@/next/link'
 import { systemFeaturesQueryOptions } from '@/service/system-features'
 import { useFeaturedTriggersRecommendations } from '@/service/use-plugins'

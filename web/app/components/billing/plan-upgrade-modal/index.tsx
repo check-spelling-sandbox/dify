@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { UpgradeModal } from '@/app/components/base/upgrade-modal'
 import UpgradeBtn from '@/app/components/billing/upgrade-btn'
 import { useModalContext } from '@/context/modal-context'
-import { SquareChecklist } from '../../base/icons/src/vender/other'
+import { SquareChecklist } from '../../base/icons/src/vendor/other'
 
 type Props = {
   Icon?: ComponentType<{ className?: string }>

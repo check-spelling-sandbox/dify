@@ -3,7 +3,7 @@ import { cn } from '@langgenius/dify-ui/cn'
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext'
 import { useEffect } from 'react'
 import { DELETE_LAST_RUN_COMMAND, LastRunBlockNode } from '.'
-import { Variable02 } from '../../../icons/src/vender/solid/development'
+import { Variable02 } from '../../../icons/src/vendor/solid/development'
 import { useSelectOrDelete } from '../../hooks'
 
 type Props = {

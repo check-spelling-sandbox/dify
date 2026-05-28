@@ -26,15 +26,15 @@ vi.mock('@/config', async (importOriginal) => {
 const render = (ui: ReactElement) =>
   renderWithSystemFeatures(ui, { systemFeatures: mockSystemFeatures })
 
-vi.mock('@/app/components/base/icons/src/vender/solid/files', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/files', () => ({
   FileZip: () => <span data-testid="file-zip-icon">file</span>,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/solid/general', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/general', () => ({
   Github: () => <span data-testid="github-icon">github</span>,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/solid/mediaAndDevices', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/mediaAndDevices', () => ({
   MagicBox: () => <span data-testid="magic-box-icon">magic</span>,
 }))
 

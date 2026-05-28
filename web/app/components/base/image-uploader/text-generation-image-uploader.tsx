@@ -11,8 +11,8 @@ import {
   useState,
 } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link03 } from '@/app/components/base/icons/src/vender/line/general'
-import { ImagePlus } from '@/app/components/base/icons/src/vender/line/images'
+import { Link03 } from '@/app/components/base/icons/src/vendor/line/general'
+import { ImagePlus } from '@/app/components/base/icons/src/vendor/line/images'
 import { TransferMethod } from '@/types/app'
 import { useImageFiles } from './hooks'
 import ImageLinkInput from './image-link-input'

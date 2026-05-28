@@ -71,7 +71,7 @@ vi.mock('@/app/components/base/app-icon', () => ({
   ),
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/other', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/other', () => ({
   Mcp: ({ className }: { className?: string }) => (
     <div data-testid="mcp-icon" className={className}>MCP</div>
   ),
@@ -80,7 +80,7 @@ vi.mock('@/app/components/base/icons/src/vender/other', () => ({
   ),
 }))
 
-vi.mock('../../../base/icons/src/vender/plugin', () => ({
+vi.mock('../../../base/icons/src/vendor/plugin', () => ({
   LeftCorner: ({ className }: { className?: string }) => (
     <div data-testid="left-corner" className={className}>LeftCorner</div>
   ),

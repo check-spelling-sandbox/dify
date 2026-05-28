@@ -4,7 +4,7 @@ import {
   useCallback,
 } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ArrowNarrowLeft } from '@/app/components/base/icons/src/vender/line/arrows'
+import { ArrowNarrowLeft } from '@/app/components/base/icons/src/vendor/line/arrows'
 import Divider from '../../base/divider'
 import {
   useWorkflowRun,

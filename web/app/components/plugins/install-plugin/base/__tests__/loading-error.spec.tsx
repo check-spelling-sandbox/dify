@@ -6,7 +6,7 @@ vi.mock('@/app/components/plugins/card/base/placeholder', () => ({
   LoadingPlaceholder: () => <div data-testid="loading-placeholder" />,
 }))
 
-vi.mock('../../../../base/icons/src/vender/other', () => ({
+vi.mock('../../../../base/icons/src/vendor/other', () => ({
   Group: ({ className }: { className: string }) => <span data-testid="group-icon" className={className} />,
 }))
 

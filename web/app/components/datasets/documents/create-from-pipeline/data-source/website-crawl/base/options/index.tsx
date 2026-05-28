@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { useAppForm } from '@/app/components/base/form'
 import BaseField from '@/app/components/base/form/form-scenarios/base/field'
 import { generateZodSchema } from '@/app/components/base/form/form-scenarios/base/utils'
-import { ArrowDownRoundFill } from '@/app/components/base/icons/src/vender/solid/general'
+import { ArrowDownRoundFill } from '@/app/components/base/icons/src/vendor/solid/general'
 import { useConfigurations, useInitialData } from '@/app/components/rag-pipeline/hooks/use-input-fields'
 import { CrawlStep } from '@/models/datasets'
 

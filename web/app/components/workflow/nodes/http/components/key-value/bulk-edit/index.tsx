@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import * as React from 'react'
 import { useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { LayoutGrid02 } from '@/app/components/base/icons/src/vender/line/layout'
+import { LayoutGrid02 } from '@/app/components/base/icons/src/vendor/line/layout'
 import TextEditor from '@/app/components/workflow/nodes/_base/components/editor/text-editor'
 
 const i18nPrefix = 'nodes.http'

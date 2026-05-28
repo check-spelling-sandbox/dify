@@ -60,7 +60,7 @@ vi.mock('@remixicon/react', () => ({
   RiPlayLargeLine: () => <span data-testid="play-icon" />,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/line/mediaAndDevices', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/mediaAndDevices', () => ({
   StopCircle: () => <span data-testid="stop-icon" />,
 }))
 

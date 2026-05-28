@@ -1,6 +1,6 @@
 import { Tooltip, TooltipContent, TooltipTrigger } from '@langgenius/dify-ui/tooltip'
 import { useTranslation } from 'react-i18next'
-import { ChevronDownDouble } from '@/app/components/base/icons/src/vender/line/arrows'
+import { ChevronDownDouble } from '@/app/components/base/icons/src/vendor/line/arrows'
 
 const PriorityUseTip = () => {
   const { t } = useTranslation()

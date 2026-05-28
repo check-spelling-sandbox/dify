@@ -89,7 +89,7 @@ vi.mock('@langgenius/dify-ui/status-dot', () => ({
   StatusDot: ({ status }: { status: string }) => <div data-testid="indicator" data-status={status} />,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/line/alertsAndFeedback/Warning', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/alertsAndFeedback/Warning', () => ({
   default: (props: Record<string, unknown>) => <div data-testid="warning-icon" className={props.className as string} />,
 }))
 

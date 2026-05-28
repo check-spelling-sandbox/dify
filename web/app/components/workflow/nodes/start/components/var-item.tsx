@@ -12,8 +12,8 @@ import { useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import ConfigVarModal from '@/app/components/app/configuration/config-var/config-modal'
 import Badge from '@/app/components/base/badge'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
-import { Edit03 } from '@/app/components/base/icons/src/vender/solid/general'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
+import { Edit03 } from '@/app/components/base/icons/src/vendor/solid/general'
 import InputVarTypeIcon from '../../_base/components/input-var-type-icon'
 
 type Props = {

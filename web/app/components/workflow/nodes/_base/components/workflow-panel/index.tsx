@@ -25,7 +25,7 @@ import {
 import { useTranslation } from 'react-i18next'
 import { useShallow } from 'zustand/react/shallow'
 import { useStore as useAppStore } from '@/app/components/app/store'
-import { Stop } from '@/app/components/base/icons/src/vender/line/mediaAndDevices'
+import { Stop } from '@/app/components/base/icons/src/vendor/line/mediaAndDevices'
 import { UserAvatarList } from '@/app/components/base/user-avatar-list'
 import { ACCOUNT_SETTING_TAB } from '@/app/components/header/account-setting/constants'
 import { useLanguage } from '@/app/components/header/account-setting/model-provider-page/hooks'

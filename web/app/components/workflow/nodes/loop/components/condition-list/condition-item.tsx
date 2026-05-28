@@ -24,7 +24,7 @@ import {
   useState,
 } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
 import BoolValue from '@/app/components/workflow/panel/chat-variable-panel/components/bool-value'
 import { VarType } from '@/app/components/workflow/types'
 import {

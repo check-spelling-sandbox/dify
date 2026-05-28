@@ -5,7 +5,7 @@ import { cn } from '@langgenius/dify-ui/cn'
 import { RiErrorWarningFill } from '@remixicon/react'
 import { cva } from 'class-variance-authority'
 import * as React from 'react'
-import AlertTriangle from '@/app/components/base/icons/src/vender/solid/alertsAndFeedback/AlertTriangle'
+import AlertTriangle from '@/app/components/base/icons/src/vendor/solid/alertsAndFeedback/AlertTriangle'
 
 export enum NodeStatusEnum {
   warning = 'warning',

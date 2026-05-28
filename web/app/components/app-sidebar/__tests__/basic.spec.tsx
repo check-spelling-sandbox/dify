@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import AppBasic from '../basic'
 
-vi.mock('@/app/components/base/icons/src/vender/workflow', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/workflow', () => ({
   ApiAggregate: (props: React.SVGProps<SVGSVGElement>) => <svg data-testid="api-icon" {...props} />,
   WindowCursor: (props: React.SVGProps<SVGSVGElement>) => <svg data-testid="webapp-icon" {...props} />,
 }))

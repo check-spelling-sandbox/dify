@@ -7,7 +7,7 @@ import {
 } from '@remixicon/react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ReplayLine } from '@/app/components/base/icons/src/vender/other'
+import { ReplayLine } from '@/app/components/base/icons/src/vendor/other'
 import ImagePreview from '@/app/components/base/image-uploader/image-preview'
 import { downloadUrl } from '@/utils/download'
 import FileImageRender from '../file-image-render'

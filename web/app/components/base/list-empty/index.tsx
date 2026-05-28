@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import * as React from 'react'
-import { Variable02 } from '../icons/src/vender/solid/development'
+import { Variable02 } from '../icons/src/vendor/solid/development'
 import HorizontalLine from './horizontal-line'
 import VerticalLine from './vertical-line'
 

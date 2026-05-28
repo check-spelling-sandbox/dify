@@ -5,7 +5,7 @@ import { Textarea } from '@langgenius/dify-ui/textarea'
 import { useBoolean } from 'ahooks'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ArrowDownRoundFill } from '@/app/components/base/icons/src/vender/solid/general'
+import { ArrowDownRoundFill } from '@/app/components/base/icons/src/vendor/solid/general'
 
 const i18nPrefix = 'generate'
 

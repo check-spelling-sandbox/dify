@@ -2,7 +2,7 @@
 import type { DataSet } from '@/models/datasets'
 import { useTranslation } from 'react-i18next'
 import Divider from '@/app/components/base/divider'
-import { ApiConnectionMod } from '@/app/components/base/icons/src/vender/solid/development'
+import { ApiConnectionMod } from '@/app/components/base/icons/src/vendor/solid/development'
 import RetrievalSettings from '../../../external-knowledge-base/create/RetrievalSettings'
 
 const rowClass = 'flex gap-x-1'

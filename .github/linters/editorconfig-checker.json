@@ -7,7 +7,7 @@
     "Exclude": [
         "^web/public/vs/",
         "^web/public/pdf.worker.min.mjs$",
-        "web/app/components/base/icons/src/vender/"
+        "web/app/components/base/icons/src/vendor/"
     ],
     "AllowedContentTypes": [],
     "PassedFiles": [],

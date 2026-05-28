@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import LoadingAnim from '@/app/components/base/chat/chat/loading-anim'
 import { FileList } from '@/app/components/base/file-uploader'
-import { ImageIndentLeft } from '@/app/components/base/icons/src/vender/line/editor'
+import { ImageIndentLeft } from '@/app/components/base/icons/src/vendor/line/editor'
 import { Markdown } from '@/app/components/base/markdown'
 import StatusContainer from '@/app/components/workflow/run/status-container'
 

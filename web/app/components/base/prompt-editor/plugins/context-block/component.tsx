@@ -46,7 +46,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
     `}
       ref={ref}
     >
-      <span className="mr-1 i-custom-vender-solid-files-file-05 h-[14px] w-[14px]" data-testid="file-icon" />
+      <span className="mr-1 i-custom-vendor-solid-files-file-05 h-[14px] w-[14px]" data-testid="file-icon" />
       <div className="mr-1 text-xs font-medium">{t('promptEditor.context.item.title', { ns: 'common' })}</div>
       {!canNotAddContext && (
         <Popover
@@ -85,7 +85,7 @@ const ContextBlockComponent: FC<ContextBlockComponentProps> = ({
                     localDatasets.map(dataset => (
                       <div key={dataset.id} className="flex h-8 items-center">
                         <div className="mr-2 flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-[0.5px] border-[#EAECF5] bg-[#F5F8FF]">
-                          <span className="i-custom-vender-solid-files-folder h-4 w-4 text-[#444CE7]" data-testid="folder-icon" />
+                          <span className="i-custom-vendor-solid-files-folder h-4 w-4 text-[#444CE7]" data-testid="folder-icon" />
                         </div>
                         <div className="truncate text-sm text-gray-800" title="">{dataset.name}</div>
                       </div>

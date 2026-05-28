@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { CheckCircle } from '@/app/components/base/icons/src/vender/solid/general'
+import { CheckCircle } from '@/app/components/base/icons/src/vendor/solid/general'
 
 type InputProps = {
   value?: string

@@ -171,6 +171,6 @@ const walk = async (basePath, entry, relativeSegments, replaceFillOrStrokeColor)
 (async () => {
   await rm(path.resolve(iconsDir, 'src'), { recursive: true, force: true })
   await walk(svgAssetsDir, 'public', [], false)
-  await walk(svgAssetsDir, 'vender', [], true)
+  await walk(svgAssetsDir, 'vendor', [], true)
   await walk(path.resolve(iconsDir, 'assets'), 'image', [], false)
 })()

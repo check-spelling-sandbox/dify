@@ -3,8 +3,8 @@ import type { FC } from 'react'
 import { cn } from '@langgenius/dify-ui/cn'
 import { useBoolean, useClickAway } from 'ahooks'
 import * as React from 'react'
-import { ChevronSelectorVertical } from '@/app/components/base/icons/src/vender/line/arrows'
-import { Check } from '@/app/components/base/icons/src/vender/line/general'
+import { ChevronSelectorVertical } from '@/app/components/base/icons/src/vendor/line/arrows'
+import { Check } from '@/app/components/base/icons/src/vendor/line/general'
 
 type Item = {
   value: string

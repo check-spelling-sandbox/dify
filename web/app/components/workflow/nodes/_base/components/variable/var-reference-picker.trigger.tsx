@@ -14,7 +14,7 @@ import { RiArrowDownSLine, RiCloseLine, RiErrorWarningFill, RiLoader4Line, RiMor
 import { useTranslation } from 'react-i18next'
 import Badge from '@/app/components/base/badge'
 import { Line3 } from '@/app/components/base/icons/src/public/common'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
 import { VarBlockIcon } from '@/app/components/workflow/block-icon'
 import TypeSelector from '@/app/components/workflow/nodes/_base/components/selector'
 import { VariableIconWithColor } from '@/app/components/workflow/nodes/_base/components/variable/variable-label'

@@ -8,7 +8,7 @@ import Cropper from 'react-easy-crop'
 import { useTranslation } from 'react-i18next'
 
 import { ALLOW_FILE_EXTENSIONS } from '@/types/app'
-import { ImagePlus } from '../icons/src/vender/line/images'
+import { ImagePlus } from '../icons/src/vendor/line/images'
 import { useDraggableUploader } from './hooks'
 import { checkIsAnimatedImage } from './utils'
 

@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectItemText, SelectTrigger } from
 import * as React from 'react'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
 import { SUB_VARIABLES } from '../../constants'
 
 type Props = {

@@ -85,12 +85,12 @@ const OperationsMenu: FC<OperationsMenuProps> = ({
           onBulkImport()
         }}
       >
-        <span aria-hidden className="i-custom-vender-line-files-file-plus-02 size-4 shrink-0 text-text-tertiary" />
+        <span aria-hidden className="i-custom-vendor-line-files-file-plus-02 size-4 shrink-0 text-text-tertiary" />
         {t('table.header.bulkImport', { ns: 'appAnnotation' })}
       </DropdownMenuItem>
       <DropdownMenuSub>
         <DropdownMenuSubTrigger className="gap-2">
-          <span aria-hidden className="i-custom-vender-line-files-file-download-02 size-4 shrink-0 text-text-tertiary" />
+          <span aria-hidden className="i-custom-vendor-line-files-file-download-02 size-4 shrink-0 text-text-tertiary" />
           {t('table.header.bulkExport', { ns: 'appAnnotation' })}
         </DropdownMenuSubTrigger>
         <DropdownMenuSubContent

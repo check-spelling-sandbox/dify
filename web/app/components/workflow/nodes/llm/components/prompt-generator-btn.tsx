@@ -8,7 +8,7 @@ import * as React from 'react'
 import { useCallback } from 'react'
 import GetAutomaticResModal from '@/app/components/app/configuration/config/automatic/get-automatic-res'
 import { ActionButton } from '@/app/components/base/action-button'
-import { Generator } from '@/app/components/base/icons/src/vender/other'
+import { Generator } from '@/app/components/base/icons/src/vendor/other'
 import { AppModeEnum } from '@/types/app'
 import { useHooksStore } from '../../../hooks-store'
 

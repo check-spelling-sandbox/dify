@@ -4,7 +4,7 @@ import { useLanguage } from '@/app/components/header/account-setting/model-provi
 import { NOTICE_I18N } from '@/i18n-config/language'
 import MaintenanceNotice from '../maintenance-notice'
 
-vi.mock('@/app/components/base/icons/src/vender/line/general', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/general', () => ({
   X: (props: React.SVGProps<SVGSVGElement>) => <svg {...props} />,
 }))
 

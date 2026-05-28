@@ -159,7 +159,7 @@ export function AppPicker({
                   className="ml-1.5 flex size-3.5 shrink-0 cursor-pointer items-center justify-center rounded-none text-text-quaternary outline-hidden hover:bg-transparent hover:text-text-quaternary focus-visible:ring-1 focus-visible:ring-components-input-border-active"
                   onClick={() => onSearchChange('')}
                 >
-                  <span className="i-custom-vender-solid-general-x-circle size-3.5" aria-hidden="true" />
+                  <span className="i-custom-vendor-solid-general-x-circle size-3.5" aria-hidden="true" />
                 </button>
               )}
             </ComboboxInputGroup>

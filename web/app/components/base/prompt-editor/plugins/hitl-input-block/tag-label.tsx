@@ -3,7 +3,7 @@ import type { FC } from 'react'
 import { cn } from '@langgenius/dify-ui/cn'
 import { RiEditLine } from '@remixicon/react'
 import * as React from 'react'
-import { Variable02 } from '../../../icons/src/vender/solid/development'
+import { Variable02 } from '../../../icons/src/vendor/solid/development'
 
 type Props = {
   type: 'edit' | 'variable'

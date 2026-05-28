@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next'
 import {
   Economic,
   HighQuality,
-} from '@/app/components/base/icons/src/vender/knowledge'
+} from '@/app/components/base/icons/src/vendor/knowledge'
 import { Infotip } from '@/app/components/base/infotip'
 import Input from '@/app/components/base/input'
 import { Field } from '@/app/components/workflow/nodes/_base/components/layout'

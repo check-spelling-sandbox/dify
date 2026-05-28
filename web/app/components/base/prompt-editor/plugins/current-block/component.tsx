@@ -4,7 +4,7 @@ import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext
 import { useEffect } from 'react'
 import { GeneratorType } from '@/app/components/app/configuration/config/automatic/types'
 import { CurrentBlockNode, DELETE_CURRENT_BLOCK_COMMAND } from '.'
-import { CodeAssistant, MagicEdit } from '../../../icons/src/vender/line/general'
+import { CodeAssistant, MagicEdit } from '../../../icons/src/vendor/line/general'
 import { useSelectOrDelete } from '../../hooks'
 
 type CurrentBlockComponentProps = {

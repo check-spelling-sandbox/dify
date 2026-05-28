@@ -38,7 +38,7 @@ vi.mock('@remixicon/react', async (importOriginal) => {
   }
 })
 
-vi.mock('@/app/components/base/icons/src/vender/line/files', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/files', () => ({
   Copy: ({ onClick }: { onClick: () => void }) => (
     <button onClick={onClick}>copy-prompt</button>
   ),

@@ -12,7 +12,7 @@ vi.mock('@/app/components/base/icons/src/public/llm', () => ({
   AnthropicLight: ({ className }: { className: string }) => <div data-testid="anthropic-light" className={className} />,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/other', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/other', () => ({
   Openai: ({ className }: { className: string }) => <div data-testid="openai-icon" className={className} />,
 }))
 

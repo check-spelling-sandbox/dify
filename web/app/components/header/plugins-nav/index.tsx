@@ -3,7 +3,7 @@
 import { cn } from '@langgenius/dify-ui/cn'
 import { StatusDot } from '@langgenius/dify-ui/status-dot'
 import { useTranslation } from 'react-i18next'
-import { Group } from '@/app/components/base/icons/src/vender/other'
+import { Group } from '@/app/components/base/icons/src/vendor/other'
 import { usePluginTaskStatus } from '@/app/components/plugins/plugin-page/plugin-tasks/hooks'
 import Link from '@/next/link'
 import { useSelectedLayoutSegment } from '@/next/navigation'

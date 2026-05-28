@@ -5,8 +5,8 @@ import { Combobox, ComboboxContent, ComboboxTrigger } from '@langgenius/dify-ui/
 import { useQuery } from '@tanstack/react-query'
 import { useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import Tag01Icon from '@/app/components/base/icons/src/vender/line/financeAndECommerce/Tag01'
-import XCircleIcon from '@/app/components/base/icons/src/vender/solid/general/XCircle'
+import Tag01Icon from '@/app/components/base/icons/src/vendor/line/financeAndECommerce/Tag01'
+import XCircleIcon from '@/app/components/base/icons/src/vendor/solid/general/XCircle'
 import { consoleQuery } from '@/service/client'
 import { TagSearchContent } from './tag-search-content'
 

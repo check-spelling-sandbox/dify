@@ -5,7 +5,7 @@ import {
 } from '@remixicon/react'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
-import { ApiConnectionMod } from '@/app/components/base/icons/src/vender/solid/development'
+import { ApiConnectionMod } from '@/app/components/base/icons/src/vendor/solid/development'
 import Option from './option'
 
 const CreateAppCard = () => {

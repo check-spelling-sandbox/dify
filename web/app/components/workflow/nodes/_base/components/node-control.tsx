@@ -10,7 +10,7 @@ import { memo } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   Stop,
-} from '@/app/components/base/icons/src/vender/line/mediaAndDevices'
+} from '@/app/components/base/icons/src/vendor/line/mediaAndDevices'
 import { NodeActionsDropdown } from '@/app/components/workflow/node-actions-menu'
 import { useWorkflowStore } from '@/app/components/workflow/store'
 import {

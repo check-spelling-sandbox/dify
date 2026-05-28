@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import KeyValueItem from '../key-value-item'
 
-vi.mock('../../../base/icons/src/vender/line/files', () => ({
+vi.mock('../../../base/icons/src/vendor/line/files', () => ({
   CopyCheck: () => <span data-testid="copy-check-icon" />,
 }))
 

@@ -42,7 +42,7 @@ function MarketplaceSection({
             onClick={() => onMarketplaceCollapsedChange(!marketplaceCollapsed)}
           >
             {t('modelProvider.selector.fromMarketplace', { ns: 'common' })}
-            <span className={cn('i-custom-vender-solid-general-arrow-down-round-fill size-4 text-text-quaternary', marketplaceCollapsed && '-rotate-90')} />
+            <span className={cn('i-custom-vendor-solid-general-arrow-down-round-fill size-4 text-text-quaternary', marketplaceCollapsed && '-rotate-90')} />
           </button>
         </div>
         {!marketplaceCollapsed && (

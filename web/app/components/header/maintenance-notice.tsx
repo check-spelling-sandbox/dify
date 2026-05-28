@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { X } from '@/app/components/base/icons/src/vender/line/general'
+import { X } from '@/app/components/base/icons/src/vendor/line/general'
 import { useLanguage } from '@/app/components/header/account-setting/model-provider-page/hooks'
 import { NOTICE_I18N } from '@/i18n-config/language'
 

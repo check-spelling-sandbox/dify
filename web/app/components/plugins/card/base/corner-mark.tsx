@@ -1,4 +1,4 @@
-import { LeftCorner } from '../../../base/icons/src/vender/plugin'
+import { LeftCorner } from '../../../base/icons/src/vendor/plugin'
 
 const CornerMark = ({ text }: { text: string }) => {
   return (

@@ -8,7 +8,7 @@ import { createPreviewCardHandle, PreviewCard, PreviewCardContent, PreviewCardTr
 import { RiMoreLine } from '@remixicon/react'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ArrowDownDoubleLine, ArrowDownRoundFill, ArrowUpDoubleLine } from '@/app/components/base/icons/src/vender/solid/arrows'
+import { ArrowDownDoubleLine, ArrowDownRoundFill, ArrowUpDoubleLine } from '@/app/components/base/icons/src/vendor/solid/arrows'
 import Loading from '@/app/components/base/loading'
 import InstallFromMarketplace from '@/app/components/plugins/install-plugin/install-from-marketplace'
 import Action from '@/app/components/workflow/block-selector/market-place-plugin/action'

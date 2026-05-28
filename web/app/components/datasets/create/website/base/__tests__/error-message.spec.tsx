@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import ErrorMessage from '../error-message'
 
-vi.mock('@/app/components/base/icons/src/vender/solid/alertsAndFeedback', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/solid/alertsAndFeedback', () => ({
   AlertTriangle: (props: React.SVGProps<SVGSVGElement>) => <svg data-testid="alert-icon" {...props} />,
 }))
 

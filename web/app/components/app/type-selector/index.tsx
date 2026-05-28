@@ -8,7 +8,7 @@ import { RiArrowDownSLine, RiCloseCircleFill, RiExchange2Fill, RiFilter3Line } f
 import * as React from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { BubbleTextMod, ChatBot, ListSparkle, Logic } from '@/app/components/base/icons/src/vender/solid/communication'
+import { BubbleTextMod, ChatBot, ListSparkle, Logic } from '@/app/components/base/icons/src/vendor/solid/communication'
 import { AppModeEnum } from '@/types/app'
 
 type AppSelectorProps = {

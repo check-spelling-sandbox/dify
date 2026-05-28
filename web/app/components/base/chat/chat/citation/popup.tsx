@@ -96,7 +96,7 @@ const Popup: FC<PopupProps> = ({
                         <div className="mb-2 flex items-center justify-between">
                           <div className="flex h-5 items-center rounded-md border border-divider-subtle px-1.5">
                             {/* replaced svg component with tailwind icon class per lint rule */}
-                            <i className="mr-0.5 i-custom-vender-line-general-hash-02 size-3 text-text-quaternary" aria-hidden />
+                            <i className="mr-0.5 i-custom-vendor-line-general-hash-02 size-3 text-text-quaternary" aria-hidden />
                             <div data-testid="popup-segment-position" className="text-[11px] font-medium text-text-tertiary">
                               {source.segment_position || index + 1}
                             </div>
@@ -109,7 +109,7 @@ const Popup: FC<PopupProps> = ({
                                 className="hidden h-[18px] items-center text-xs text-text-accent group-hover:flex"
                               >
                                 {t('chat.citation.linkToDataset', { ns: 'common' })}
-                                <i className="ml-1 i-custom-vender-line-arrows-arrow-up-right size-3" aria-hidden />
+                                <i className="ml-1 i-custom-vendor-line-arrows-arrow-up-right size-3" aria-hidden />
                               </Link>
                             )
                           }
@@ -121,17 +121,17 @@ const Popup: FC<PopupProps> = ({
                               <Tooltip
                                 text={t('chat.citation.characters', { ns: 'common' })}
                                 data={source.word_count}
-                                icon={<i className="mr-1 i-custom-vender-line-editor-type-square size-3" aria-hidden />}
+                                icon={<i className="mr-1 i-custom-vendor-line-editor-type-square size-3" aria-hidden />}
                               />
                               <Tooltip
                                 text={t('chat.citation.hitCount', { ns: 'common' })}
                                 data={source.hit_count}
-                                icon={<i className="mr-1 i-custom-vender-line-general-target-04 size-3" aria-hidden />}
+                                icon={<i className="mr-1 i-custom-vendor-line-general-target-04 size-3" aria-hidden />}
                               />
                               <Tooltip
                                 text={t('chat.citation.vectorHash', { ns: 'common' })}
                                 data={source.index_node_hash?.substring(0, 7)}
-                                icon={<i className="mr-1 i-custom-vender-line-editor-bezier-curve-03 size-3" aria-hidden />}
+                                icon={<i className="mr-1 i-custom-vendor-line-editor-bezier-curve-03 size-3" aria-hidden />}
                               />
                               {
                                 !!source.score && (

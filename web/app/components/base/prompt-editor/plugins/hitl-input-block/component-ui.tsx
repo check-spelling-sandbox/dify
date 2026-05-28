@@ -11,7 +11,7 @@ import { useCallback, useEffect, useMemo, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { InputVarType } from '@/app/components/workflow/types'
 import ActionButton from '../../../action-button'
-import { VariableX } from '../../../icons/src/vender/workflow'
+import { VariableX } from '../../../icons/src/vendor/workflow'
 import InputField from './input-field'
 import VariableBlock from './variable-block'
 

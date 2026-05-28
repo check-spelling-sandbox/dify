@@ -7,7 +7,7 @@ import { PreviewCardTrigger } from '@langgenius/dify-ui/preview-card'
 import { StatusDot } from '@langgenius/dify-ui/status-dot'
 import { useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { CreditsCoin } from '@/app/components/base/icons/src/vender/line/financeAndECommerce'
+import { CreditsCoin } from '@/app/components/base/icons/src/vendor/line/financeAndECommerce'
 import { useModalContext } from '@/context/modal-context'
 import { useProviderContext } from '@/context/provider-context'
 import { ConfigurationMethodEnum, ModelStatusEnum } from '../declarations'
@@ -98,7 +98,7 @@ function PopupItem({
           onClick={() => setCollapsed(prev => !prev)}
         >
           <span className="truncate">{model.label[language] || model.label.en_US}</span>
-          <span className={cn('i-custom-vender-solid-general-arrow-down-round-fill size-4 shrink-0 text-text-quaternary', collapsed && '-rotate-90')} />
+          <span className={cn('i-custom-vendor-solid-general-arrow-down-round-fill size-4 shrink-0 text-text-quaternary', collapsed && '-rotate-90')} />
         </button>
         <Popover open={dropdownOpen} onOpenChange={setDropdownOpen}>
           <PopoverTrigger
@@ -169,7 +169,7 @@ function PopupItem({
             {
               defaultModel?.model === modelItem.model && defaultModel.provider === currentProvider.provider && (
                 <ComboboxItemIndicator className="shrink-0 text-text-accent">
-                  <span className="i-custom-vender-line-general-check size-4" aria-hidden="true" />
+                  <span className="i-custom-vendor-line-general-check size-4" aria-hidden="true" />
                 </ComboboxItemIndicator>
               )
             }

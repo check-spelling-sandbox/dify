@@ -11,7 +11,7 @@ import {
 import { useTranslation } from 'react-i18next'
 
 import ActionButton, { ActionButtonState } from '@/app/components/base/action-button'
-import { BubbleX, LongArrowLeft, LongArrowRight } from '@/app/components/base/icons/src/vender/line/others'
+import { BubbleX, LongArrowLeft, LongArrowRight } from '@/app/components/base/icons/src/vendor/line/others'
 import BlockIcon from '@/app/components/workflow/block-icon'
 import { webSocketClient } from '@/app/components/workflow/collaboration/core/websocket-manager'
 import { useCollaborativeWorkflow } from '@/app/components/workflow/hooks/use-collaborative-workflow'

@@ -6,7 +6,7 @@ import {
 } from '@langgenius/dify-ui/popover'
 import { useCallback, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
 
 type ConditionCommonVariableSelectorProps = {
   variables?: { name: string, type: string, value: string }[]

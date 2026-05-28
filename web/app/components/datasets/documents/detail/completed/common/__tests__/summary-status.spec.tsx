@@ -6,7 +6,7 @@ import SummaryStatus from '../summary-status'
 vi.mock('@/app/components/base/badge', () => ({
   default: ({ children }: { children: React.ReactNode }) => <span data-testid="badge">{children}</span>,
 }))
-vi.mock('@/app/components/base/icons/src/vender/knowledge', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/knowledge', () => ({
   SearchLinesSparkle: (props: React.SVGProps<SVGSVGElement>) => <svg data-testid="sparkle-icon" {...props} />,
 }))
 

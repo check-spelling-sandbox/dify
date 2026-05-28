@@ -14,8 +14,8 @@ import { useTranslation } from 'react-i18next'
 import {
   Copy,
   CopyCheck,
-} from '@/app/components/base/icons/src/vender/line/files'
-import { BubbleX } from '@/app/components/base/icons/src/vender/line/others'
+} from '@/app/components/base/icons/src/vendor/line/files'
+import { BubbleX } from '@/app/components/base/icons/src/vendor/line/others'
 import CodeEditor from '@/app/components/workflow/nodes/_base/components/editor/code-editor'
 import { CodeLanguage } from '@/app/components/workflow/nodes/code/types'
 import { ChatVarType } from '@/app/components/workflow/panel/chat-variable-panel/type'

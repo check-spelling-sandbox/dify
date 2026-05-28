@@ -7,7 +7,7 @@ import * as React from 'react'
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ActionButton from '@/app/components/base/action-button'
-import { CopyCheck } from '../../base/icons/src/vender/line/files'
+import { CopyCheck } from '../../base/icons/src/vendor/line/files'
 
 type Props = {
   label: string

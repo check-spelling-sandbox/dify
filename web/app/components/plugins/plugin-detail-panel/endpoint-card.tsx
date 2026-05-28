@@ -18,7 +18,7 @@ import * as React from 'react'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ActionButton from '@/app/components/base/action-button'
-import { CopyCheck } from '@/app/components/base/icons/src/vender/line/files'
+import { CopyCheck } from '@/app/components/base/icons/src/vendor/line/files'
 import { addDefaultValue, toolCredentialToFormSchemas } from '@/app/components/tools/utils/to-form-schema'
 import {
   useDeleteEndpoint,

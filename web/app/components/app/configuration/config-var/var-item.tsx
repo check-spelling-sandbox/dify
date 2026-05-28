@@ -11,7 +11,7 @@ import * as React from 'react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Badge from '@/app/components/base/badge'
-import { BracketsX as VarIcon } from '@/app/components/base/icons/src/vender/line/development'
+import { BracketsX as VarIcon } from '@/app/components/base/icons/src/vendor/line/development'
 import IconTypeIcon from './input-type-icon'
 
 type ItemProps = {

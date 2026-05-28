@@ -189,7 +189,7 @@ function SearchMethodRadioCard({
       </RadioRoot>
       {!!(children && isActive) && (
         <div className="relative rounded-b-xl bg-components-panel-bg p-3">
-          <div className="absolute -top-2.75 left-3.5 i-custom-vender-knowledge-arrow-shape h-4 w-4 text-components-panel-bg" />
+          <div className="absolute -top-2.75 left-3.5 i-custom-vendor-knowledge-arrow-shape h-4 w-4 text-components-panel-bg" />
           {children}
         </div>
       )}
@@ -324,7 +324,7 @@ export function SearchMethodOption({
                     <div className="mt-2 flex h-10 items-center gap-x-0.5 overflow-hidden rounded-xl border-[0.5px] border-components-panel-border bg-components-panel-bg-blur p-2 shadow-xs backdrop-blur-[5px]">
                       <div className="absolute inset-0 bg-dataset-warning-message-bg opacity-40" />
                       <div className="p-1">
-                        <div className="i-custom-vender-solid-alertsAndFeedback-alert-triangle size-4 text-text-warning-secondary" />
+                        <div className="i-custom-vendor-solid-alertsAndFeedback-alert-triangle size-4 text-text-warning-secondary" />
                       </div>
                       <span className="system-xs-medium text-text-primary">
                         {t('form.retrievalSetting.multiModalTip', { ns: 'datasetSettings' })}

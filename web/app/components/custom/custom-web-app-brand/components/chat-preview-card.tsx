@@ -20,7 +20,7 @@ const ChatPreviewCard = ({
       <div className="flex h-full w-[232px] shrink-0 flex-col p-1 pr-0">
         <div className="flex items-center gap-3 p-3 pr-2">
           <div className={cn('inline-flex size-8 items-center justify-center rounded-lg border border-divider-regular', 'bg-components-icon-bg-blue-light-solid')}>
-            <span className="i-custom-vender-solid-communication-bubble-text-mod size-4 text-components-avatar-shape-fill-stop-100" />
+            <span className="i-custom-vendor-solid-communication-bubble-text-mod size-4 text-components-avatar-shape-fill-stop-100" />
           </div>
           <div className="grow system-md-semibold text-text-secondary">Chatflow App</div>
           <div className="p-1.5">

@@ -63,7 +63,7 @@ export function SegmentAdd({
         {importStatus === segmentImportStatus.completed && (
           <div className="relative mr-2 inline-flex items-center overflow-hidden rounded-lg border-[0.5px] border-components-panel-border bg-components-panel-bg shadow-xs shadow-shadow-shadow-3 backdrop-blur-[5px]">
             <div className="inline-flex items-center border-r border-r-divider-subtle px-2.5 py-2 text-text-success">
-              <span aria-hidden className="mr-1 i-custom-vender-solid-general-check-circle size-4" />
+              <span aria-hidden className="mr-1 i-custom-vendor-solid-general-check-circle size-4" />
               <span className="pr-0.5 system-sm-medium">{t('list.batchModal.completed', { ns: 'datasetDocuments' })}</span>
             </div>
             <div className="m-1 inline-flex items-center">

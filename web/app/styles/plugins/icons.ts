@@ -4,14 +4,14 @@
  * Wired into Tailwind v4 via `@plugin './plugins/icons.ts';` in tailwind-core.css.
  */
 import { icons as customPublicIcons } from '@dify/iconify-collections/custom-public'
-import { icons as customVenderIcons } from '@dify/iconify-collections/custom-vender'
+import { icons as customVendorIcons } from '@dify/iconify-collections/custom-vendor'
 import { getIconCollections, iconsPlugin } from '@egoist/tailwindcss-icons'
 
 export default iconsPlugin({
   collections: {
     ...getIconCollections(['heroicons', 'ri']),
     'custom-public': customPublicIcons,
-    'custom-vender': customVenderIcons,
+    'custom-vendor': customVendorIcons,
   },
   extraProperties: {
     width: '1rem',

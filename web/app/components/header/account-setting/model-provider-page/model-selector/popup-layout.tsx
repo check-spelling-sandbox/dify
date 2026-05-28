@@ -66,7 +66,7 @@ export function ModelSelectorSearchHeader({
               onClick={() => onInputValueChange('')}
               onPointerDown={event => event.preventDefault()}
             >
-              <span className="i-custom-vender-solid-general-x-circle size-3.5" aria-hidden="true" />
+              <span className="i-custom-vendor-solid-general-x-circle size-3.5" aria-hidden="true" />
             </button>
           )
         }

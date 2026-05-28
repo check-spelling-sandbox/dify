@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
 } from '@langgenius/dify-ui/popover'
 import { useTranslation } from 'react-i18next'
-import { Economic, HighQuality } from '@/app/components/base/icons/src/vender/knowledge'
+import { Economic, HighQuality } from '@/app/components/base/icons/src/vendor/knowledge'
 import { IndexingType } from '../../create/step-two'
 import { EffectColor } from '../chunk-structure/types'
 import OptionCard from '../option-card'

@@ -3,7 +3,7 @@ import { cn } from '@langgenius/dify-ui/cn'
 import { capitalize } from 'es-toolkit/string'
 
 import { memo } from 'react'
-import { GlobalVariable as GlobalVariableIcon } from '@/app/components/base/icons/src/vender/line/others'
+import { GlobalVariable as GlobalVariableIcon } from '@/app/components/base/icons/src/vendor/line/others'
 
 type Props = {
   payload: GlobalVariable

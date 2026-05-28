@@ -36,8 +36,8 @@ const CopyIcon = ({ content }: Props) => {
             onMouseLeave={reset}
           >
             {!copied
-              ? (<span aria-hidden className="i-custom-vender-line-files-copy size-3.5" />)
-              : (<span aria-hidden className="i-custom-vender-line-files-copy-check size-3.5" />)}
+              ? (<span aria-hidden className="i-custom-vendor-line-files-copy size-3.5" />)
+              : (<span aria-hidden className="i-custom-vendor-line-files-copy-check size-3.5" />)}
           </button>
         )}
       />

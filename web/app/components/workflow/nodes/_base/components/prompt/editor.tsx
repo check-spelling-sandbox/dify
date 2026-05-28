@@ -23,9 +23,9 @@ import ActionButton from '@/app/components/base/action-button'
 import {
   Copy,
   CopyCheck,
-} from '@/app/components/base/icons/src/vender/line/files'
-import { Variable02 } from '@/app/components/base/icons/src/vender/solid/development'
-import { Jinja } from '@/app/components/base/icons/src/vender/workflow'
+} from '@/app/components/base/icons/src/vendor/line/files'
+import { Variable02 } from '@/app/components/base/icons/src/vendor/solid/development'
+import { Jinja } from '@/app/components/base/icons/src/vendor/workflow'
 import PromptEditor from '@/app/components/base/prompt-editor'
 import { PROMPT_EDITOR_INSERT_QUICKLY } from '@/app/components/base/prompt-editor/plugins/update-block'
 import { useWorkflowVariableType } from '@/app/components/workflow/hooks'

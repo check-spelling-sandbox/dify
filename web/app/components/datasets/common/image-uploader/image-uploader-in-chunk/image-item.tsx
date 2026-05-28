@@ -10,7 +10,7 @@ import {
 } from 'react'
 import { useTranslation } from 'react-i18next'
 import FileImageRender from '@/app/components/base/file-uploader/file-image-render'
-import { ReplayLine } from '@/app/components/base/icons/src/vender/other'
+import { ReplayLine } from '@/app/components/base/icons/src/vendor/other'
 import { fileIsUploaded } from '../utils'
 
 type ImageItemProps = {

@@ -33,7 +33,7 @@ vi.mock('@/app/components/base/app-icon', () => ({
   }) => <div className={className}>{`app-icon:${background}:${icon}`}</div>,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/other', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/other', () => ({
   Group: ({ className }: { className?: string }) => <div className={className}>group-icon</div>,
 }))
 

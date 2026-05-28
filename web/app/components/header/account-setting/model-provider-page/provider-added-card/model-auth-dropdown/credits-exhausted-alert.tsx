@@ -1,6 +1,6 @@
 import { MeterIndicator, MeterLabel, MeterRoot, MeterTrack } from '@langgenius/dify-ui/meter'
 import { Trans, useTranslation } from 'react-i18next'
-import { CreditsCoin } from '@/app/components/base/icons/src/vender/line/financeAndECommerce'
+import { CreditsCoin } from '@/app/components/base/icons/src/vendor/line/financeAndECommerce'
 import { useModalContextSelector } from '@/context/modal-context'
 import { formatNumber } from '@/utils/format'
 import { useTrialCredits } from '../use-trial-credits'

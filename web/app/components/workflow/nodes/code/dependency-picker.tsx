@@ -11,7 +11,7 @@ import {
 import { t } from 'i18next'
 import * as React from 'react'
 import { useCallback, useState } from 'react'
-import { Check } from '@/app/components/base/icons/src/vender/line/general'
+import { Check } from '@/app/components/base/icons/src/vendor/line/general'
 import Input from '@/app/components/base/input'
 
 type Props = {

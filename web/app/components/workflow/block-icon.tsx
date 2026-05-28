@@ -27,7 +27,7 @@ import {
   TemplatingTransform,
   VariableX,
   WebhookLine,
-} from '@/app/components/base/icons/src/vender/workflow'
+} from '@/app/components/base/icons/src/vendor/workflow'
 import { API_PREFIX } from '@/config'
 import { BlockEnum } from './types'
 

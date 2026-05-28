@@ -6,7 +6,7 @@ import type {
 import { Button } from '@langgenius/dify-ui/button'
 import { RiArrowRightSLine } from '@remixicon/react'
 import { useTranslation } from 'react-i18next'
-import { Loop } from '@/app/components/base/icons/src/vender/workflow'
+import { Loop } from '@/app/components/base/icons/src/vendor/workflow'
 
 type LoopLogTriggerProps = {
   nodeInfo: NodeTracing

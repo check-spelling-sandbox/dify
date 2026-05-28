@@ -187,11 +187,11 @@ vi.mock('@/app/components/plugins/card/base/card-icon', () => ({
 }))
 
 // Mock icons
-vi.mock('@/app/components/base/icons/src/vender/line/general', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/general', () => ({
   SearchMenu: ({ className }: { className?: string }) => <span data-testid="search-menu-icon" className={className}>🔍</span>,
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/other', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/other', () => ({
   Group: ({ className }: { className?: string }) => <span data-testid="group-icon" className={className}>📦</span>,
 }))
 

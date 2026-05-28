@@ -130,7 +130,7 @@ vi.mock('@langgenius/dify-ui/toast', () => ({
   },
 }))
 
-vi.mock('@/app/components/base/icons/src/vender/line/general', () => ({
+vi.mock('@/app/components/base/icons/src/vendor/line/general', () => ({
   LinkExternal02: () => <span data-testid="link-icon" />,
   Settings01: () => <span data-testid="settings-icon" />,
 }))

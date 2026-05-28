@@ -1241,172 +1241,172 @@
       "count": 21
     }
   },
-  "web/app/components/base/icons/src/vender/features/index.ts": {
+  "web/app/components/base/icons/src/vendor/features/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 10
     }
   },
-  "web/app/components/base/icons/src/vender/knowledge/index.ts": {
+  "web/app/components/base/icons/src/vendor/knowledge/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 15
     }
   },
-  "web/app/components/base/icons/src/vender/line/alertsAndFeedback/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/alertsAndFeedback/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 2
     }
   },
-  "web/app/components/base/icons/src/vender/line/arrows/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/arrows/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 6
     }
   },
-  "web/app/components/base/icons/src/vender/line/communication/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/communication/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/line/development/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/development/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/line/editor/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/editor/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/line/education/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/education/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/line/files/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/files/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 6
     }
   },
-  "web/app/components/base/icons/src/vender/line/financeAndECommerce/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/financeAndECommerce/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 4
     }
   },
-  "web/app/components/base/icons/src/vender/line/general/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/general/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 11
     }
   },
-  "web/app/components/base/icons/src/vender/line/images/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/images/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/line/layout/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/layout/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/line/mediaAndDevices/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/mediaAndDevices/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 2
     }
   },
-  "web/app/components/base/icons/src/vender/line/others/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/others/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 7
     }
   },
-  "web/app/components/base/icons/src/vender/line/time/index.ts": {
+  "web/app/components/base/icons/src/vendor/line/time/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 2
     }
   },
-  "web/app/components/base/icons/src/vender/other/index.ts": {
+  "web/app/components/base/icons/src/vendor/other/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 8
     }
   },
-  "web/app/components/base/icons/src/vender/pipeline/index.ts": {
+  "web/app/components/base/icons/src/vendor/pipeline/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/plugin/index.ts": {
+  "web/app/components/base/icons/src/vendor/plugin/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/solid/FinanceAndECommerce/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/FinanceAndECommerce/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/solid/alertsAndFeedback/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/alertsAndFeedback/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/solid/arrows/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/arrows/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/solid/communication/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/communication/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 6
     }
   },
-  "web/app/components/base/icons/src/vender/solid/development/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/development/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 4
     }
   },
-  "web/app/components/base/icons/src/vender/solid/editor/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/editor/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/solid/education/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/education/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/solid/files/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/files/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 3
     }
   },
-  "web/app/components/base/icons/src/vender/solid/general/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/general/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 11
     }
   },
-  "web/app/components/base/icons/src/vender/solid/mediaAndDevices/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/mediaAndDevices/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 2
     }
   },
-  "web/app/components/base/icons/src/vender/solid/security/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/security/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/solid/shapes/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/shapes/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/solid/users/index.ts": {
+  "web/app/components/base/icons/src/vendor/solid/users/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/system/index.ts": {
+  "web/app/components/base/icons/src/vendor/system/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 1
     }
   },
-  "web/app/components/base/icons/src/vender/workflow/index.ts": {
+  "web/app/components/base/icons/src/vendor/workflow/index.ts": {
     "no-barrel-files/no-barrel-files": {
       "count": 30
     }

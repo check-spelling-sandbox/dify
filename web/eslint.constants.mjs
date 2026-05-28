@@ -129,7 +129,7 @@ export const HYOBAN_PREFER_TAILWIND_ICONS_OPTIONS = {
   libraries: [
     {
       prefix: 'i-custom-',
-      source: '^@/app/components/base/icons/src/(?<set>(?:public|vender)(?:/.*)?)$',
+      source: '^@/app/components/base/icons/src/(?<set>(?:public|vendor)(?:/.*)?)$',
       name: '^(?<name>.*)$',
     },
     {

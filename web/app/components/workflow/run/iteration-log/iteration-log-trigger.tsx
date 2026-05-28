@@ -5,7 +5,7 @@ import type {
 import { Button } from '@langgenius/dify-ui/button'
 import { RiArrowRightSLine } from '@remixicon/react'
 import { useTranslation } from 'react-i18next'
-import { Iteration } from '@/app/components/base/icons/src/vender/workflow'
+import { Iteration } from '@/app/components/base/icons/src/vendor/workflow'
 import { NodeRunningStatus } from '@/app/components/workflow/types'
 
 type IterationLogTriggerProps = {

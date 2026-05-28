@@ -15,7 +15,7 @@ import { useBoolean } from 'ahooks'
 import * as React from 'react'
 import { useTranslation } from 'react-i18next'
 import Divider from '@/app/components/base/divider'
-import { SearchLinesSparkle } from '@/app/components/base/icons/src/vender/knowledge'
+import { SearchLinesSparkle } from '@/app/components/base/icons/src/vendor/knowledge'
 import { IS_CE_EDITION } from '@/config'
 
 const i18nPrefix = 'batchAction'

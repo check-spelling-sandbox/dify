@@ -285,7 +285,7 @@ const Operations = ({ embeddingAvailable, datasetId, detail, selectedIds, onSele
                     )}
                     {IS_CE_EDITION && (
                       <button type="button" className={cn(menuActionClassName, 'text-left')} onClick={() => handleMenuOperation('summary')}>
-                        <span aria-hidden className="i-custom-vender-knowledge-search-lines-sparkle size-4 text-text-tertiary" />
+                        <span aria-hidden className="i-custom-vendor-knowledge-search-lines-sparkle size-4 text-text-tertiary" />
                         <span className={s.actionName}>{t('list.action.summary', { ns: 'datasetDocuments' })}</span>
                       </button>
                     )}

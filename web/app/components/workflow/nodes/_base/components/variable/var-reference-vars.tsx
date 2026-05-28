@@ -117,14 +117,14 @@ const Item: FC<ItemProps> = ({
             aria-hidden
             className={cn(
               'size-3.5 shrink-0 text-util-colors-violet-violet-600',
-              isInCodeGeneratorInstructionEditor ? 'i-custom-vender-line-general-code-assistant' : 'i-custom-vender-line-general-magic-edit',
+              isInCodeGeneratorInstructionEditor ? 'i-custom-vendor-line-general-code-assistant' : 'i-custom-vendor-line-general-magic-edit',
             )}
           />
         )
       case 'error_message':
-        return <span aria-hidden className="i-custom-vender-solid-development-variable-02 size-3.5 shrink-0 text-util-colors-orange-dark-orange-dark-600" />
+        return <span aria-hidden className="i-custom-vendor-solid-development-variable-02 size-3.5 shrink-0 text-util-colors-orange-dark-orange-dark-600" />
       default:
-        return <span aria-hidden className="i-custom-vender-solid-development-variable-02 size-3.5 shrink-0 text-text-accent" />
+        return <span aria-hidden className="i-custom-vendor-solid-development-variable-02 size-3.5 shrink-0 text-text-accent" />
     }
   }, [isFlat, isInCodeGeneratorInstructionEditor, itemData.variable])
 
@@ -247,7 +247,7 @@ const Item: FC<ItemProps> = ({
       <div className="ml-1 shrink-0 text-xs font-normal text-text-tertiary capitalize">{(preferSchemaType && itemData.schemaType) ? itemData.schemaType : itemData.type}</div>
       {
         (isObj || isStructureOutput) && (
-          <span aria-hidden className={cn('ml-0.5 i-custom-vender-line-arrows-chevron-right size-3 text-text-quaternary', isHovering && 'text-text-tertiary')} />
+          <span aria-hidden className={cn('ml-0.5 i-custom-vendor-line-arrows-chevron-right size-3 text-text-quaternary', isHovering && 'text-text-tertiary')} />
         )
       }
     </div>

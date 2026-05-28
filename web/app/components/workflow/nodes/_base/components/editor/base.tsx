@@ -13,7 +13,7 @@ import FileListInLog from '@/app/components/base/file-uploader/file-list-in-log'
 import {
   Copy,
   CopyCheck,
-} from '@/app/components/base/icons/src/vender/line/files'
+} from '@/app/components/base/icons/src/vendor/line/files'
 import useToggleExpend from '@/app/components/workflow/nodes/_base/hooks/use-toggle-expend'
 import CodeGeneratorButton from '../code-generator-button'
 import ToggleExpandBtn from '../toggle-expand-btn'

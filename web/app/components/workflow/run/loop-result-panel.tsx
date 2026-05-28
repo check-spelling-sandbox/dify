@@ -9,8 +9,8 @@ import {
 import * as React from 'react'
 import { useCallback, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Loop } from '@/app/components/base/icons/src/vender/workflow'
-import { ArrowNarrowLeft } from '../../base/icons/src/vender/line/arrows'
+import { Loop } from '@/app/components/base/icons/src/vendor/workflow'
+import { ArrowNarrowLeft } from '../../base/icons/src/vendor/line/arrows'
 import TracingPanel from './tracing-panel'
 
 const i18nPrefix = 'singleRun'

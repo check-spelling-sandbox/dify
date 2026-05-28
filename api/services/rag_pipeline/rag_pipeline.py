@@ -516,9 +516,9 @@ class RagPipelineService:
         start_at = time.perf_counter()
         node_config = draft_workflow.get_node_config_by_id(node_id)
 
-        eclosing_node_type_and_id = draft_workflow.get_enclosing_node_type_and_id(node_config)
-        if eclosing_node_type_and_id:
-            _, enclosing_node_id = eclosing_node_type_and_id
+        enclosing_node_type_and_id = draft_workflow.get_enclosing_node_type_and_id(node_config)
+        if enclosing_node_type_and_id:
+            _, enclosing_node_id = enclosing_node_type_and_id
         else:
             enclosing_node_id = None
 
@@ -1281,9 +1281,9 @@ class RagPipelineService:
             raise ValueError("Node id is required")
         node_config = draft_workflow.get_node_config_by_id(node_id)
 
-        eclosing_node_type_and_id = draft_workflow.get_enclosing_node_type_and_id(node_config)
-        if eclosing_node_type_and_id:
-            _, enclosing_node_id = eclosing_node_type_and_id
+        enclosing_node_type_and_id = draft_workflow.get_enclosing_node_type_and_id(node_config)
+        if enclosing_node_type_and_id:
+            _, enclosing_node_id = enclosing_node_type_and_id
         else:
             enclosing_node_id = None
 

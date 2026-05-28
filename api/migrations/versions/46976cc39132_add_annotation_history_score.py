@@ -1,4 +1,4 @@
-"""add-annotation-histoiry-score
+"""add-annotation-history-score
 
 Revision ID: 46976cc39132
 Revises: e1901f623fd0

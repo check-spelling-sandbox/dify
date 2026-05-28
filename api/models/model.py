@@ -987,7 +987,7 @@ class AccountTrialAppRecord(TypeBase):
         return db.session.scalar(select(Account).where(Account.id == self.account_id))
 
 
-class ExporleBanner(TypeBase):
+class ExploreBanner(TypeBase):
     __tablename__ = "exporle_banners"
     __table_args__ = (sa.PrimaryKeyConstraint("id", name="exporler_banner_pkey"),)
     id: Mapped[str] = mapped_column(

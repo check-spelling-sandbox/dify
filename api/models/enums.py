@@ -304,7 +304,7 @@ class PaymentStatus(StrEnum):
 
 
 class BannerStatus(StrEnum):
-    """ExporleBanner status"""
+    """ExploreBanner status"""
 
     ENABLED = "enabled"
     DISABLED = "disabled"

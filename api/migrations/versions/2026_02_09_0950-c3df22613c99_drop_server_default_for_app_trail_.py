@@ -24,10 +24,10 @@ def upgrade():
 
 
 def downgrade():
-    # This migration is primarily for schema consistence
+    # This migration is primarily for schema consistency
     # between database  and model definitions.
     #
-    # The original 
+    # The original
     # DROP SERVER default is idemponent.
     # Besides, the original migration has been updated to
     # reflect the

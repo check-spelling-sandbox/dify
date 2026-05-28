@@ -90,7 +90,7 @@ const ToolCallItem: FC<Props> = ({ toolCall, isLLM = false, isFinal, tokens, obs
           <div className="pb-2">
             <div className={cn('px-[10px] py-1')}>
               {toolCall.status === 'error' && (
-                <div className="rounded-lg border-[0.5px] border-[rbga(0,0,0,0.05)] bg-[#fef3f2] px-3 py-[10px] text-xs leading-[18px] text-[#d92d20] shadow-xs">{toolCall.error}</div>
+                <div className="rounded-lg border-[0.5px] border-[rgba(0,0,0,0.05)] bg-[#fef3f2] px-3 py-[10px] text-xs leading-[18px] text-[#d92d20] shadow-xs">{toolCall.error}</div>
               )}
             </div>
             {toolCall.tool_input && (

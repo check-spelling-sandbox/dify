@@ -480,8 +480,8 @@ export const getLayoutByELK = async (originNodes: Node[], originEdges: Edge[]): 
     edges: elkEdges,
   }
 
-  const layoutedGraph = await (await getELK()).layout(graph)
-  const layout = collectLayout(layoutedGraph, () => true)
+  const laidOutGraph = await (await getELK()).layout(graph)
+  const layout = collectLayout(laidOutGraph, () => true)
   return normaliseBounds(layout)
 }
 
@@ -578,7 +578,7 @@ export const getLayoutForChildNodes = async (
     edges: elkEdges,
   }
 
-  const layoutedGraph = await (await getELK()).layout(graph)
-  const layout = collectLayout(layoutedGraph, () => true)
+  const laidOutGraph = await (await getELK()).layout(graph)
+  const layout = collectLayout(laidOutGraph, () => true)
   return normaliseChildLayout(layout, nodes)
 }
